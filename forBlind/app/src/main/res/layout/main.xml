@@ -17,59 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
-
-            <Button
-                android:id="@+id/btn_angle_main_menu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginEnd="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/icon_menu" />
-        </RelativeLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:layout_weight="1"
-            android:layout_marginTop="50dp"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageView
-                android:id="@+id/img_angle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/angle_90"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_H_pos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="00 "
-                android:textColor="#000"
-                android:textSize="60dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="grade"
-                android:textColor="#000"
-                android:textSize="45dp" />
-
-        </LinearLayout>
+            android:layout_marginTop="20dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -78,20 +26,12 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btn_main_display_start"
+                android:id="@+id/btn_main_bluetooth"
                 android:layout_width="300dp"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/angle_click" />
-
-            <Button
-                android:id="@+id/btn_angle_main_bluetooth"
-                android:layout_width="300dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:background="#00ff0000"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:background="@drawable/blu_button"/>
 
         </LinearLayout>
 
@@ -105,6 +45,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_gravity="bottom"
-        android:background="#E1F144"></RelativeLayout>
+        android:background="#E1F144" />
 
 </RelativeLayout>
