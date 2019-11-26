@@ -149,14 +149,15 @@ public class Main extends AppCompatActivity implements View.OnClickListener {
                                                        // pass_value_2 = data;
                                                         pass_value_1 = data;
 
-                                                        call_sign = pass_value_1.substring(0,3);
+                                                        call_sign = pass_value_1.substring(4,7);
 
 //
-//                                                        CIP = Integer.parseInt(call_sign);
-//                                                        Log.d("call_sign", String.valueOf(call_sign));
+                                                      CIP = Integer.parseInt(call_sign);
+                                                       Log.d("call_sign", String.valueOf(call_sign));
 
-                                                        if (call_sign.equals("111")) {
+                                                        if (call_sign.equals("043")) {
                                                             Intent intentxx = new Intent(Intent.ACTION_CALL, Uri.parse("tel:01068887481"));
+                                                            Log.d("call",String.valueOf(call_sign));
                                                             if (ActivityCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                                                                 // TODO: Consider calling
                                                                 //    ActivityCompat#requestPermissions
