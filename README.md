@@ -1,4 +1,4 @@
-# Study
+# AndroidStudy
 ## Android
 ### forBlind
 - [전화연결 앱](./01.androidCode/01.forBlind)
