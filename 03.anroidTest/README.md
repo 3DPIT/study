@@ -1,4 +1,6 @@
 ## 안드로이드 실습 공부
+## 동영상 링크
+[인프런-쉽게 따라할 수 있는 안드로이드 앱 개발](https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%95%B1%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EC%88%A0%EB%85%B8%ED%8A%B8/dashboard)
 
 ## 목적
 
