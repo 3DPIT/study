@@ -1,0 +1,106 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\bc4c9b882ef2614b9b3352566d1f003d\AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\d5a50650e853ee5d40ea761017d71233\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b88603c7adf5f57614ee46a6b3cd6882\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\37fa085b812171b0911b3543dcf82c53\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\89c553c6a5633fd6f34e5a1c4a94b24f\AndroidManifest.xml:17:1-27:12
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\fa53da5bc54c8a67441b49c5f1e9c9ff\AndroidManifest.xml:17:1-27:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:3:5-35
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:5:5-31
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:7:5-66
+	android:name
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:7:22-64
+uses-sdk
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\bc4c9b882ef2614b9b3352566d1f003d\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\bc4c9b882ef2614b9b3352566d1f003d\AndroidManifest.xml:15:5-42
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\d5a50650e853ee5d40ea761017d71233\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\d5a50650e853ee5d40ea761017d71233\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b88603c7adf5f57614ee46a6b3cd6882\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b88603c7adf5f57614ee46a6b3cd6882\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\37fa085b812171b0911b3543dcf82c53\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\37fa085b812171b0911b3543dcf82c53\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\89c553c6a5633fd6f34e5a1c4a94b24f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\89c553c6a5633fd6f34e5a1c4a94b24f\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\fa53da5bc54c8a67441b49c5f1e9c9ff\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\fa53da5bc54c8a67441b49c5f1e9c9ff\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:10:9-38
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:9:5-10:41
+		INJECTED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml
+application
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:12:5-27:19
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\bc4c9b882ef2614b9b3352566d1f003d\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:appcompat-v7:21.0.3] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\appcompat-v7-21.0.3.aar\bc4c9b882ef2614b9b3352566d1f003d\AndroidManifest.xml:16:5-19
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-v4-24.2.1.aar\02d8a11361e1f41f3275962cc55ec3f2\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\d5a50650e853ee5d40ea761017d71233\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-fragment-24.2.1.aar\d5a50650e853ee5d40ea761017d71233\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b88603c7adf5f57614ee46a6b3cd6882\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-media-compat-24.2.1.aar\b88603c7adf5f57614ee46a6b3cd6882\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\37fa085b812171b0911b3543dcf82c53\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-utils-24.2.1.aar\37fa085b812171b0911b3543dcf82c53\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\89c553c6a5633fd6f34e5a1c4a94b24f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-core-ui-24.2.1.aar\89c553c6a5633fd6f34e5a1c4a94b24f\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\fa53da5bc54c8a67441b49c5f1e9c9ff\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.1] C:\Users\oksos\.gradle\caches\transforms-1\files-1.1\support-compat-24.2.1.aar\fa53da5bc54c8a67441b49c5f1e9c9ff\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:15:9-41
+	android:icon
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:14:9-45
+	android:allowBackup
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:13:9-35
+	android:theme
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:16:9-40
+activity#com.hitouch.wikibook.BrowserActivity
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:17:9-26:20
+	android:screenOrientation
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:18:13-49
+	android:label
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:20:13-45
+	android:name
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:19:13-64
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from C:\Users\oksos\Desktop\work\05.android\01.androidCode\03.webApp\webApp\app\src\main\AndroidManifest.xml:24:27-74
