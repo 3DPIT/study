@@ -11,5 +11,5 @@
 ## 03. [androidTest](./03.anroidTest)
 - 실제 실습하고 공부도 하고 하는 자료
 
-## 04. [HeadFirst design patterns](./04.HeadFirst design patterns)
+## 04. [HeadFirst design patterns](./04.HeadFirst_design_patterns)
 - 디자인 패턴 공부 자료 정리
