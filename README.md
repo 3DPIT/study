@@ -11,5 +11,10 @@
 ## 03. [androidTest](./03.anroidTest)
 - 실제 실습하고 공부도 하고 하는 자료
 
-## 04. [HeadFirst design patterns](./04.HeadFirst_design_patterns)
+## 04. [HeadFirst design patterns](./04.HeadFirst_design_patterns) (이론)
 - 디자인 패턴 공부 자료 정리
+
+## 05.[코딩으로학습하는GoF의디자인패턴](./05.코딩으로학습하는GoF의디자인패턴) (실습위주)
+
+- GoF의 디자인 패턴 내용 정리
+
