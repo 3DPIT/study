@@ -2,10 +2,10 @@
 
 ## 목차
 
-1. **[Commit시 컨벤션 용어](##1.Commit시 컨벤션 용어)**
-2. **[구성](##2.구성)**
-3. **[사용법예시](##3.사용법 예시)**
-4. **[번외 Commit Message Emogji](##4.번외 Commit Message Emogji)**
+1. **Commit시 컨벤션 용어**
+2. **구성**
+3. **사용법예시**
+4. **번외 Commit Message Emogji**
 
 ## 1.Commit시 컨벤션 용어
 
