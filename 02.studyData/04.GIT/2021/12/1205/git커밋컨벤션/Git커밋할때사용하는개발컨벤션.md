@@ -39,7 +39,7 @@
     - feat(navigation)
     - fix(database)
 
-![image-20211205184201710](Git 커밋할때사용하는개발컨벤션.assets/image-20211205184201710.png)
+![image-20211205184201710](Git커밋할때사용하는개발컨벤션.assets/image-20211205184201710.png)
 
 #### 개선태그의 종류
 
