@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "NM+Pnd2I3eHR4z6hJYX1S5/qoAeE0Qzj7Upq5YBmbENTRlqSdOu0iURhHXCB0X39HVLrNBV4tGC3Zxy2et4Img==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\12월\\1207\\serilog\\serilogTest\\serilogTest\\serilogTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\km.park\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\km.park\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
+    "C:\\Users\\km.park\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
