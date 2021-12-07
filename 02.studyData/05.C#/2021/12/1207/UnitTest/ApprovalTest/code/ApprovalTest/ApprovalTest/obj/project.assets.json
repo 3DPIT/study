@@ -1,0 +1,136 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "coverlet.collector/3.1.0": {
+        "type": "package",
+        "build": {
+          "build/netstandard1.0/coverlet.collector.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "coverlet.collector/3.1.0": {
+      "sha512": "YzYqSRrjoP5lULBhTDcTOjuM4IDPPi6PhFsl4w8EI4WdZhE6llt7E38Tg4CHyrS+QKwyu1+9OwkdDgluOdoBTw==",
+      "type": "package",
+      "path": "coverlet.collector/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard1.0/Microsoft.CSharp.dll",
+        "build/netstandard1.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyInjection.dll",
+        "build/netstandard1.0/Microsoft.Extensions.DependencyModel.dll",
+        "build/netstandard1.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.CoreUtilities.dll",
+        "build/netstandard1.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "build/netstandard1.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/Newtonsoft.Json.dll",
+        "build/netstandard1.0/NuGet.Frameworks.dll",
+        "build/netstandard1.0/System.AppContext.dll",
+        "build/netstandard1.0/System.Collections.Immutable.dll",
+        "build/netstandard1.0/System.Dynamic.Runtime.dll",
+        "build/netstandard1.0/System.IO.FileSystem.Primitives.dll",
+        "build/netstandard1.0/System.Linq.Expressions.dll",
+        "build/netstandard1.0/System.Linq.dll",
+        "build/netstandard1.0/System.ObjectModel.dll",
+        "build/netstandard1.0/System.Reflection.Emit.ILGeneration.dll",
+        "build/netstandard1.0/System.Reflection.Emit.Lightweight.dll",
+        "build/netstandard1.0/System.Reflection.Emit.dll",
+        "build/netstandard1.0/System.Reflection.Metadata.dll",
+        "build/netstandard1.0/System.Reflection.TypeExtensions.dll",
+        "build/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "build/netstandard1.0/System.Text.RegularExpressions.dll",
+        "build/netstandard1.0/System.Threading.Tasks.Extensions.dll",
+        "build/netstandard1.0/System.Threading.dll",
+        "build/netstandard1.0/System.Xml.ReaderWriter.dll",
+        "build/netstandard1.0/System.Xml.XDocument.dll",
+        "build/netstandard1.0/coverlet.collector.deps.json",
+        "build/netstandard1.0/coverlet.collector.dll",
+        "build/netstandard1.0/coverlet.collector.pdb",
+        "build/netstandard1.0/coverlet.collector.targets",
+        "build/netstandard1.0/coverlet.core.dll",
+        "build/netstandard1.0/coverlet.core.pdb",
+        "coverlet-icon.png",
+        "coverlet.collector.3.1.0.nupkg.sha512",
+        "coverlet.collector.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "coverlet.collector >= 3.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\km.park\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\11월\\1119\\src\\ApprovalTest\\ApprovalTest\\ApprovalTest.csproj",
+      "projectName": "ApprovalTest",
+      "projectPath": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\11월\\1119\\src\\ApprovalTest\\ApprovalTest\\ApprovalTest.csproj",
+      "packagesPath": "C:\\Users\\km.park\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\11월\\1119\\src\\ApprovalTest\\ApprovalTest\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\km.park\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "coverlet.collector": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

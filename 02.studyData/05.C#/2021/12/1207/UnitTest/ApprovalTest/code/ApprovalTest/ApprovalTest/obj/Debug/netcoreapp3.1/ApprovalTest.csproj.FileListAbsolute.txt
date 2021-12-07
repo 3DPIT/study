@@ -1,0 +1,14 @@
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.exe
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.deps.json
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.runtimeconfig.json
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.runtimeconfig.dev.json
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\bin\Debug\netcoreapp3.1\ApprovalTest.pdb
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.csproj.AssemblyReference.cache
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.AssemblyInfoInputs.cache
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.AssemblyInfo.cs
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.csproj.CoreCompileInputs.cache
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.pdb
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\ApprovalTest\obj\Debug\netcoreapp3.1\ApprovalTest.genruntimeconfig.cache

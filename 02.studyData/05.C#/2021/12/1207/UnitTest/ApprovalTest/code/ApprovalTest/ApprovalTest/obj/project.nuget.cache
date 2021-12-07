@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z1+juyEROH2Tx+Kl8WoQ2wnPgIiMMrul76buBWfyTha1KcrR10A//ncN5ELlQWKx+W3iALwabfhUi5+m372Tfg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\11월\\1119\\src\\ApprovalTest\\ApprovalTest\\ApprovalTest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\km.park\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
