@@ -1,0 +1,158 @@
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.abstractions.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.7z
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.bz2
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.gz
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.tar
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.xz
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.zip
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.docx
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.odt
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.pdf
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.rtf
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.avif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.bmp
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.dds
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.dib
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.emf
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.exif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.gif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.heic
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.heif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.ico
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.j2c
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jfif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jp2
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpc
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpe
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpg
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jxr
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pbm
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pcx
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pgm
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.png
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.ppm
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.rle
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.tga
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.tif
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.wdp
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.webp
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.wmp
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\sheet\empty.ods
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\sheet\empty.xlsx
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\slide\empty.odp
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\slide\empty.pptx
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalTests.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalUtilities.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\DiffEngine.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Data.SqlClient.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.AccessControl.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\TextCopy.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.assert.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.core.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.execution.desktop.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalTests.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalUtilities.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\DiffEngine.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Data.SqlClient.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.AccessControl.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\TextCopy.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.assert.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.core.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.execution.desktop.xml
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\km.park\Desktop\박경민 문서\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.pdb
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.7z
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.bz2
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.gz
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.tar
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.xz
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\archive\empty.zip
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.docx
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.odt
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.pdf
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\document\empty.rtf
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.avif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.bmp
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.dds
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.dib
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.emf
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.exif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.gif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.heic
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.heif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.ico
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.j2c
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jfif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jp2
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpc
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpe
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jpg
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.jxr
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pbm
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pcx
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.pgm
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.png
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.ppm
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.rle
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.tga
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.tif
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.wdp
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.webp
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\image\empty.wmp
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\sheet\empty.ods
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\sheet\empty.xlsx
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\slide\empty.odp
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles\slide\empty.pptx
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.reporters.net452.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.runner.utility.net452.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.abstractions.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\UnitTest.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\UnitTest.pdb
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalTests.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalUtilities.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\DiffEngine.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Data.SqlClient.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.AccessControl.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\TextCopy.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.assert.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.core.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.execution.desktop.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalTests.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\ApprovalUtilities.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\DiffEngine.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\EmptyFiles.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Data.SqlClient.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.AccessControl.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\TextCopy.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.assert.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.core.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\bin\Debug\xunit.execution.desktop.xml
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.AssemblyReference.cache
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\11월\1119\src\ApprovalTest\UnitTest\obj\Debug\UnitTest.pdb
