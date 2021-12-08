@@ -5,7 +5,7 @@
 1. **Commit시 컨벤션 용어**
 2. **구성**
 3. **사용법예시**
-4. **번외 Commit Message Emogji**
+4. **번외 Commit Message Emoji**
 
 ## 1.Commit시 컨벤션 용어
 
@@ -25,7 +25,7 @@
   - 프로덕션 코드 리팩토링
 - comment 
   - 필요한 주석 추가 및 변경
-- !BREAKING CHANGE: 커다란 API 변경의 경우 (
+- !BREAKING CHANGE: 커다란 API 변경의 경우 
   - 예) API의 arguments, return 값의 변경, DB 테이블 변경, 급하게 치명적인 버그를 고쳐야 하는 경우)
 - !HOTFIX : 급하게 치명적인 버그를 고쳐야하는 경우
 - rename : 파일 혹은 폴더명을 수정하거나 옮기는 작업만 하는 경우
