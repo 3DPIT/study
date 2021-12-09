@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UYYMGo2RX2XHOdeNSJAwudwYuODjXQrlL5AghGBshdgJFhxjYTsIiUuCstivgV2p7693Usem7ept1OV5wq+KHg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\km.park\\Desktop\\kyeongmin.park\\문서\\Study자료\\02.업무\\12월\\1208\\SmartEnum\\code\\SmartEnum\\SmartEnum\\SmartEnum1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\km.park\\.nuget\\packages\\ardalis.smartenum\\2.0.1\\ardalis.smartenum.2.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.exe
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.deps.json
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.runtimeconfig.json
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.runtimeconfig.dev.json
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\SmartEnum1.pdb
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\bin\Debug\netcoreapp3.1\Ardalis.SmartEnum.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.csproj.AssemblyReference.cache
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.AssemblyInfoInputs.cache
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.AssemblyInfo.cs
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.csproj.CoreCompileInputs.cache
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.csproj.CopyComplete
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.dll
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.pdb
+C:\Users\km.park\Desktop\kyeongmin.park\문서\Study자료\02.업무\12월\1208\SmartEnum\code\SmartEnum\SmartEnum\obj\Debug\netcoreapp3.1\SmartEnum1.genruntimeconfig.cache
