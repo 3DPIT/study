@@ -28,6 +28,7 @@
 - `2021.12.07` [CsvHelper 사용법](./05.Csharp/2021/12/1207/CsvHelper/2021.12.07_CsvHelper사용법.md)
 - `2021.12.07` [UnitTest ApprovalTest 사용법](./05.Csharp/2021/12/1207/UnitTest/ApprovalTest/2021.12.07_UnitTest(ApprovalTests,coverlet-coverage).md)
 - `2021.12.14` [다형성](./05.Csharp/2021/12/1214/다형성.md)
+- ENUM,string, stringbuilder 차이 
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](.//05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
 
