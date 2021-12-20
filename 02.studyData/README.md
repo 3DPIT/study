@@ -31,7 +31,7 @@
 - ENUM,string, stringbuilder 차이 
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](.//05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
-## flutter
+## 06.flutter
 - 플러터 내용 정리하기
 - 
 
