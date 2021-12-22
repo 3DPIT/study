@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6647F2F-178F-4B92-A193-4B4798D13E6F}</ProjectGuid>
+    <ProjectGuid>{CFC56FB0-4A3E-4E69-8883-A31DFAE0CEA4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NetCoreDatabases</RootNamespace>
-    <AssemblyName>NetCoreDatabases</AssemblyName>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <AssemblyName>ClassLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -50,98 +50,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\DBFirstDBEDM.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFirstDBEDM.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\DBFirstDBEDM.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\DBFirstDBEDM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DBFirstDBEDM.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Model1.Context.cs">
+    <Compile Include="Class1.cs" />
+    <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Data\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\Model1.Designer.cs">
+    <Compile Include="Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Data\MSreplication_options.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\spt_fallback_db.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\spt_fallback_dev.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\spt_fallback_usg.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\spt_monitor.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\tb_user.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Data\TB_USER1.cs">
-      <DependentUpon>DBFirstDBEDM.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Data\DBFirstDBEDM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBFirstDBEDM.edmx</DependentUpon>
-      <LastGenOutput>DBFirstDBEDM.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\DBFirstDBEDM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBFirstDBEDM.edmx</DependentUpon>
-      <LastGenOutput>DBFirstDBEDM.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Data\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.Config" />
-    <EntityDeploy Include="Data\DBFirstDBEDM.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBFirstDBEDM.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Data\DBFirstDBEDM.edmx.diagram">
-      <DependentUpon>DBFirstDBEDM.edmx</DependentUpon>
-    </None>
-    <EntityDeploy Include="Data\Model1.edmx">
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Data\Model1.edmx.diagram">
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
