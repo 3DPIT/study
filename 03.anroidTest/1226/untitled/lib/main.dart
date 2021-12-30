@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,34 +13,73 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
           appBar: AppBar(),
-          body: Container(
-            height: 150,
-            padding: EdgeInsets.all(10),
-            child: Row(
-              children: [
-                Image.asset('youtube.jpg',width:150,),
-               Expanded(child: Container(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text('카메라 팜',),
-                      Text('금호동 3가'),
-                      Text('7000원'),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Icon(Icons.favorite),
-                          Text('4'),
-                        ],
-                      )
-                    ],
-                  ),
-                )
-               )
-              ],
-            ),
-          )
-        )
+          body: ListView(
+            children: [
+              UserItem(),
+              UserItem(),
+              UserItem(),
+            ],
+        ),
+          bottomNavigationBar: BottomAppBar(
+            child: Container(
+              alignment: Alignment.center,
+              width: 100,
+               height: 50,
+               child: Row(
+                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                 children: [
+               PhoneIcon(),
+               MessageIcon(),
+               AddIcon(),
+                ],
+               ),
+          ),
+         ),
+      )
     );
+  }
+}
+
+class UserItem extends StatelessWidget {
+  const UserItem({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.all(5),
+      child:Row(
+        children: [
+           Icon(Icons.account_box_rounded ),
+           Text('홍길동'),
+        ],
+      ),
+    );
+  }
+}
+
+class PhoneIcon extends StatelessWidget {
+  const PhoneIcon({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(Icons.call);
+  }
+}
+
+class MessageIcon extends StatelessWidget {
+  const MessageIcon({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(Icons.message);
+  }
+}
+
+class AddIcon extends StatelessWidget {
+  const AddIcon({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(Icons.add_box_rounded);
   }
 }
