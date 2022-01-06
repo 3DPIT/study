@@ -1,0 +1,19 @@
+    version: '3.7'
+    services:
+        mssql2:
+            image: mcr.microsoft.com/mssql/server:latest 
+            user: root
+            environment:
+              ACCEPT_EULA: Y
+              SA_PASSWORD: password!
+              MSSQL_PID: Express
+              MSSQL_COLLATION: Korean_Wansung_CI_AS
+
+            ports:
+              - 1440:1433
+            volumes:
+              - ./workSqlData:/var/opt/mssql
+              - ./environment:/environment
+            command: bin/bash -c "bin/bash /environment/entrypoint.sh tail -f /dev/null"
+    volumes:
+        workSqlData:
