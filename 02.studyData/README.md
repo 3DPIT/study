@@ -35,9 +35,7 @@
 
 - `2021.12.18`[docker를 이용한 mssql 올리기](./06Docker/2021/1218/2021.12.18_Docker_portsNotAvailable.md)
 
-## 07. Flutter
-
-- 플러터 내용 정리하기
-
+## 07. DDD
+- DDD내용 정리 진행(22.01.16)
   
 
