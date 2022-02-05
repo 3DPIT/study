@@ -29,6 +29,9 @@
 - `2021.12.07` [UnitTest ApprovalTest 사용법](./05.Csharp/2021/12/1207/UnitTest/ApprovalTest/2021.12.07_UnitTest(ApprovalTests,coverlet-coverage).md)
 - `2021.12.14` [다형성](./05.Csharp/2021/12/1214/다형성.md)
 - ENUM,string, stringbuilder 차이 
+- `2022.02.04` [프로퍼티](./05.Csharp/2022/02/0204/프로퍼티/22.02.04_Csharp프로퍼티.md)
+- `2022.02.05` [배열](./05.Csharp/2022/02/0205/배열/22.02.05_Csharp배열.md)
+- `2022.02.05` [일반화프로그래밍](./05.Csharp/2022/02/0205/일반화프로그래밍/22.02.05_Csharp일반화프로그래밍.md)
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](./05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
 ## 06.docker
