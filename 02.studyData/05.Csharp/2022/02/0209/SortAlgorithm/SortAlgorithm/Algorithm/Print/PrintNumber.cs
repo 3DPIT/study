@@ -1,11 +1,15 @@
-namespace SortAlgorithm;
+using System;
 
-class PrintNumber
+namespace SortAlgorithm
 {
-    public void Run(int[] arr)
+
+    class PrintNumber
     {
-        for(int i=0;i<arr.Length;i++)
-            Console.Write(arr[i]+" ");
-        Console.WriteLine();
+        public void Run(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+                Console.Write(arr[i] + " ");
+            Console.WriteLine();
+        }
     }
 }

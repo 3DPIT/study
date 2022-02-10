@@ -1,17 +1,15 @@
-﻿using System;
 using Xunit;
-namespace SortAlgorithm.UnitTest;
 
-public class UnitTest1
+namespace SortAlgorithm1.UnitTest
 {
-    [Fact]
-    public void TestMethod1()
+    public class UnitTest1
     {
-        int[] arr = { 4,3,2,1 };
-        Merge merge = new Merge();
-        merge.Sort(arr);
-        expectArr =  new int[] {1,2,3,4};
-        Assert.Equal(expectArr,arr);
+        [Fact]
+        public void MergeSortTest()
+        {
+            int[] arr = { 5, 12, 3, 4, 8, 3, 1, 9, 5 };
+            Merge merge = new Merge();
+            merge.Sort(arr);
+        }
     }
 }
-

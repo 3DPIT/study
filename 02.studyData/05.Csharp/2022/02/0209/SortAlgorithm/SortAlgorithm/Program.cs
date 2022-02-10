@@ -1,14 +1,16 @@
-﻿namespace SortAlgorithm;
-
-class Program
+﻿namespace SortAlgorithm
 {
-    public static void Main(string[] arg)
+
+    class Program
     {
-       int[] arr = {5,12,3,4,8,3,1,9,5};
-       PrintNumber print = new PrintNumber();
-       Merge merge = new Merge();
-       print.Run(arr);
-       merge.Sort(arr);
-       print.Run(arr);
+        public static void Main(string[] arg)
+        {
+            int[] arr = {5, 12, 3, 4, 8, 3, 1, 9, 5};
+            PrintNumber print = new PrintNumber();
+            Merge merge = new Merge();
+            print.Run(arr);
+            merge.Sort(arr);
+            print.Run(arr);
+        }
     }
 }
