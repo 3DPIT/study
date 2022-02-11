@@ -12,7 +12,7 @@
             "program": "${workspaceFolder}/PasswordProgram/bin/Debug/net6.0/PasswordProgram.dll",
             "args": [],
             "cwd": "${workspaceFolder}/PasswordProgram",
-            "console": "internalConsole",
+            "console": "integratedTerminal",
             "stopAtEntry": false
         },
         {
