@@ -16,7 +16,7 @@ public class Result
 		get { return _success; }
  	}
 
-	private Result() : this(null)
+	private Result()
 	{
 	}
 	// private Result(List<string> messages)

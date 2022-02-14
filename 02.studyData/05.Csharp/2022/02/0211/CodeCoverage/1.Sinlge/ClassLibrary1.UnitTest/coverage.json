@@ -1,0 +1,32 @@
+{
+  "ClassLibrary1.dll": {
+    "C:\\Users\\km.park\\Desktop\\CodeCoverage\\1.Sinlge\\ClassLibrary1\\Class1.cs": {
+      "ClassLibrary1.Class1": {
+        "System.Int32 ClassLibrary1.Class1::Method0()": {
+          "Lines": {
+            "13": 1,
+            "14": 1,
+            "15": 1
+          },
+          "Branches": []
+        },
+        "System.Int32 ClassLibrary1.Class1::Method1()": {
+          "Lines": {
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void ClassLibrary1.Class1::.ctor()": {
+          "Lines": {
+            "7": 1,
+            "8": 1,
+            "10": 1
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}

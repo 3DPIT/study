@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace PasswordCheckProgram.CheckTools;
-public class RuleComposite
+public class RuleComposite : IRule
 {
     private List<IRule> _rule = new List<IRule>();
     public void Add(IRule rule)
