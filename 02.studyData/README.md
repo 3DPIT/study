@@ -44,7 +44,10 @@
   - `22.01.31`[루신이란?](./06Docker/2022/01/0131/elk/22.01.31_Lucene이란.md)
   - `22.02.01`[elastic설정1](./06Docker/2022/02/01/elk/22.02.01_ElasticSearch1.md)
 
-
 ## 07. DDD
 - DDD내용 정리 진행(22.01.16)
 
+## 08.TestCode
+- `2022.02.16`[EtoE Test](./08.TestCode/2022/0216/22.02.16_CICD를위한E2ETEST.md)
+## 09.Python
+- `2022.02.19`[python설치 및 실행 ](./09.Python/0.python설정/2022/0219/python/22.02.19_python설치및실행.md)
