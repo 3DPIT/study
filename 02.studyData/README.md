@@ -51,6 +51,10 @@
   - `2022.03.01`[코드커버리지](./05.Csharp/2022/객체지향/22.03.01_코드커버리지.md)
   - `2022.03.01`[Debug와Release의차이](./05.Csharp/2022/객체지향/22.03.02_Debug와Release의차이.md)
   - `2022.03.02`[컴파일타임과런타임의차이](./05.Csharp/2022/객체지향/22.03.02_컴파일타임과런타임의차이.md)
+  - `2022.03.02`[CICD](./05.Csharp/2022/CICD/22.03.02_CICD.md)
+  - `2022.03.02`[obj bin](./05.Csharp/2022/obj와bin/22.03.02_obj와bin.md)
+  - `2022.03.02`[x64 x86 any cpu](./05.Csharp/2022/x64,x86,AnyCpu/22.03.02_x64,x86,AnyCpu.md)
+  - `2022.03.02`[뮤테이션 테스팅](./05.Csharp/2022/뮤테이션테스트/)
 
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](./05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
