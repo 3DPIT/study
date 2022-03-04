@@ -54,8 +54,15 @@
   - `2022.03.02`[CICD](./05.Csharp/2022/CICD/22.03.02_CICD.md)
   - `2022.03.02`[obj bin](./05.Csharp/2022/obj와bin/22.03.02_obj와bin.md)
   - `2022.03.02`[x64 x86 any cpu](./05.Csharp/2022/x64,x86,AnyCpu/22.03.02_x64,x86,AnyCpu.md)
-  - `2022.03.02`[뮤테이션 테스팅](./05.Csharp/2022/뮤테이션테스트/)
-
+  - `2022.03.02`[뮤테이션 테스팅](./05.Csharp/2022/뮤테이션테스트/22.03.02_뮤테이션테스트.md)
+  - `2022.03.03`[AAA](./05.Csharp/2022/22.03.03_3A란/22.03.03_3A란.md)
+  - `2022.03.03`[EndToEndTest란](./05.Csharp/2022/22.03.03_EndToEndTest란/22.03.03_EndToEndTest란.md)
+  - `2022.03.03`[Integration테스트](./05.Csharp/2022/22.03.03_Integration테스트/22.03.03_Integration테스트.md)
+  - `2022.03.03`[QA&QC](./05.Csharp/2022/22.03.03_QA와QC/22.03.03_QA와QC.md)
+  - `2022.03.03`[UML이란](./05.Csharp/2022/22.03.03_UML이란/22.03.03_UML이란.md)
+  - `2022.03.03`[디자인패턴이란](./05.Csharp/2022/22.03.03_디자인패턴이란/22.03.03_디자인패턴이란.md)
+  - `2022.03.03`[UnitTest](./05.Csharp/2022/22.03.04_UnitTest/22.03.04_UnitTest.md)
+  - `2022.03.03`[클래스다이어그램](./05.Csharp/2022/22.03.04_클래스다이어그램/22.03.04_클래스다이어그램.md)
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](./05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
 ## 06.docker
