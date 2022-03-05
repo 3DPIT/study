@@ -1,0 +1,21 @@
+@startuml
+class Multiple {
+    getResult(sumResult:int, number:int) : int
+}
+Operator <|-- Multiple
+interface Operator {
+    {abstract} getResult(sumResult:int, number:int) : int
+}
+class Plus {
+    getResult(sumResult:int, number:int) : int
+}
+Operator <|-- Plus
+class AddTest {
+    + {static} Main(args:string[]) : void
+}
+class Template {
+    - _numbers : int[]
+    + Template(numbers:int[])
+    + Result(operator1:Operator) : int
+}
+@enduml

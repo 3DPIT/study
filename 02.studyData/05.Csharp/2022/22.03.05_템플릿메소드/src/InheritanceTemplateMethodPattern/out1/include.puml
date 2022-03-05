@@ -1,0 +1,21 @@
+@startuml
+class Multiple {
+    + Multiple(numbers:int[])
+    # <<override>> getResult(sumResult:int, number:int) : int
+}
+Template <|-- Multiple
+class Plus {
+    + Plus(numbers:int[])
+    # <<override>> getResult(sumResult:int, number:int) : int
+}
+Template <|-- Plus
+class AddTest {
+    + {static} Main(args:string[]) : void
+}
+abstract class Template {
+    - _numbers : int[]
+    + Template(numbers:int[])
+    + Result() : int
+    # {abstract} getResult(sumResult:int, number:int) : int
+}
+@enduml

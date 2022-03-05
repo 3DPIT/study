@@ -1,7 +1,0 @@
-@startuml
-!include .\\Program.puml
-!include .\\Template.puml
-!include .\\obj\Debug\net60\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
-!include .\\obj\Debug\net60\DelegateTemplateMethodPattern.AssemblyInfo.puml
-!include .\\obj\Debug\net60\DelegateTemplateMethodPattern.GlobalUsings.g.puml
-@enduml

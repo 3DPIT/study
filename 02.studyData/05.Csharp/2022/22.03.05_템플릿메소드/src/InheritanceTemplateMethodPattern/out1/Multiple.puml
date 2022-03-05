@@ -1,0 +1,7 @@
+@startuml
+class Multiple {
+    + Multiple(numbers:int[])
+    # <<override>> getResult(sumResult:int, number:int) : int
+}
+Template <|-- Multiple
+@enduml
