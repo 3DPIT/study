@@ -1,0 +1,9 @@
+@startuml
+!include .\\Multiple.puml
+!include .\\Plus.puml
+!include .\\Program.puml
+!include .\\Template.puml
+!include .\\obj\Debug\net60\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net60\InheritanceTemplateMethodPattern.AssemblyInfo.puml
+!include .\\obj\Debug\net60\InheritanceTemplateMethodPattern.GlobalUsings.g.puml
+@enduml

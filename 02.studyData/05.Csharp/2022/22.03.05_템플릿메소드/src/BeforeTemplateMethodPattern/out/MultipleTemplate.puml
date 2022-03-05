@@ -1,0 +1,7 @@
+@startuml
+class MultipleTemplate {
+    - _numbers : int[]
+    + MultipleTemplate(numbers:int[])
+    + Result() : int
+}
+@enduml

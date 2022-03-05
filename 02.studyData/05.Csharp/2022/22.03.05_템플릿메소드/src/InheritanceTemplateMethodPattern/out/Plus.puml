@@ -1,0 +1,7 @@
+@startuml
+class Plus {
+    + Plus(numbers:int[])
+    # <<override>> getResult(sumResult:int, number:int) : int
+}
+Template <|-- Plus
+@enduml

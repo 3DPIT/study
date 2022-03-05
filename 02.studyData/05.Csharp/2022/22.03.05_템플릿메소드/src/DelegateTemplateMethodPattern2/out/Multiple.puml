@@ -1,0 +1,6 @@
+@startuml
+class Multiple {
+    getResult(sumResult:int, number:int) : int
+}
+Operator <|-- Multiple
+@enduml

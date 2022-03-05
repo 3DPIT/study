@@ -1,0 +1,5 @@
+@startuml
+interface Operator {
+    {abstract} getResult(sumResult:int, number:int) : int
+}
+@enduml

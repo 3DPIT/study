@@ -1,0 +1,6 @@
+@startuml
+class Plus {
+    getResult(sumResult:int, number:int) : int
+}
+Operator <|-- Plus
+@enduml

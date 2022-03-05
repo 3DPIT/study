@@ -1,0 +1,7 @@
+@startuml
+class AddTemplate {
+    - _numbers : int[]
+    + AddTemplate(numbers:int[])
+    + Result() : int
+}
+@enduml

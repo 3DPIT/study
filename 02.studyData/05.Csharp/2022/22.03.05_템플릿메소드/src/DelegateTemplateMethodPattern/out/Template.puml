@@ -1,0 +1,7 @@
+@startuml
+class Template {
+    - _numbers : int[]
+    + Template(numbers:int[])
+    + Result(operator1:Func<int,int,int>) : int
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+!include .\\AddTemplate.puml
+!include .\\MultipleTemplate.puml
+!include .\\Program.puml
+!include .\\obj\Debug\net60\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net60\BeforeTemplateMethodPattern.AssemblyInfo.puml
+!include .\\obj\Debug\net60\BeforeTemplateMethodPattern.GlobalUsings.g.puml
+@enduml
