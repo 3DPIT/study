@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/BeforeTemplateMethodPattern/bin/Debug/net6.0/BeforeTemplateMethodPattern.dll",
+            "program": "${workspaceFolder}/AddTest/bin/Debug/net6.0/AddTest.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/BeforeTemplateMethodPattern",
+            "cwd": "${workspaceFolder}/AddTest",
             "console": "internalConsole",
             "stopAtEntry": false
         },
