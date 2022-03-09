@@ -1,9 +1,7 @@
 {
-	"folders": [
-		{
-			"name": "Nuke",
-			"path": "../.."
-		}
-	],
-	"settings": {}
+    "folders": [
+        {
+            "path": "../.."
+        }
+    ]
 }
