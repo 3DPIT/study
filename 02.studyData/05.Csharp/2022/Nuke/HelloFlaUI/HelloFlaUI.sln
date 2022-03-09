@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloFlaUI", "HelloFlaUI\HelloFlaUI.csproj", "{427C8235-BCBA-4115-881E-029C444A4065}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_build", "build\_build.csproj", "{E35DE7A1-6191-4000-9739-134EA52A0018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloFlaUI.UnitTest", "HelloFlaUI.UnitTest\HelloFlaUI.UnitTest.csproj", "{74BC7D37-B1D1-4B94-A9AA-4D3E587A2287}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E35DE7A1-6191-4000-9739-134EA52A0018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E35DE7A1-6191-4000-9739-134EA52A0018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427C8235-BCBA-4115-881E-029C444A4065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{427C8235-BCBA-4115-881E-029C444A4065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{427C8235-BCBA-4115-881E-029C444A4065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{427C8235-BCBA-4115-881E-029C444A4065}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BC7D37-B1D1-4B94-A9AA-4D3E587A2287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BC7D37-B1D1-4B94-A9AA-4D3E587A2287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BC7D37-B1D1-4B94-A9AA-4D3E587A2287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BC7D37-B1D1-4B94-A9AA-4D3E587A2287}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

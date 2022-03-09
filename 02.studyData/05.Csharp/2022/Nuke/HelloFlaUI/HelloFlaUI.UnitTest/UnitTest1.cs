@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace HelloNuke.UnitTest;
+namespace HelloFlaUI.UnitTest;
 
 public class UnitTest1
 {
