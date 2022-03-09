@@ -12,7 +12,7 @@ using static Nuke.Common.EnvironmentInfo;
 using static Nuke.Common.IO.FileSystemTasks;
 using static Nuke.Common.IO.PathConstruction;
 using static Nuke.Common.Tools.DotNet.DotNetTasks;
-
+using Serilog;
 [CheckBuildProjectConfigurations]
 [ShutdownDotNetAfterServerBuild]
 class Build : NukeBuild
@@ -23,7 +23,7 @@ class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
-    public static int Main () => Execute<Build>(x => x.Compile);
+    public static int Main() => Execute<Build>(x => x.Compile);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
     readonly Configuration Configuration = IsLocalBuild ? Configuration.Debug : Configuration.Release;
@@ -31,12 +31,14 @@ class Build : NukeBuild
     [Solution] readonly Solution Solution;
 
     AbsolutePath TestsDirectory => RootDirectory / "tests";
+    AbsolutePath ArtifactsDirectory => RootDirectory / "artifacts";
 
     Target Clean => _ => _
         .Before(Restore)
         .Executes(() =>
         {
             TestsDirectory.GlobDirectories("**/bin", "**/obj").ForEach(DeleteDirectory);
+            EnsureCleanDirectory(ArtifactsDirectory);
         });
 
     Target Restore => _ => _
@@ -55,5 +57,22 @@ class Build : NukeBuild
                 .SetConfiguration(Configuration)
                 .EnableNoRestore());
         });
+    Target Test => _ => _
+    .DependsOn(Compile)
+    .Executes(() =>
+    {
+        Log.Information("Hi Information Test");
+        Log.Debug("Hi Debug Test");
 
+        //dotnet test NukeHello.sln --configuration Debug --no restore
+
+        //dotnet test NukeHello.sln --configuration Debug --no build
+        DotNetTest(s => s
+       .SetProjectFile(Solution)
+       .SetConfiguration(Configuration)
+       .EnableNoBuild()
+       .SetProcessArgumentConfigurator(args =>
+       args.Add("--logger\"console;verbosity=detailed\"")));
+    });
 }
+
