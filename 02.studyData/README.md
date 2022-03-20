@@ -63,6 +63,7 @@
   - `2022.03.03`[디자인패턴이란](./05.Csharp/2022/22.03.03_디자인패턴이란/22.03.03_디자인패턴이란.md)
   - `2022.03.03`[UnitTest](./05.Csharp/2022/22.03.04_UnitTest/22.03.04_UnitTest.md)
   - `2022.03.03`[클래스다이어그램](./05.Csharp/2022/22.03.04_클래스다이어그램/22.03.04_클래스다이어그램.md)
+  - `2022.03.15`[애트리뷰트](./05.Csharp/2022/애트리뷰트/22.03.15_Csharp애트리뷰트.md)
 #### EFCore (ORM)
 - `2021.12.16` [EntityFramworkCore첫걸음](./05.Csharp/2021/EFCore/2021/1206/2021.12.16_EFCore06.EntityFramworkCore첫걸음.md)
 ## 06.docker
@@ -80,5 +81,7 @@
 
 ## 08.TestCode
 - `2022.02.16`[EtoE Test](./08.TestCode/2022/0216/22.02.16_CICD를위한E2ETEST.md)
+- `2022.03.09`[Nuke적용](./05.Csharp/2022/Nuke/22.03.09_Nuke적용메뉴얼.md)
+
 ## 09.Python
 - `2022.02.19`[python설치 및 실행 ](./09.Python/0.python설정/2022/0219/python/22.02.19_python설치및실행.md)
