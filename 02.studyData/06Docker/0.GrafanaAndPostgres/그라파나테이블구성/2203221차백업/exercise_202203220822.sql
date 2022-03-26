@@ -1,0 +1,12 @@
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-15','기울기 런닝머신',30.27,2.560,507);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-15','런닝머신',20.11,2.610,111.60);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-16','기울기 런닝머신',35.06,3.029,602);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-16','런닝머신',21.27,2.480,108.0);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-17','기울기 런닝머신',35.10,3.143,624);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-17','런닝머신',25.17,3.000,130.00);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-18','기울기 런닝머신',34.01,3.005,596);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-18','런닝머신',26.42,3.000,132.10);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-20','기울기 런닝머신',34.49,2.971,591);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-20','런닝머신',25.21,3.000,130.04);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-21','기울기 런닝머신',33.23,3.004,607);
+INSERT INTO exercise ("year","name","minute",distance,calories) VALUES ('2022-03-21','런닝머신',25.17,3.000,130.04);
