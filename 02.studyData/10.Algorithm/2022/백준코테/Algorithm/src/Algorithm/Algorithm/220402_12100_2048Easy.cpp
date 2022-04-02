@@ -6,16 +6,25 @@ using namespace std;
 #define N_SIZE 21
 int N;
 int board[N_SIZE][N_SIZE];
-
 void initValue();
 void sumRight();
 void sumBlock2();
 void sumBlock3();
 void sumBlock4();
-void rotation();
+void rotation(int arr[N_SIZE][N_SIZE]);
 void printBlock();
-void copyBoard(int crr[N_SIZE][N_SIZE],int arr[N_SIZE][N_SIZE]);
+void copyBoard(int crr[N_SIZE][N_SIZE], int arr[N_SIZE][N_SIZE]);
+void dfs(int index);
 int ret = 0x80000000;
+
+int main()
+{
+	initValue();
+	dfs(0);
+	cout << ret << endl;
+	return 0;
+}
+
 void dfs(int idx)
 {
 	if (idx == 5) {
@@ -31,19 +40,9 @@ void dfs(int idx)
 		copyBoard(crr, board);
 		sumRight();
 		dfs(idx + 1);
-		rotation();
+		rotation(crr);
 		copyBoard(board, crr);
 	}
-}
-
-void rotation();
-
-int main()
-{
-	initValue();
-	dfs(0);
-	cout << ret << endl;
-	return 0;
 }
 
 void initValue()
@@ -65,156 +64,45 @@ void copyBoard(int crr[N_SIZE][N_SIZE], int arr[N_SIZE][N_SIZE]) {
 		}
 	}
 }
-void rotation()
-{
-	int crr[N_SIZE][N_SIZE] = { 0, };
-	for (int i = 0; i < N; i++) {
-		for (int j = 0; j < N; j++) {
-			crr[j][N - i -1] = board[i][j];
-		}
-	}
 
+void rotation(int arr[N_SIZE][N_SIZE])
+{
+	int copy[N_SIZE][N_SIZE] = { 0, };
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < N; j++) {
-			board[i][j] = crr[i][j];
+			copy[j][N - i - 1] = arr[i][j];
 		}
 	}
-	//printBlock();
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < N; j++) {
+			arr[i][j] = copy[i][j];
+		}
+	}
 }
 
 
 void sumRight()
 {
-	for (int i = 0; i < N; i++)
-	{
-		vector<int>v1;
-		vector<int>v2;
-		for (int j = N - 1; j >= 0; j--)
-		{
-			if(board[i][j]!=0)
-			v1.push_back(board[i][j]);
-			board[i][j] = 0;
+	vector<int>q;
+	for (int j = 0; j < N; j++) {
+		for (int i = N - 1; i >= 0; i--) {
+			if (board[i][j] != 0)q.push_back(board[i][j]);//일단 저장
+			board[i][j] = 0;//초기화 시키기
 		}
-
-		int k = 0;
-		for (k = 0; k < v1.size()-1; k++)
-		{
-			if (v1.size() ==0)break;
-			if (v1[k]!=0&&v1[k] == v1[k+1]) {
-				v2.push_back(v1[k]*2);
-				k++;
+		for (int i = 0; i < q.size() - 1; i++) {
+			if (q.size() == 0)break;
+			if (q[i] == q[i + 1] && q[i] != 0) {
+				q[i] += q[i + 1];
+				q.erase(q.begin() + i + 1);
 			}
-			else 
-				v2.push_back(v1[k]);
 		}
-		if (k == v1.size() - 1) v2.push_back(v1[k]);
-		
-		int index = N - 1;
-		for (k = 0; k < v2.size(); k++)
-		{
-			board[i][index--] = v2[k];
+		for (int i = N - 1; q.size(); i--) {
+			board[i][j] = q.front();
+			q.erase(q.begin());
 		}
 	}
 }
 
-void sumBlock2()
-{
-	for (int j = 0; j < N; j++)
-	{
-		vector<int>v1;
-		vector<int>v2;
-		for (int i = N - 1; i >= 0; i--)
-		{
-			if (board[i][j] != 0)
-				v1.push_back(board[i][j]);
-			board[i][j] = 0;
-		}
-
-		int k = 0;
-		for (k = 0; k < v1.size() - 1; k++)
-		{
-			if (v1[k] != 0 && v1[k] == v1[k + 1]) {
-				v2.push_back(v1[k] * 2);
-				k++;
-			}
-			else
-				v2.push_back(v1[k]);
-		}
-		if (k == v1.size() - 1) v2.push_back(v1[k]);
-
-		int index = 0;
-		for (k = 0; k < v2.size(); k++)
-		{
-			board[index++][j] = v2[k];
-		}
-	}
-}
-
-void sumBlock3()
-{
-	for (int i = N - 1; i >= 0; i--)
-	{
-		vector<int>v1;
-		vector<int>v2;
-		for (int j = N-1; j >=0; j--)
-		{
-			if (board[i][j] != 0)
-				v1.push_back(board[i][j]);
-			board[i][j] = 0;
-		}
-
-		int k = 0;
-		for (k = 0; k < v1.size() - 1; k++)
-		{
-			if (v1[k] != 0 && v1[k] == v1[k + 1]) {
-				v2.push_back(v1[k] * 2);
-				k++;
-			}
-			else
-				v2.push_back(v1[k]);
-		}
-		if (k == v1.size() - 1) v2.push_back(v1[k]);
-
-		int index = 0;
-		for (k = 0; k < v2.size(); k++)
-		{
-			board[i][index++] = v2[k];
-		}
-	}
-}
-
-void sumBlock4()
-{
-	for (int i = 0; i< N; i++)
-	{
-		vector<int>v1;
-		vector<int>v2;
-		for (int j = N - 1; j >= 0; j--)
-		{
-			if (board[i][j] != 0)
-				v1.push_back(board[i][j]);
-			board[i][j] = 0;
-		}
-
-		int k = 0;
-		for (k = 0; k < v1.size() - 1; k++)
-		{
-			if (v1[k] != 0 && v1[k] == v1[k + 1]) {
-				v2.push_back(v1[k] * 2);
-				k++;
-			}
-			else
-				v2.push_back(v1[k]);
-		}
-		if (k == v1.size() - 1) v2.push_back(v1[k]);
-
-		int index = 0;
-		for (k = 0; k < v2.size(); k++)
-		{
-			board[i][index++] = v2[k];
-		}
-	}
-}
 void printBlock()
 {
 	for (int i = 0; i < N; i++)
