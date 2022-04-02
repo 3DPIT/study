@@ -87,3 +87,5 @@
 
 ## 09.Python
 - `2022.02.19`[python설치 및 실행 ](./09.Python/0.python설정/2022/0219/python/22.02.19_python설치및실행.md)
+## 10.Algorithm [링크](./10.Algorithm)
+- 알고리즘과 구현력을 키우자
