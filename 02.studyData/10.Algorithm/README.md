@@ -12,7 +12,7 @@
 
 | 풀이날짜 |      | 문제번호 | 문제 이름                                                    |            |                                                              |                                                          | 성공률  |
 | -------- | ---- | -------- | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ | -------------------------------------------------------- | ------- |
-|          |      | 13460    | [구슬 탈출 2](https://www.acmicpc.net/problem/13460)         | 성공       | [9532](https://www.acmicpc.net/status?problem_id=13460&result_id=4) | [59972](https://www.acmicpc.net/status?problem_id=13460) | 26.631% |
+|`22.03.30`|`O`| 13460    | [구슬 탈출 2](https://www.acmicpc.net/problem/13460)         | 성공       | [9532](https://www.acmicpc.net/status?problem_id=13460&result_id=4) | [59972](https://www.acmicpc.net/status?problem_id=13460) | 26.631% |
 |          |      | 12100    | [2048 (Easy)](https://www.acmicpc.net/problem/12100)         | 성공       | [9136](https://www.acmicpc.net/status?problem_id=12100&result_id=4) | [57157](https://www.acmicpc.net/status?problem_id=12100) | 25.442% |
 |          |      | 3190     | [뱀](https://www.acmicpc.net/problem/3190)                   | 성공다국어 | [12233](https://www.acmicpc.net/status?problem_id=3190&result_id=4) | [45449](https://www.acmicpc.net/status?problem_id=3190)  | 39.012% |
 |          |      | 13458    | [시험 감독](https://www.acmicpc.net/problem/13458)           | 성공       | [13447](https://www.acmicpc.net/status?problem_id=13458&result_id=4) | [64706](https://www.acmicpc.net/status?problem_id=13458) | 27.348% |
