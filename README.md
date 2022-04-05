@@ -11,6 +11,9 @@
 - 5. C#에 대한 공부 자료
 - 6. Docker에 대한 공부 자료
 - 7. DDD 대한 공부 자료
+- 8. Test code
+- 9. Python
+- 10. Algorithm
 
 ## 03. [androidTest](./03.anroidTest)
 - 실제 실습하고 공부도 하고 하는 자료
