@@ -59,8 +59,8 @@ int bfs() {
 void installWall(int y, int x, int count)
 {
 	if (count == 3) {
-		int safeZone=bfs();
-		ret = ret < safeZone ? safeZone:ret;
+		int safeZone = bfs();
+		ret = ret < safeZone ? safeZone : ret;
 		return;
 	}
 
