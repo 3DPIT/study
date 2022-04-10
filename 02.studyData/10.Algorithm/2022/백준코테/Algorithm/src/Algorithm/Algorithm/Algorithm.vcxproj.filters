@@ -36,5 +36,8 @@
     <ClCompile Include="220406_14500테트로미노.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-10-14502-연구소.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
