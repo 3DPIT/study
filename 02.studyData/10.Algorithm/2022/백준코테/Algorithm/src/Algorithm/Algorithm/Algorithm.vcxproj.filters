@@ -42,5 +42,8 @@
     <ClCompile Include="22-04-11-14503-로봇청소기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-12-14888-연산자끼워넣기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
