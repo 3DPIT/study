@@ -48,5 +48,8 @@
     <ClCompile Include="22-04-12-14889-스타트와링크.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-14-14891-톱니바퀴.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
