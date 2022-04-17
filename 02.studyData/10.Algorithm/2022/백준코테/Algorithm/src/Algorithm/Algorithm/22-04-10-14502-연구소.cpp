@@ -79,6 +79,7 @@ int main(void)
 {
 	init();
 	installWall(0,0,0);
+	if (ret == 0x7fffffff)ret = 0;
 	printf("%d\n", ret);
 	return 0;
 }
