@@ -169,7 +169,10 @@
     <ClCompile Include="22-04-17-15683-감시.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="22-04-17-15684-사다리조작.cpp" />
+    <ClCompile Include="22-04-17-15684-사다리조작.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="22-04-18-15685-드래곤커브.cpp" />
     <ClCompile Include="220329_13460_구슬탈출2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
