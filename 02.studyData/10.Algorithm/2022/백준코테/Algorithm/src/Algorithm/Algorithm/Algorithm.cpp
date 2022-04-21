@@ -2,117 +2,77 @@
 #include<iostream>
 #include<vector>
 #include<string.h>
-#include<queue>
+#include<algorithm>
+#define NS 21
 using namespace std;
-void dfs(int idx)
+int N;
+int ret;
+int board[NS][NS];
+int D[NS];
+void initValue()
 {
-	if (idx == 5)
+	N = 0;
+	ret = 0x7fffffff;
+	scanf("%d", &N);
+	for (int i = 0; i < N; i++)
 	{
-		return;
-	}
-
-	for (int i = 0; i < 4; i++)
-	{
-		int crr[5][5] = { 0, };
-		copyArr(crr, arr);
-		sumArr(arr);
-		dfs(idx + 1);
-		rotation(crr);
-		copyArr(arr, crr);
-	}
-}
-
-void dfs1(int y, int x, int sum, int idx)
-{
-	if (idx == 3)
-	{
-		return;
-	}
-
-	for (int dir = 0; dir < 4; dir++)
-	{
-		int ny = y + dy[dir]; int nx = x + dx[dir];
-		if (safeZone(ny, nx) && board[ny][nx] == 0)
+		for (int j = 0; j < N; j++)
 		{
-			board[ny][nx] = 1;
-			dfs(ny, nx, sum + input[ny][nx], idx + 1);
-			board[ny][nx] = 0;
+			scanf("%d", &board[i][j]);
 		}
 	}
 }
 
-void dfs(int y, int x, int idx)
+void dfs(int idx, int cnt)
 {
-	if (idx == 3)
+	if (idx == N) return;
+	if (N / 2 == cnt)
 	{
-		return;
-	}
-
-	for (int i = y; i < N; i++)
-	{
-		for (int j = x; j < N; j++)
+		vector<int>start;
+		vector<int>link;
+		for (int i = 0; i < N; i++)
 		{
-			if (board[i][j] == 0)
+			if (D[i] == 1) start.push_back(i);
+			else if (D[i] == 0)link.push_back(i);
+		}
+
+		int sumStart = 0;
+		int sumLink = 0;
+		for (int i = 0; i < start.size(); i++)
+		{
+			for (int j = 0; j < start.size(); j++)
 			{
-				board[i][j] = 1;
-				dfs(i, j + 1, idx + 1);
-				board[i][j] = 0;
+				if (start[i] == start[j]) continue;
+				sumStart += board[start[i]][start[j]];
 			}
 		}
+
+		for (int i = 0; i < link.size(); i++)
+		{
+
+			for (int j = 0; j < link.size(); j++)
+			{
+				if (link[i] == link[j]) continue;
+				sumLink += board[link[i]][link[j]];
+			}
+		}
+		int minusResult = abs(sumStart - sumLink);
+		ret = min(minusResult, ret);
+		return;
 	}
+
+
+	D[idx] = 1;
+	dfs(idx + 1, cnt + 1);
+	D[idx] = 0;
+	dfs(idx + 1, cnt);
+
+
 }
 int main(void)
 {
-	int N=5;
-	int crr[5][5];
-	int arr[5][5];
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
-			crr[i][j] = arr[N-j-1][i];
-		}
-	}//시계
-
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
-			crr[i][j] = arr[j][N-i-1];
-		}
-	}//반시계
-
-
-	vector<int>q;
-	int board[50][50];
-	for (int i = 0; i < N; i++)
-	{
-		for (int j = 0; j < N; j++)
-		{
-			if (board[i][j] != 0)
-			{
-				q.push_back(board[i][j]);
-				board[i][j] = 0;
-			}
-		}
-
-		for (int j = 0; j < q.size()-1; j++)
-		{
-			if (q.size() == 0) break;
-			if (q[j] == q[j + 1])
-			{
-				q[j] += q[j + 1];
-				q.erase(q.begin() + j + 1);
-			}
-		}
-
-		for (int j = 0; q.size() != 0; j++)
-		{
-			board[i][j] = q.front();
-			q.erase(q.begin());
-		}
-	}
-
-
+	initValue();
+	dfs(0, 0);
+	printf("%d\n", ret);
 	return 0;
 }
