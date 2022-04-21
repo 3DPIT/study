@@ -100,7 +100,7 @@ void treeMoney() {
 }
 int main(void)
 {
-	int testCase = 5;
+	int testCase = 1;
 	for (int tc = 1;tc <= testCase; tc++) {
 		init();
 		treeMoney();
