@@ -72,5 +72,8 @@
     <ClCompile Include="22-04-21-16236-아기상어.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-22-17144-미세먼지안녕.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
