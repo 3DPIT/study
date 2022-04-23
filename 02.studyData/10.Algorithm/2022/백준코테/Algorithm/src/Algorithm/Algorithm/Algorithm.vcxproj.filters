@@ -81,5 +81,8 @@
     <ClCompile Include="22-04-23-17140-이차원배열과연산.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-14-17141-연구소2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
