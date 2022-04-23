@@ -80,7 +80,7 @@ int main(void)
 {
 	init();
 	dfs(0, 0);
-	//if (ret == 0x80000000)ret = 1;
+	if (ret == 0x80000000)ret = 1;
 	printf("%d\n", ret==0x7fffffff?-1:ret-1);
 	return 0;
 }
