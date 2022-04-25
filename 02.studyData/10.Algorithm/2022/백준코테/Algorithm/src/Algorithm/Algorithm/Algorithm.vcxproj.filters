@@ -102,5 +102,8 @@
     <ClCompile Include="22-04-25-21610-마법사상어와비바라기.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-25-21611-마법사상어와블리자드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
