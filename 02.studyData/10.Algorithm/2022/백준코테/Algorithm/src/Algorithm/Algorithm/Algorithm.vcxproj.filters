@@ -96,5 +96,8 @@
     <ClCompile Include="22-04-24-20056-마법사상어와파이어볼.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-25-20057-마법사상어와토네이도.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
