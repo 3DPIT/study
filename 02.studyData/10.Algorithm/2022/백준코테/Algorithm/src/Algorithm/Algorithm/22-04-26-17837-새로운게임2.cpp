@@ -84,7 +84,6 @@ int blue(int number, int y, int x, int dir) {
 }
 
 int chk() {
-
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
 			if (board[i][j].size() >= 4) {
