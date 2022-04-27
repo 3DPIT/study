@@ -108,5 +108,8 @@
     <ClCompile Include="22-04-26-17779-게리맨더링2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-26-17837-새로운게임2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
