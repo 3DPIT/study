@@ -93,25 +93,6 @@ void two() {// 블록 제거
 	ret += n.cnt*n.cnt;
 }
 void three() {//중력
-	//for (int j = 0; j < N; j++) {
-	//	deque<int>q;
-	//	for (int i = 0; i < N; i++) {
-	//		if (board[i][j] != 0 && board[i][j] != -1) {
-	//			q.push_back(board[i][j]);
-	//			board[i][j] = 0;
-	//		}
-	//		if (board[i][j] == -1) {
-	//			int ci = i;
-	//			while (!q.empty()) {
-	//				board[--ci][j] = q.back(); q.pop_back();
-	//			}
-	//		}
-	//	}
-	//	int i = N - 1;
-	//	while (!q.empty()) {
-	//		board[i--][j] = q.back(); q.pop_back();
-	//	}
-	//}
 	for (int j = 0; j < N; j++) {
 		deque<int>q;
 		for (int i = 0; i < N; i++) {

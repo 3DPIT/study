@@ -123,5 +123,8 @@
     <ClCompile Include="22-04-28-21609-상어중학교.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="22-04-28-23288-주사위굴리기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
