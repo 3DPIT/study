@@ -60,5 +60,5 @@
 | `22.04.28` | `O` | [23288](./2022/백준코테/Algorithm/2022/04/0428/2022-04-28-23288-주사위굴리기2.md) | [주사위 굴리기 2](https://www.acmicpc.net/problem/23288)     | 성공 | [439](https://www.acmicpc.net/status?problem_id=23288&result_id=4) | [895](https://www.acmicpc.net/status?problem_id=23288)   | 64.275% |
 |          |      | 23289    | [온풍기 안녕!](https://www.acmicpc.net/problem/23289)        |            | [234](https://www.acmicpc.net/status?problem_id=23289&result_id=4) | [1109](https://www.acmicpc.net/status?problem_id=23289)  | 37.803% |
 | `22.04.29` | `O` | [23290](./2022/백준코테/Algorithm/2022/04/0429/2022-04-29-23290-마법사상어와복제.md) | [마법사 상어와 복제](https://www.acmicpc.net/problem/23290)  |            | [286](https://www.acmicpc.net/status?problem_id=23290&result_id=4) | [877](https://www.acmicpc.net/status?problem_id=23290)   | 52.190% |
-|          |      | 23291    | [어항 정리](https://www.acmicpc.net/problem/23291)           |            | [201](https://www.acmicpc.net/status?problem_id=23291&result_id=4) | [553](https://www.acmicpc.net/status?problem_id=23291)   | 54.768% |
+| `22.04.29` | `O` | 23291    | [어항 정리](https://www.acmicpc.net/problem/23291)           |            | [201](https://www.acmicpc.net/status?problem_id=23291&result_id=4) | [553](https://www.acmicpc.net/status?problem_id=23291)   | 54.768% |
 
