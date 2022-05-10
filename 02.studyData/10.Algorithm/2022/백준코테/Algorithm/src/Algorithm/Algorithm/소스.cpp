@@ -125,7 +125,7 @@ void play() {
 			sBoard[S.y][S.x] = 0;
 			S.y = S.y + dyN[idx];
 			S.x = S.x + dxN[idx];
-			sBoard[S.y][S.x] = -1;
+			sBoard[S.y][S.x] = 1;
 			gidx++;
 
 			if (gidx == nidx) {
