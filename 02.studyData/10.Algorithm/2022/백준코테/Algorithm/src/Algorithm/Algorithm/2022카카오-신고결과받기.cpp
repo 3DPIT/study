@@ -11,6 +11,8 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
 	vector<int> answer;
 	vector<int>friends[5000];
 	map<string, int>friends_num;
+	
+	map<string, map<string,int>>friends_chk;
 	int check_out[5000] = { 0, };
 	for (int i = 0; i < id_list.size(); i++)
 	{
@@ -28,10 +30,12 @@ vector<int> solution(vector<string> id_list, vector<string> report, int k) {
 			if(flag==0)s1 += report[i][j];
 			if (flag == 1)s2 += report[i][j];
 		}
-		cout << s1 << endl;
-		cout << s2 << endl;
-		friends[friends_num[s1]].push_back(friends_num[s2]);
-		check_out[friends_num[s2]]++;
+		if (friends_chk[s1][s2]==0) {
+			friends_chk[s1][s2] = 1;
+			friends[friends_num[s1]].push_back(friends_num[s2]);
+			check_out[friends_num[s2]]++;
+
+		}
 	}
 
 	for (int i = 0; i < id_list.size(); i++) {
