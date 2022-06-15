@@ -6,11 +6,14 @@ using namespace std;
 
 string solution(string new_id) {
 	string answer = "";
+
+	//1
 	for (int i = 0; i< new_id.size(); i++) {//대문자를 소문자로 변경
 		if('A'<=new_id[i]&&new_id[i]<='Z')
 		new_id[i] += 32;
 	}
 
+	//2
 	for (int i = 0; i < new_id.size(); i++) {
 		if (('0' <= new_id[i] && new_id[i] <= '9')||('a' <= new_id[i] && new_id[i] <= 'z')
 			||new_id[i] == '.'||new_id[i] == '-'||new_id[i] == '_') {

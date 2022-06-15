@@ -154,7 +154,10 @@
     <ClCompile Include="2021Dev-Matching-로또의최고순위와최저순위.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="20221카카오_신규아이디추천.cpp" />
+    <ClCompile Include="2022-06-15-2021-카카오-숫자문자열과영단어.cpp" />
+    <ClCompile Include="20221카카오_신규아이디추천.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="2022카카오-신고결과받기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
