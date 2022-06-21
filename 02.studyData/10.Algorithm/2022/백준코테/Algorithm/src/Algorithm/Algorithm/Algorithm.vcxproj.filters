@@ -153,5 +153,8 @@
     <ClCompile Include="2022-06-15-2021-카카오-숫자문자열과영단어.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="2022-06-21-카카오인턴-키패드누르기.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
