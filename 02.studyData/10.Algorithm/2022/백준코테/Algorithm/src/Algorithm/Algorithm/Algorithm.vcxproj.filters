@@ -156,5 +156,11 @@
     <ClCompile Include="2022-06-21-카카오인턴-키패드누르기.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="2022-06-22-월간체인지-없는숫자더하기.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
+    <ClCompile Include="2019카카오_크레인인형뽑기게임.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
