@@ -27,7 +27,7 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 		//인형 두개 이상인지 확인하고 같은 종류 두개인지 확인후 제거 점수 추가
 		if (box.size() >= 2) {
 			for (int i = 0; i < box.size() - 1; i++) {
-				if (box.size() == 1)break;
+				if (box.size()==0||box.size() == 1)break;
 				if (box[i] == box[i + 1]) {
 					box.erase(box.begin() + i, box.begin() + i+2);
 					i--;
@@ -41,7 +41,6 @@ int solution(vector<vector<int>> board, vector<int> moves) {
 
 int main(void)
 {
-	cout << solution({ {0, 0, 0, 0, 0}, {0, 0, 1, 0, 3}, {0, 2, 5, 0, 1}, {4, 2, 4, 4, 2}, {3, 5, 1, 3, 1} }, { 1, 5, 3, 5, 1, 2, 1, 4
-		});
+	cout << solution({ {0, 0, 0, 0, 0}, {0, 0, 1, 0, 3}, {0, 2, 5, 0, 1}, {4, 2, 4, 4, 2}, {3, 5, 1, 3, 1} }, { 1, 5, 3, 5, 1, 2, 1, 4});
 	return 0;
 }

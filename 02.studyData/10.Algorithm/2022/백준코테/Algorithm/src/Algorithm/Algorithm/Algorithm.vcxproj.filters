@@ -162,5 +162,8 @@
     <ClCompile Include="2019카카오_크레인인형뽑기게임.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-06-23-2017카카오예선-카카오프렌즈-컬러링북.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
