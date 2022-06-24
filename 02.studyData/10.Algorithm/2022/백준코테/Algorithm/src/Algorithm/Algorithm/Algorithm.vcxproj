@@ -154,6 +154,7 @@
     <ClCompile Include="2021Dev-Matching-로또의최고순위와최저순위.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2021카카오Blind메뉴리뉴얼.cpp" />
     <ClCompile Include="2022-06-15-2021-카카오-숫자문자열과영단어.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
