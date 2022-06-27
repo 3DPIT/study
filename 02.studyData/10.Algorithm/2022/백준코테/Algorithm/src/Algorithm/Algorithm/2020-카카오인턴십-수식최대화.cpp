@@ -47,8 +47,8 @@ long long solution(string expression) {
 			long long sum = 0;
 			for (int e = 0; e < calNumber.size(); e++) {
 				if (calNumber[e] == ordering[i][j]) {
-					int firstNum = stol (calNumber[e - 1]);
-					int secondNum = stol(calNumber[e + 1]);
+					long long firstNum = stoll (calNumber[e - 1]);
+					long long secondNum = stoll(calNumber[e + 1]);
 
 					if (calNumber[e] == "+") {
 						sum = firstNum + secondNum;
