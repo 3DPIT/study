@@ -171,5 +171,8 @@
     <ClCompile Include="2020-카카오인턴십-수식최대화.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-06-29-2021KAKAO순위검색.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
