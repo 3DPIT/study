@@ -46,16 +46,6 @@ vector<int> solution(vector<string> info, vector<string> query) {
 }
 int main(void)
 {
-	string inf = "java and c++ and python and c#";
-	string key[4], rm;
-
-	istringstream iss(inf);
-	iss >> key[0] >> rm >> key[1] >> rm >> key[2] >> rm >> key[3];
-	cout << "key[0]" << " = " << key[0] << endl
-		<< "key[1]" << " = " << key[1] << endl
-		<< "key[2]" << " = " << key[2] << endl
-		<< "key[3]" << " = " << key[3] << endl;
-
 
 	vector<int> a = solution({ "java backend junior pizza 150", "python frontend senior chicken 210", "python frontend senior chicken 150", "cpp backend senior pizza 260", "java backend junior chicken 80", "python backend senior chicken 50" },
 		{ "java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150" });
