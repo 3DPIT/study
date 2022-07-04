@@ -174,5 +174,8 @@
     <ClCompile Include="22-06-29-2021KAKAO순위검색.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-07-04-2019카카오-오픈채팅방.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
