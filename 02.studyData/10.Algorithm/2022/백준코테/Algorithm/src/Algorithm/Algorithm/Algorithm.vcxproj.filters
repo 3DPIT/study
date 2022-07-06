@@ -180,5 +180,8 @@
     <ClCompile Include="22-07-05-2020카카오문자열압축.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-07-06-2018카카오-1차뉴스클러스터링.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
