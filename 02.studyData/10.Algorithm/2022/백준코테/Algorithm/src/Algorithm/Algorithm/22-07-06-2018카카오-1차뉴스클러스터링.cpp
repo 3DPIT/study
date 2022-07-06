@@ -30,7 +30,7 @@
 //			str2[i] = ' ';
 //		}
 //	}
-//	// 변환
+//	 변환
 //
 //	vector<string>v;
 //	vector<string>v1;
@@ -129,7 +129,7 @@ int solution(string str1, string str2) {
 
 	for (int i = 0; i < v1.size(); i++) {
 		for (int j = 0; j < v2.size(); j++) {
-			if (v1[i] == v2[j]) {//방문 체크
+			if (v1[i] == v2[j]) {
 				v2.erase(v2.begin() + j);
 				A++;//공집합
 				j--;
@@ -138,7 +138,7 @@ int solution(string str1, string str2) {
 		}
 	}
 
-	B = v1.size() + v2.size();
+	B = v1.size() + v2.size();//합집합
 	if (v1.size() == 0 && v2.size() == 0) answer = 65536;
 	else 
 	answer = ((double)A / (double)B) * 65536;
