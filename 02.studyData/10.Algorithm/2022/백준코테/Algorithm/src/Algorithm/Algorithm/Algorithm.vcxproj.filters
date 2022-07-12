@@ -189,5 +189,8 @@
     <ClCompile Include="22-07-11-2019카카오튜플.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-07-12-2022카카오-양궁대회.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
