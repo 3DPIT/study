@@ -201,5 +201,8 @@
     <ClCompile Include="22-07-24-2021카카오-거리두기확인하기.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-07-25-2018카카오[3차]n진수게임.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
