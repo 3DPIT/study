@@ -17,13 +17,11 @@ struct Data {
 string solution(string m, vector<string> musicinfos) {
 	string answer = "";
 	pair<int, string> ans = { 0,"" };
-	replaceAll(m, "A#", "a"); // 1. m에서 반올림된 음계를 모두 치환
-	replaceAll(m, "B#", "b");
 	replaceAll(m, "C#", "c");
 	replaceAll(m, "D#", "d");
-	replaceAll(m, "E#", "e");
 	replaceAll(m, "F#", "f");
 	replaceAll(m, "G#", "g");
+	replaceAll(m, "A#", "a");
 	
 	for (int i = 0; i < musicinfos.size(); i++) {
 
@@ -45,12 +43,11 @@ string solution(string m, vector<string> musicinfos) {
 			title += musicinfos[i][j];
 		}
 		for (int j = idx+1; j < musicinfos[i].size(); j++) runningMusic += musicinfos[i][j];
-		replaceAll(runningMusic, "B#", "b");
 		replaceAll(runningMusic, "C#", "c");
 		replaceAll(runningMusic, "D#", "d");
-		replaceAll(runningMusic, "E#", "e");
 		replaceAll(runningMusic, "F#", "f");
 		replaceAll(runningMusic, "G#", "g");
+		replaceAll(runningMusic, "A#", "a");
 
 		int remainTime = t;
 		idx = 0;
