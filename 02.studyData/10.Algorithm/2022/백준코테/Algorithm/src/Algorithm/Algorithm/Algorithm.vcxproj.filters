@@ -210,5 +210,8 @@
     <ClCompile Include="22-08-02-2022-카카오주차요금계산.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="22-08-03-2022카카오-k진수에서소수개수구하기.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

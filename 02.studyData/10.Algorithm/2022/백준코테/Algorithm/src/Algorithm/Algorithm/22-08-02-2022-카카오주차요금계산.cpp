@@ -25,6 +25,7 @@ vector<int> solution(vector<int> fees, vector<string> records) {
 			cars[car.first].push_back({ 1439,"O" });
 		}
 	}
+
 	for (auto car : cars) {
 		int minuteS=0;
 		for (int i = 0; i < car.second.size(); i += 2) {

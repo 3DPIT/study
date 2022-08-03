@@ -307,7 +307,10 @@
     <ClCompile Include="22-07-28-2018카카오-[3차]방금그곡.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="22-08-02-2022-카카오주차요금계산.cpp" />
+    <ClCompile Include="22-08-02-2022-카카오주차요금계산.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="22-08-03-2022카카오-k진수에서소수개수구하기.cpp" />
     <ClCompile Include="220329_13460_구슬탈출2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
