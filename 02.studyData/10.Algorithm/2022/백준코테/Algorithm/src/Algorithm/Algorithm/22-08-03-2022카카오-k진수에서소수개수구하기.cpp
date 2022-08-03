@@ -6,7 +6,7 @@
 using namespace std;
 char numberChar[] = { '0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F' };
 
-bool checkPrimeNumber1(long long n) {
+bool checkPrimeNumber(long long n) {
 	if (n == 0 || n == 1) return false;
 	for (int i = 2; i <= sqrt(n); i++) {
 		if (n%i == 0) return false;
@@ -14,9 +14,9 @@ bool checkPrimeNumber1(long long n) {
 
 	return true;
 }
-bool checkPrimeNumber(long long n) {
+bool checkPrimeNumber1(long long n) {
 	if (n == 0 || n == 1) return false;
-	for (int i = 2; i <= sqrt(n); i++) {
+	for (int i = 2; i*i <=  n; i++) {
 		if (n%i == 0) return false;
 	}
 	return true;
