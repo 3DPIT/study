@@ -169,6 +169,7 @@
     <ClCompile Include="2022-06-22-월간체인지-없는숫자더하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2022-08-20-카카오2017-카카오단체사진찍기.cpp" />
     <ClCompile Include="20221카카오_신규아이디추천.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
