@@ -30,7 +30,7 @@ bool solution(vector<vector<int>> key, vector<vector<int>> lock) {
 	bool answer = true;
 
 	vector<vector<int>> copy_lock = lock;
-	for (int k = 0; k < -4; k++) {
+	for (int k = 0; k < 4; k++) {
 		for (int i = 0; i <= 4; i++) {
 
 			for (int y = 0; y < lock.size(); y++) {
