@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CS_Study_220927
-{
+namespace main1;
     public class Cat
     {
         public string Name;
@@ -16,4 +15,4 @@ namespace CS_Study_220927
             Console.WriteLine("{0} : 야옹", Name);
         }
     }
-}
+
