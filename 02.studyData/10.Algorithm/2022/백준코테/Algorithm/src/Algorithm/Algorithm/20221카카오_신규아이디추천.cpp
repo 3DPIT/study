@@ -15,6 +15,7 @@ string solution(string new_id) {
 
 	//2
 	for (int i = 0; i < new_id.size(); i++) {
+		for (int i = 0; i < new_id.size(); i++) {
 		if (('0' <= new_id[i] && new_id[i] <= '9')||('a' <= new_id[i] && new_id[i] <= 'z')
 			||new_id[i] == '.'||new_id[i] == '-'||new_id[i] == '_') {
 
@@ -62,11 +63,13 @@ string solution(string new_id) {
 	if (new_id.size()&&new_id[new_id.size() - 1] == '.')new_id.pop_back();
 
 	//7
+	//7
 	if (new_id.size()&&new_id.size() <= 2) {
 		char c = new_id[new_id.size() - 1];
 		while (new_id.size()!=3) {
 			new_id.push_back(c);
 		}
+	}
 	}
 
 	answer = new_id;
@@ -75,6 +78,8 @@ string solution(string new_id) {
 
 int main(void)
 {
+	{
+		{
 	//cout << solution("ssssssssssssssssssssssssadasdafafafaliehaklsfhjk3@34jiuo23h48972rn au3r98f2a3lruj2389ry239rynq2789gr?@#rq23rq#@RQ@#*(rq2893nryq2389yr98sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss") << endl;
 	//cout<<solution("...!@BaT#*..y.abcdefghijklm")<<endl;
 	//cout << solution("z-+.^.") << endl;
@@ -82,4 +87,4 @@ int main(void)
 	//cout << solution("123_.def") << endl;
 	cout << solution("abcdefghijklmn.p") << endl;
 	return 0;
-}
+		}}

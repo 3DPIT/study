@@ -225,5 +225,8 @@
     <ClCompile Include="22-09-21-2021-카카오-행렬 테두리 회전하기.cpp">
       <Filter>소스 파일\프로그래머스</Filter>
     </ClCompile>
+    <ClCompile Include="소스1.cpp">
+      <Filter>소스 파일\프로그래머스</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
