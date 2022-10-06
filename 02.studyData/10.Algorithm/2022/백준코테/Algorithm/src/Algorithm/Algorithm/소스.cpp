@@ -1,39 +1,25 @@
-#include <iostream>
-#include <sstream>
+#include <string>
 #include <vector>
+
 using namespace std;
+
+int solution(vector<int> players) {
+	int answer = -1;
+	int zero = 0;
+	int one = 0;
+	for (int i = 0; i < players.size(); i++) {
+		if (players[i] == 1)one++;
+		else if (players[i] == 0) zero++;
+	}
+	if (one == zero || one == zero - 1) {
+		answer = players.size() - 1;
+	}
+	else {
+		one + 1 
+	}
+	return answer;
+}
 int main(void)
 {
-	int rr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int ii[] = { 1,2,4,4,5,6,7,8,9,10};
-	int idx = 0;
-	while (rr[idx++] >0);
-	string s;
-	int driLen = idx-1;
-
-	vector<string>vs;
-
-	for (int i = 0; i < driLen; i++) {
-		if (rr[i] == ii[i]) {
-			for (int j = 0; j < driLen; j++) {
-				if (j+1 == rr[i]) s += "1,";
-				else s += "0,";
-			}
-		}
-		else if (rr[i] != ii[i]) {
-			for (int j = 0; j < driLen; j++) {
-				if (j+1 == rr[i]) s += "2,";
-				else if (j == rr[i]) s += "1,";
-				else s += "0,";
-			}
-		}
-		vs.push_back(s);
-		s.clear();
-	}
-
-	for (int i = 0; i < driLen; i++) {
-			cout << vs[i]<<endl;
-	}
-	
 	return 0;
 }
