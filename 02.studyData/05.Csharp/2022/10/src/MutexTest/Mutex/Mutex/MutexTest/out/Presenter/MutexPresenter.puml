@@ -1,0 +1,6 @@
+@startuml
+class MutexPresenter {
+    + WriteConsole(IsMutexSucess:bool) : void
+}
+IMutexOutputPort <|-- MutexPresenter
+@enduml

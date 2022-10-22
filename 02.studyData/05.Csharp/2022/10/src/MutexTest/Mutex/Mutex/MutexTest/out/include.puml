@@ -1,0 +1,32 @@
+@startuml
+class Program {
+    + {static} Main(args:string[]) : void
+}
+class MutexController {
+    - <<readonly>> _mutexInputPort : IMutexInputPort
+    - <<readonly>> _mutexRusult : Mutex
+    + MutexController(mutexInputPort:IMutexInputPort)
+}
+class MutexPresenter {
+    + WriteConsole(IsMutexSucess:bool) : void
+}
+IMutexOutputPort <|-- MutexPresenter
+interface IMutexInputPort {
+    + MutexInputPort() : Mutex
+}
+interface IMutexOutputPort {
+    + WriteConsole(IsMutexSucess:bool) : void
+}
+class MutexInteractor {
+    - <<readonly>> _mutexOutputPort : IMutexOutputPort
+    - <<readonly>> _mutex : Mutex
+    - _guid : string
+    - _mtxSuccess : bool
+    - <<const>> _registryAppKey : string = "MutexTest.Guid"
+    + MutexInteractor(mutexOutputPort:IMutexOutputPort)
+    + MutexInputPort() : Mutex
+    + Handle() : void
+}
+IMutexInputPort <|-- MutexInteractor
+
+@enduml

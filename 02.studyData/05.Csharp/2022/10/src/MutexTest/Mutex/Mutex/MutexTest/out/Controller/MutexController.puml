@@ -1,0 +1,7 @@
+@startuml
+class MutexController {
+    - <<readonly>> _mutexInputPort : IMutexInputPort
+    - <<readonly>> _mutexRusult : Mutex
+    + MutexController(mutexInputPort:IMutexInputPort)
+}
+@enduml

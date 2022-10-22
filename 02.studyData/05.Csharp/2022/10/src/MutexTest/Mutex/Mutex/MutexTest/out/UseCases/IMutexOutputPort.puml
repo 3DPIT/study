@@ -1,0 +1,5 @@
+@startuml
+interface IMutexOutputPort {
+    + WriteConsole(IsMutexSucess:bool) : void
+}
+@enduml

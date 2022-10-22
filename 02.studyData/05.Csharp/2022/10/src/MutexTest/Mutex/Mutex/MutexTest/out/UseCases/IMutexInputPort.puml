@@ -1,0 +1,5 @@
+@startuml
+interface IMutexInputPort {
+    + MutexInputPort() : Mutex
+}
+@enduml

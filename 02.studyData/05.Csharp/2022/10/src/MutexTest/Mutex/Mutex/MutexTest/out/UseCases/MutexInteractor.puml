@@ -1,0 +1,13 @@
+@startuml
+class MutexInteractor {
+    - <<readonly>> _mutexOutputPort : IMutexOutputPort
+    - <<readonly>> _mutex : Mutex
+    - _guid : string
+    - _mtxSuccess : bool
+    - <<const>> _registryAppKey : string = "MutexTest.Guid"
+    + MutexInteractor(mutexOutputPort:IMutexOutputPort)
+    + MutexInputPort() : Mutex
+    + Handle() : void
+}
+IMutexInputPort <|-- MutexInteractor
+@enduml

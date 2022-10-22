@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexTest", "MutexTest.csproj", "{98B77606-48B7-4B08-91A5-C0D0BAB2E1FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexTest.IntegrationTest", "..\MutexTest.IntegrationTest\MutexTest.IntegrationTest.csproj", "{A8E015CE-76E2-46F8-9CD5-D1DFD1BCC70F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98B77606-48B7-4B08-91A5-C0D0BAB2E1FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B77606-48B7-4B08-91A5-C0D0BAB2E1FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B77606-48B7-4B08-91A5-C0D0BAB2E1FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B77606-48B7-4B08-91A5-C0D0BAB2E1FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8E015CE-76E2-46F8-9CD5-D1DFD1BCC70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8E015CE-76E2-46F8-9CD5-D1DFD1BCC70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8E015CE-76E2-46F8-9CD5-D1DFD1BCC70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8E015CE-76E2-46F8-9CD5-D1DFD1BCC70F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D01D1786-53AC-4F31-AED5-38532D686AB6}
+	EndGlobalSection
+EndGlobal
