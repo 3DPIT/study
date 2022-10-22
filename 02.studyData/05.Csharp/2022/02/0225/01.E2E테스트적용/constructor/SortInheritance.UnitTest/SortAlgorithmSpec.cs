@@ -59,7 +59,7 @@ namespace Constructor.UnitTest
                     //Console.WriteLine($"Test - {output}");
                     //_output.WriteLine($"Test - {output}");
                     ////_output.Should().Be("Hi");
-
+                    
                     output.Should().Be(result[idx]);
                     idx++;
                 }

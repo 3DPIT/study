@@ -1,0 +1,5 @@
+@startuml
+interface ICliWrapInputPort {
+    + InputPath(url:string, mainFolder:string, configFileName:string) : void
+}
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class CliWrapController {
+    - <<readonly>> _cliWrapInputPort : ICliWrapInputPort
+    + CliWrapController(cliWrapInputPort:ICliWrapInputPort)
+    + GetInputData(url:string, mainFolder:string, configFileName:string) : void
+}
+@enduml

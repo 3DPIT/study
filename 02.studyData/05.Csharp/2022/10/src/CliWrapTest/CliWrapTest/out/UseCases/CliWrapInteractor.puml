@@ -1,0 +1,14 @@
+@startuml
+class CliWrapInteractor {
+    - <<readonly>> _cliWrapOutputPort : ICliWrapOutputPort
+    - <<readonly>> _path : string
+    - _config : Config
+    - _url : string
+    + CliWrapInteractor(cliWrapOutput:ICliWrapOutputPort)
+    + InputPath(url:string, mainFolder:string, configFileName:string) : void
+    + Handle() : void
+    - GetChromePath() : string
+    - ReadConfigurationFromHoconFile(assembly:Assembly, configDirectoryName:string, configAppFileName:string) : Akka.Configuration.Config
+}
+ICliWrapInputPort <|-- CliWrapInteractor
+@enduml

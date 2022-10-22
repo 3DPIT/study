@@ -16,9 +16,9 @@ namespace CliWrapTest
             cliWrapController.GetInputData("ui.server.url_exercise", "Configs", "Mirero.BLUE-CATS.AlertNotifie");
             cliWrapInteractor.Handle();
 
-            //그라파나 로또 사이트 실행
-            cliWrapController.GetInputData("ui.server.url_lotto", "Configs1", "KmConfig");
-            cliWrapInteractor.Handle();
+            ////그라파나 로또 사이트 실행
+            //cliWrapController.GetInputData("ui.server.url_lotto", "Configs1", "KmConfig");
+            //cliWrapInteractor.Handle();
         }
     }
 }

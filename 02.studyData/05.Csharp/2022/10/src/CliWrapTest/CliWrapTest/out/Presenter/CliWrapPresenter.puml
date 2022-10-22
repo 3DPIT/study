@@ -1,0 +1,6 @@
+@startuml
+class CliWrapPresenter {
+    + ExcuteSite(url:string, path:string) : void
+}
+ICliWrapOutputPort <|-- CliWrapPresenter
+@enduml

@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliWrapTest", "CliWrapTest\CliWrapTest.csproj", "{58EC4706-E4EC-44D1-A2E5-000EFBDE5534}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CliWrap.IntegrationTest", "CliWrap.IntegrationTest\CliWrap.IntegrationTest.csproj", "{6B0BD243-38A5-4B36-A8FF-9CD649E36443}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{58EC4706-E4EC-44D1-A2E5-000EFBDE5534}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58EC4706-E4EC-44D1-A2E5-000EFBDE5534}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58EC4706-E4EC-44D1-A2E5-000EFBDE5534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B0BD243-38A5-4B36-A8FF-9CD649E36443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B0BD243-38A5-4B36-A8FF-9CD649E36443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B0BD243-38A5-4B36-A8FF-9CD649E36443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B0BD243-38A5-4B36-A8FF-9CD649E36443}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

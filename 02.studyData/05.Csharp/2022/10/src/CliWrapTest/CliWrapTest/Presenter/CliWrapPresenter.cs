@@ -19,6 +19,7 @@ namespace CliWrapTest.Presenter
                     .WithArguments("https://www.google.com/chrome/")
                     .WithValidation(CommandResultValidation.None)
                     .ExecuteAsync();
+                Console.WriteLine("https://www.google.com/chrome/");
                 return;
             }
             else
@@ -27,6 +28,7 @@ namespace CliWrapTest.Presenter
                     .WithArguments(url)
                     .WithValidation(CommandResultValidation.None)
                     .ExecuteAsync();
+                Console.WriteLine(url);
                 return;
             }
         }

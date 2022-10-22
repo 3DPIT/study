@@ -1,0 +1,5 @@
+@startuml
+interface ICliWrapOutputPort {
+    + ExcuteSite(url:string, path:string) : void
+}
+@enduml
