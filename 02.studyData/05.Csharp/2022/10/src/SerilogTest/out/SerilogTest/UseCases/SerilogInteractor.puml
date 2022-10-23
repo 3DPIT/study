@@ -1,0 +1,11 @@
+@startuml
+class SerilogInteractor {
+    - <<readonly>> _outputPort : ISerilogOutputPort
+    - _message : string
+    - _logger : ILogger
+    + SerilogInteractor(outputPort:ISerilogOutputPort)
+    + LogInit() : void
+    + HandleLog(message:string) : void
+}
+ISerilogInputPort <|-- SerilogInteractor
+@enduml

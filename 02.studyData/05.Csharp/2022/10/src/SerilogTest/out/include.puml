@@ -1,0 +1,29 @@
+@startuml
+class Program {
+    + {static} Main(args:string[]) : void
+}
+class SerilogController {
+    - <<readonly>> _serilogInputPort : ISerilogInputPort
+    + SerilogController(serilogInputPort:ISerilogInputPort)
+    + GetInputData() : void
+}
+class SerilogPresenter {
+    + LogWrite(log:ILogger, message:string) : void
+}
+ISerilogOutputPort <|-- SerilogPresenter
+interface ISerilogInputPort {
+    + LogInit() : void
+}
+interface ISerilogOutputPort {
+    + LogWrite(log:ILogger, message:string) : void
+}
+class SerilogInteractor {
+    - <<readonly>> _outputPort : ISerilogOutputPort
+    - _message : string
+    - _logger : ILogger
+    + SerilogInteractor(outputPort:ISerilogOutputPort)
+    + LogInit() : void
+    + HandleLog(message:string) : void
+}
+ISerilogInputPort <|-- SerilogInteractor
+@enduml

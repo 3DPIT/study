@@ -1,0 +1,7 @@
+@startuml
+class SerilogController {
+    - <<readonly>> _serilogInputPort : ISerilogInputPort
+    + SerilogController(serilogInputPort:ISerilogInputPort)
+    + GetInputData() : void
+}
+@enduml

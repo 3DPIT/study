@@ -1,0 +1,5 @@
+@startuml
+interface ISerilogOutputPort {
+    + LogWrite(log:ILogger, message:string) : void
+}
+@enduml

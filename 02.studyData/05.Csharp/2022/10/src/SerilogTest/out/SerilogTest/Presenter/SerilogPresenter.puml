@@ -1,0 +1,6 @@
+@startuml
+class SerilogPresenter {
+    + LogWrite(log:ILogger, message:string) : void
+}
+ISerilogOutputPort <|-- SerilogPresenter
+@enduml

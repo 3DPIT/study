@@ -1,39 +1,31 @@
-using FluentAssertions;
+﻿using System.Diagnostics;
 using Microsoft.VisualStudio.TestPlatform.ObjectModel;
-using MutexTest.Controller;
-using MutexTest.Presenter;
-using MutexTest.UseCases;
-using NetArchTest.Rules;
 using System.Diagnostics;
 using System.Reflection;
 using Xunit.Abstractions;
-using TestResult = NetArchTest.Rules.TestResult;
+using FluentAssertions;
 
-namespace MutexTest.IntegrationTest
+namespace SerilogIntegrationTest
 {
-    public class MutexIntegrationTest
+    public class IntegrationTest
     {
-        private readonly ITestOutputHelper _output;
-        public MutexIntegrationTest(ITestOutputHelper output)
-        {
-            _output = output;
-        }
         [Fact]
-        public void MutexE2E()
+        public void Test1()
         {
-            //Arrange
             using (Process process = new Process())
             {
                 string path = Path.GetFileName(Environment.CurrentDirectory);
                 Console.WriteLine(path);
-                process.StartInfo.FileName = $"../{path}\\MutexTest.exe";
+                process.StartInfo.FileName = $"../{path}\\SerilogTest.exe";
                 process.StartInfo.RedirectStandardInput = true;
                 process.StartInfo.RedirectStandardOutput = true;
 
                 //Act
                 process.Start();
-                string expect = "프로그램 실행 중입니다.";
+                string expect = " INF] serilog test1";
+                // 0-9
                 var actual = process.StandardOutput.ReadLine();
+                actual = actual.Substring(9, actual.Length-9);
 
                 //Assert
                 actual.Should().Be(expect);
