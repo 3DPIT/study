@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+
+}
+
+
+.outer{
+    width: 100%;
+    position: relative;
+    background: yellow;
+}
+.inner{
+    width :100px;
+    position:absolute;
+    background: red;
+    left: 50%;
+    top: 50%;
+    /* transform:translate(-50%, -50%); */
+   margin-left: -50px;
+   margin-top:-50px;
+}
