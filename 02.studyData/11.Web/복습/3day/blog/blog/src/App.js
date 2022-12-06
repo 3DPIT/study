@@ -6,8 +6,9 @@ function App() {
   let post = '강남 우동 맛집';
   let [blogTitle, setBlogTitle] = useState('React Blog'); 
   let [subTitle, setSubTitle] = useState(['남자 코드 추천','강남 우동 맛집', '리액트 독학']); 
-  let [like, setLike]=useState(0);
+  let [like, setLike]=useState([0,0,0]);
   let [modal, setModal]=useState(false);
+  let [title,setTitle] =useState(0);
 
   return (
     <div className="App">
@@ -39,32 +40,42 @@ function App() {
         <p>12월 04일 발행</p>
       </div> */}
       {/* <h4 style={{color:'red', fontSize:'45apx'}}>{post}</h4> */}
-        {
-          modal == true ? <Modal/> : null
-        }
     {
       subTitle.map(function(index, number){
         return (
           <div className="list" key={number}>
-            <h4>{subTitle[number]}
+            <h4 onClick={()=>{
+              setTitle(number);
+              setModal(!modal);
+            }}>{subTitle[number]}
             <span onClick={()=>{
-              setLike(like+1)
+              let copyLike = [...like];
+              copyLike[number]=copyLike[number]+1;
+              setLike(copyLike);
             }}>❤️</span>
-            {like}
+            {like[number]}
             </h4>
           </div>
         )
       })
     }
+            {
+          modal == true ? <Modal title={title} color = {'skyblue'} subTitle = {subTitle} setSubTitle ={setSubTitle}/> : null
+        }
     </div>
   );
 
-  function Modal(){
+  function Modal(props){
     return(
-      <div class="modal">
-        <h4>제목</h4>
+      <div class="modal" style={{backgournd: props.color}}>
+        <h4>{props.subTitle[props.title]}</h4>
         <p>날짜</p>
         <p>상세내용</p>
+        <button onClick={()=>{
+                  {props.setSubTitle(['여자 코드 추천','강남 우동 맛집', '리액트 독학'])}
+                }}>
+          제목 바꾸기
+        </button>
       </div>
     )
   }
