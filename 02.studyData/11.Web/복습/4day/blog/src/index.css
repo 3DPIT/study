@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.title-header{
+  background: #005ebf;
+  margin: 0;
+  padding: 0.3em;
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+.modal{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px ;
+}
+.modal > h4{
+  padding: 0px 25px 10px;
+  border-bottom: 1px solid;
+  max-width: 300;
+}
+.modal > h4 > span:last-child { 
+  float: right;
+  color: red;
+}
