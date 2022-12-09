@@ -1,0 +1,10 @@
+@startuml
+class Lion {
+    - <<readonly>> life : int
+    - <<readonly>> health : string
+    + Name : string
+    + eat() : void
+    + walk() : void
+}
+Animal <|-- Lion
+@enduml

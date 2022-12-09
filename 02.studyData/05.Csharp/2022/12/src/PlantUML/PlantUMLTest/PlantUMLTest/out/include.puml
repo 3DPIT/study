@@ -1,0 +1,25 @@
+@startuml
+class Program {
+    {static} Main(args:string[]) : void
+}
+interface Animal {
+    + eat() : void
+    + walk() : void
+}
+class Lion {
+    - <<readonly>> life : int
+    - <<readonly>> health : string
+    + Name : string
+    + eat() : void
+    + walk() : void
+}
+Animal <|-- Lion
+class Tiger {
+    - <<readonly>> life : int
+    - <<readonly>> health : string
+    + Name : string
+    + eat() : void
+    + walk() : void
+}
+Animal <|-- Tiger
+@enduml

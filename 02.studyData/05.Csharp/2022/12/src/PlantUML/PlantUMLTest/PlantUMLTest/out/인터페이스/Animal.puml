@@ -1,0 +1,6 @@
+@startuml
+interface Animal {
+    + eat() : void
+    + walk() : void
+}
+@enduml

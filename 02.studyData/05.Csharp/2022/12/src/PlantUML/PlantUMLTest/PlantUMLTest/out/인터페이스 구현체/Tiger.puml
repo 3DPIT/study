@@ -1,0 +1,10 @@
+@startuml
+class Tiger {
+    - <<readonly>> life : int
+    - <<readonly>> health : string
+    + Name : string
+    + eat() : void
+    + walk() : void
+}
+Animal <|-- Tiger
+@enduml
