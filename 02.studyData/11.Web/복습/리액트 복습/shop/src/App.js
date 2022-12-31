@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { createContext, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
@@ -8,9 +8,12 @@ import Detail from "./router/Detail.js";
 import About from "./component/About.js";
 import axios from "axios";
 
+const ContextAPI = createContext();
+
 function App() {
   const [addBtn, setAddBtn] = useState(0);
   const [shoes, setShoes] = useState(data);
+  const [재고] = useState(10, 11, 12);
   let navigate = useNavigate();
 
   function onAddItem() {

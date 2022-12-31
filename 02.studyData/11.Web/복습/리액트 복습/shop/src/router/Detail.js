@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
-
+import { Nav } from "react-bootstrap";
+import "./Detail.css";
 const YellowButton = styled.button`
   background: yellow;
   color: black;
@@ -42,13 +43,25 @@ function Detail({ shoes }) {
   const [count, setCount] = useState(0);
   const { id } = useParams();
   const [hidden, setHidden] = useState(0);
+  const [tab, setTab] = useState(0);
+
   // const findProduct = shoes.find(function (x) {
   //   return x.id == id;
   // });
   const findProduct = shoes.find((x) => x.id == id);
   console.log(findProduct);
+  const [fade, setFade] = useState("");
+  useEffect(() => {
+    setTimeout(() => {
+      setFade("end-scale");
+    }, 100);
+    return () => {
+      clearTimeout();
+      setFade("");
+    };
+  }, []);
   return (
-    <div className="container">
+    <div className={`container start-scale ${fade}`}>
       {hidden == 0 && (
         <div className="alert alert-warning">2초이내 구매시 할인</div>
       )}
@@ -82,6 +95,74 @@ function Detail({ shoes }) {
           <button className="btn btn-danger">주문하기</button>
         </div>
       </div>
+
+      <Nav variant="tabs" defaultActiveKey="link0">
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(0);
+            }}
+            eventKey="link0"
+          >
+            버튼0
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(1);
+            }}
+            eventKey="link1"
+          >
+            버튼1
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(2);
+            }}
+            eventKey="link2"
+          >
+            버튼2
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <TabContent shoes={shoes} tab={tab} />
+    </div>
+  );
+}
+
+function TabContent({ shoes, tab }) {
+  // return tab === 0 ? (
+  //   <div>내용0</div>
+  // ) : tab == 1 ? (
+  //   <div>내용1</div>
+  // ) : (
+  //   <div>내용2</div>
+  // );
+
+  // if (tab === 0) {
+  //   return <div>내용0</div>;
+  // } else if (tab === 1) {
+  //   return <div>내용1</div>;
+  // } else {
+  //   return <div>내용2</div>;
+  // }
+
+  const [fade, setFade] = useState("");
+  useEffect(() => {
+    setTimeout(() => {
+      setFade("end");
+    }, 100);
+    return () => {
+      clearTimeout();
+      setFade("");
+    };
+  }, [tab]);
+  return (
+    <div className={`start ${fade}`}>
+      {[<div>{shoes[0].id}</div>, <div>내용1</div>, <div>내용2</div>][tab]}
     </div>
   );
 }

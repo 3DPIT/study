@@ -417,3 +417,163 @@ fetch('url')
 .then(결과 => 결과.json())
 .then(data=>{})
 ```
+
+## tab UI 만들기
+
+```js
+
+      <Nav variant="tabs" defaultActiveKey="link0">
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(0);
+            }}
+            eventKey="link0"
+          >
+            버튼0
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(1);
+            }}
+            eventKey="link1"
+          >
+            버튼1
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link
+            onClick={() => {
+              setTab(2);
+            }}
+            eventKey="link2"
+          >
+            버튼2
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <TabContent tab={tab}> </TabContent>
+
+function TabContent({ tab }) {
+// 삼항연산자로 하기
+  return tab === 0 ? (
+    <div>내용0</div>
+  ) : tab == 1 ? (
+    <div>내용1</div>
+  ) : (
+    <div>내용2</div>
+  );
+
+// if elseif else
+  if (tab === 0) {
+    return <div>내용0</div>;
+  } else if (tab === 1) {
+    return <div>내용1</div>;
+  } else {
+    return <div>내용2</div>;
+  }
+
+// 배열로 하기
+  return [<div>내용0</div>, <div>내용1</div>, <div>내용2</div>][tab];
+}
+}
+```
+
+- if else 이런거 쓰려면 컴포넌트 같이 만들엇 사용하면됨
+
+## 애니메이션 넣기
+
+- 1.애니메이션 동작 전 className 만들기
+- 2.애니메이션 동작 후 className 만들기
+- 3.className에 transition 속성 추가
+- 4.원할 때 2번 className 부착
+
+### useEffect로 css 넣기
+
+```js
+// 일반적인 방법
+const [fade, setFade] = useState("");
+useEffect(() => {}, [tab]);
+return (
+  <div className={"strat " + fade}>
+    {[<div>내용0</div>, <div>내용1</div>, <div>내용2</div>][tab]}
+  </div>
+);
+
+// `` 을 이용한 방법
+const [fade, setFade] = useState("");
+useEffect(() => {}, [tab]);
+return (
+  <div className={`strat ${fade}`}>
+    {[<div>내용0</div>, <div>내용1</div>, <div>내용2</div>][tab]}
+  </div>
+);
+
+// 실제 사용법
+function TabContent({ tab }) {
+  const [fade, setFade] = useState("");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setFade("end");
+    }, 100);
+    return () => {
+      setFade("");
+    };
+  }, [tab]);
+
+  return (
+    <div className={`start ${fade}`}>
+      {[<div>내용0</div>, <div>내용1</div>, <div>내용2</div>][tab]}
+    </div>
+  );
+}
+```
+
+## automatic bathing 기능
+
+- 리액트 18버전 이후 나온것
+  - 주변에 있는 state중 마지막 하나만 재렌더링해서 좀 지연해주거나 다른 방법을 써야함
+  - 시간차를 둬서 실행해주면 좋음
+
+# state 전체 공유 하기
+
+## Context API 사용해보기
+
+```js
+/*
+App{
+  Detail{
+    TabContent{
+
+    }
+  }
+}
+이런 경우라면 ? 어떻게 App에 있는 State를 공유할까?
+*/
+
+//app.js
+
+import React, { createContext, useState } from "react";
+
+export const ContextAPI = createContext();
+
+<ContextAPI.Provider value={{재고, shoes}}>
+<Detail/>
+<ContextAPI.Provider>
+
+//Detail.js
+import React, { useContext, useState } from "react";
+import {ContextAPI} from './../App.js';
+
+const {재고} = useContext(ContextAPI);// 분해시키는 것
+
+```
+
+- 성능 이슈와 컴포넌트 재활용이 어려운 단점이 있어서 잘 안쓰긴함
+- 저렇게 하면 아무곳에서도 가져다 쓸수 있음
+- Context API 특징
+  - 1.state 변경시 -> 쓸데없는 것까지 재 렌더링함
+  - 2.Detail.js에 useContext로 분리하는 것에서 다른곳에서쓰면 없는 것이라고 나오니까 컴포넌트 재사용이 어려움
