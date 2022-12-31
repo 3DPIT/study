@@ -370,3 +370,50 @@ return () => {}; // 이곳에 넣으면됨
 // 5.특정 state 변경시에만 실행하려면 [state명]
 useEffect(() => {}, [count]);
 ```
+
+## ajax 사용하기
+
+### 설치
+
+```js
+npm install axios
+
+import axios from "axios";
+
+//여러 상태까지 나옴
+axios.get('https://codingapple1.github.io/shop/data2.json ')
+.then((data)=>{
+  console.log(data);
+})
+
+//현재 원하는 값이 나옴
+axios.get('https://codingapple1.github.io/shop/data2.json ')
+.then((data)=>{
+  console.log(data.data);
+})
+
+//실패시
+axios
+  .get("https://codingapple1.github.io/shop/data2.json ")
+  .then((data) => {
+    console.log(data.data);
+  })
+  .catch(()=>{
+    console.log("실패함")
+  });
+
+// 서버에 데이터 전송하는 POST 요청
+axios.post('/asdf',{name:park})
+
+//여러개에 한번에 하고 싶은 경우 두개다 성공한 경우만
+Promis.all([axios.get('/url1),axios.get('/url1)])
+.then(()=>{
+
+})
+
+//서버에서는 array, object도  따옴표 쓰면 가능
+//fetch()를 쓰면 아래와 같이 변환이 필요, axios는 알아서 변환해줌
+fetch('url')
+.then(결과 => 결과.json())
+.then(data=>{})
+```

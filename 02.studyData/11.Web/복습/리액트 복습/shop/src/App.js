@@ -6,10 +6,25 @@ import data from "./data/data.js";
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
 import Detail from "./router/Detail.js";
 import About from "./component/About.js";
+import axios from "axios";
 
 function App() {
+  const [addBtn, setAddBtn] = useState(0);
   const [shoes, setShoes] = useState(data);
   let navigate = useNavigate();
+
+  function onAddItem() {
+    axios
+      .get("https://codingapple1.github.io/shop/data2.json ")
+      .then((data) => {
+        console.log(data.data);
+        const copyShoes = [...shoes, ...data.data];
+        setShoes(copyShoes);
+      })
+      .catch(() => {
+        console.log("실패함");
+      });
+  }
 
   return (
     <div className="App">
@@ -45,6 +60,13 @@ function App() {
                   ))}
                 </div>
               </div>
+              <button
+                onClick={() => {
+                  onAddItem();
+                }}
+              >
+                더보기
+              </button>
             </>
           }
         />
