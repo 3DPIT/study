@@ -577,3 +577,192 @@ const {재고} = useContext(ContextAPI);// 분해시키는 것
 - Context API 특징
   - 1.state 변경시 -> 쓸데없는 것까지 재 렌더링함
   - 2.Detail.js에 useContext로 분리하는 것에서 다른곳에서쓰면 없는 것이라고 나오니까 컴포넌트 재사용이 어려움
+
+## 리덕스 설치
+
+```sh
+npm install @reduxjs/toolkit react-redux
+
+
+// store.js
+import {configureStore} from '@reduxjs/toolkit'
+
+export default configureStore({
+    reducer:{
+
+    }
+})
+
+// index.js 파일에
+import { Provider } from "react-redux";
+import store from './redux/store.js'
+
+<Provider store={store}> //쓰면 되는데
+
+// 이렇게 해주기
+
+    <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    </Provider>
+```
+
+### 리덕스 쓰는 이유
+
+- 컴포넌트간 state 공유 편해짐
+  - props 안써도 되는 점 이 있음
+
+#### 사용해보기
+
+```js
+import { createSlice, configureStore } from "@reduxjs/toolkit";
+
+const user = createSlice({
+  name: "user",
+  initialState: "park",
+});
+
+export default configureStore({
+  reducer: {
+    user: user.reducer,
+  },
+});
+```
+
+- 이렇게 하면 state 만들고 등록한것
+
+- 원하는 곳에 사용하기
+
+  ```js
+  import { useSelector } from "react-redux";
+
+  const { user } = useSelector((state) => {
+    return state;
+  });
+  ```
+
+### 응용사용
+
+```js
+const a = useSelector((state) => {
+  return state.user;
+});
+// 여러개 있다면 한개만 가져오고 싶은 경우
+
+//구조분해할당 하는법
+const { user, stock } = useSelector((state) => {
+  return state;
+});
+
+//리턴 생략 하기
+useSelector((state) => state.user);
+```
+
+## 리덕스 state 변경하기
+
+- 1.state 수정해주는 함수 만들기
+
+  ```js
+  reducers:{
+    changeName(){
+      return 'john park'
+    }
+  }
+
+    reducers:{
+    changeName(state){
+      return 'john '+ state
+    }
+  }
+  ```
+
+- 2.export 하기
+  ```js
+  export const { changeName } = user.actions;
+  ```
+- 3.만든 함수 import 해서 쓰기
+
+  ```js
+  import { changeName } from "./../redux/store.js";
+  import { useDispatch } from "react-redux";
+
+  const dispatch = useDispatch(); // store.js에서 요청 보내주는 함수
+
+  onClick={()=>{
+    dispatch(changeName())
+  }}
+  ```
+
+## 리덕스 state 변경하기
+
+```js
+const user = createSlice({
+  name: "user",
+  initialState: { name: "park", age: 20 },
+  reducers: {
+    changeName(state) {
+      return { name: "kim", age: 20 };
+    },
+  },
+});
+```
+
+- 저렇게 return 해서 수정해도 되지만
+- array/object의 경우는 직접 수정해도 됨
+
+  ```js
+  const user = createSlice({
+    name: "user",
+    initialState: { name: "park", age: 20 },
+    reducers: {
+      changeName(state) {
+        state.naem = "park";
+      },
+    },
+  });
+  ```
+
+- 함수 파라미터 문법 사용해보기
+
+  ```js
+  const user = createSlice({
+    name: "user",
+    initialState: { name: "park", age: 20 },
+    reducers: {
+      changeName(state) {
+        return { name: "kim", age: 20 };
+      },
+      addAge(state, action) {
+        state.age += action.payload;
+      },
+    },
+  });
+
+  // 사용법
+  dispatch(addAge(10));
+  ```
+
+## 리덕스 파일 분할하기
+
+- user를 분리해보면
+
+  - userSlice.js 만들고
+
+    ```js
+    import { createSlice } from "@reduxjs/toolkit";
+    const user = createSlice({
+      name: "user",
+      initialState: { name: "park", age: 20 },
+      reducers: {
+        changeName(state) {
+          return { name: "kim", age: 20 };
+        },
+        addAge(state, action) {
+          state.age += action.payload;
+        },
+      },
+    });
+    export const { changeName, addAge } = user.actions;
+    export default user;
+    ```

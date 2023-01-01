@@ -7,6 +7,7 @@ import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
 import Detail from "./router/Detail.js";
 import About from "./component/About.js";
 import axios from "axios";
+import Cart from "./router/Cart.js";
 
 const ContextAPI = createContext();
 
@@ -44,6 +45,13 @@ function App() {
             </Nav.Link>
             <Nav.Link>
               <Link to="/detail">상세페이지</Link>
+            </Nav.Link>
+            <Nav.Link
+              onClick={() => {
+                navigate("./cart");
+              }}
+            >
+              Cart
             </Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
@@ -91,6 +99,7 @@ function App() {
           <Route path="one" element={<div>첫 주문시 양배추즙 서비스</div>} />
           <Route path="two" element={<div>생일기념 쿠폰받기</div>} />
         </Route>
+        <Route path="cart" element={<Cart></Cart>} />
       </Routes>
     </div>
   );

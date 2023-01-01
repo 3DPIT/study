@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { Nav } from "react-bootstrap";
 import "./Detail.css";
+import { addItem } from "./../redux/store.js";
+import { useDispatch } from "react-redux";
 const YellowButton = styled.button`
   background: yellow;
   color: black;
@@ -20,6 +22,7 @@ const BlackBox = styled.div`
 const NewBtn = styled.button(ColorButton);
 
 function Detail({ shoes }) {
+  const dispatch = useDispatch();
   useEffect(() => {
     console.log(2);
     const setTImer = setTimeout(() => {
@@ -92,7 +95,14 @@ function Detail({ shoes }) {
           <h4 className="pt-5">{findProduct.title}</h4>
           <p>{findProduct.content}</p>
           <p>{findProduct.price}원</p>
-          <button className="btn btn-danger">주문하기</button>
+          <button
+            className="btn btn-danger"
+            onClick={() =>
+              dispatch(addItem({ id: 1, name: "3dpit", count: 3 }))
+            }
+          >
+            주문하기
+          </button>
         </div>
       </div>
 
