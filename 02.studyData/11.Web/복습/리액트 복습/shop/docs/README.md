@@ -765,4 +765,7 @@ const user = createSlice({
     });
     export const { changeName, addAge } = user.actions;
     export default user;
+
+    //기존 store.js에서 import
+    import { user } from "./store/userSlice.js";
     ```

@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
@@ -16,6 +16,12 @@ function App() {
   const [shoes, setShoes] = useState(data);
   const [재고] = useState(10, 11, 12);
   let navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem("watched") == null) {
+      localStorage.setItem("watched", JSON.stringify([]));
+    }
+  }, []);
 
   function onAddItem() {
     axios
@@ -78,6 +84,7 @@ function App() {
               >
                 더보기
               </button>
+              <RecentItem></RecentItem>
             </>
           }
         />
@@ -116,6 +123,18 @@ function Item({ shoes, index }) {
       ></img>
       <h4>{shoes.title}</h4>
       <p>{shoes.price}</p>
+    </div>
+  );
+}
+
+function RecentItem() {
+  let getItem1 = JSON.parse(localStorage.getItem("watched"));
+
+  return (
+    <div>
+      {getItem1.map((obj, index) => {
+        return obj;
+      })}
     </div>
   );
 }

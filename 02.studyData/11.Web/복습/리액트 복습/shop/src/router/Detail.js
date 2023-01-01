@@ -35,6 +35,15 @@ function Detail({ shoes }) {
     };
   }, []);
 
+  useEffect(() => {
+    const getItem = JSON.parse(localStorage.getItem("watched"));
+    getItem.push(id);
+    const setItem1 = new Set(getItem);
+    console.log(setItem1);
+    const setItem2 = Array.from(setItem1);
+    localStorage.setItem("watched", JSON.stringify(setItem2));
+    console.log(setItem2);
+  });
   const [inputValue, setInputValue] = useState("");
 
   useEffect(() => {
@@ -63,6 +72,8 @@ function Detail({ shoes }) {
       setFade("");
     };
   }, []);
+
+  //localStorage.setItem("watched");
   return (
     <div className={`container start-scale ${fade}`}>
       {hidden == 0 && (
