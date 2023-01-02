@@ -1,14 +1,23 @@
-import React, { createContext, useEffect, useState } from "react";
+import React, {
+  lazy,
+  Suspense,
+  createContext,
+  useEffect,
+  useState,
+} from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import data from "./data/data.js";
 import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
-import Detail from "./router/Detail.js";
 import About from "./component/About.js";
 import axios from "axios";
-import Cart from "./router/Cart.js";
 import { useQuery } from "react-query";
+// import Detail from "./router/Detail.js"
+// import Cart from "./router/Cart.js";
+
+const Detail = lazy(() => import("./router/Detail.js"));
+const Cart = lazy(() => import("./router/Cart.js"));
 
 const ContextAPI = createContext();
 
@@ -55,10 +64,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="dark" variant="light">
+      <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link
               onClick={() => {
                 navigate("./detail");
@@ -85,51 +94,53 @@ function App() {
           </Nav>
         </Container>
       </Navbar>
-
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <div className="main-bg"></div>
-              <div className="container">
-                <div className="row">
-                  {shoes.map((obj, index) => (
-                    <Item shoes={obj} index={index + 1} key={index}></Item>
-                  ))}
+      <Suspense fallback={<div>로딩중입니다.</div>}>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="main-bg"></div>
+                <div className="container">
+                  <div className="row">
+                    {shoes.map((obj, index) => (
+                      <Item shoes={obj} index={index + 1} key={index}></Item>
+                    ))}
+                  </div>
                 </div>
+                <button
+                  onClick={() => {
+                    onAddItem();
+                  }}
+                >
+                  더보기
+                </button>
+                <RecentItem></RecentItem>
+              </>
+            }
+          />
+
+          <Route path="/detail/:id" element={<Detail shoes={shoes}></Detail>} />
+          <Route path="/about" element={<About></About>}>
+            <Route path="member" element={<div>멤버</div>} />
+            <Route path="location" element={<div>위치</div>} />
+          </Route>
+          <Route path="*" element={<div>없는 페이지임</div>} />
+          <Route
+            path="event"
+            element={
+              <div>
+                <h1>오늘의 이벤트</h1>
+                <Outlet></Outlet>
               </div>
-              <button
-                onClick={() => {
-                  onAddItem();
-                }}
-              >
-                더보기
-              </button>
-              <RecentItem></RecentItem>
-            </>
-          }
-        />
-        <Route path="/detail/:id" element={<Detail shoes={shoes}></Detail>} />
-        <Route path="/about" element={<About></About>}>
-          <Route path="member" element={<div>멤버</div>} />
-          <Route path="location" element={<div>위치</div>} />
-        </Route>
-        <Route path="*" element={<div>없는 페이지임</div>} />
-        <Route
-          path="event"
-          element={
-            <div>
-              <h1>오늘의 이벤트</h1>
-              <Outlet></Outlet>
-            </div>
-          }
-        >
-          <Route path="one" element={<div>첫 주문시 양배추즙 서비스</div>} />
-          <Route path="two" element={<div>생일기념 쿠폰받기</div>} />
-        </Route>
-        <Route path="cart" element={<Cart></Cart>} />
-      </Routes>
+            }
+          >
+            <Route path="one" element={<div>첫 주문시 양배추즙 서비스</div>} />
+            <Route path="two" element={<div>생일기념 쿠폰받기</div>} />
+          </Route>
+          <Route path="cart" element={<Cart></Cart>} />
+        </Routes>
+      </Suspense>
     </div>
   );
 }

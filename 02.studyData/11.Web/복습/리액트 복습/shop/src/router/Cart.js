@@ -3,19 +3,41 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { changeName, addAge } from "./../redux/userSlice.js";
 import { addCount, sortItem } from "./../redux/store.js";
+import { memo, useMemo, useState } from "react";
 
+let Child = memo(function Child() {
+  console.log("재렌더링 됨");
+  return <div>자식임</div>;
+});
+
+// function Child() {
+//   console.log('재렌더링 됨')
+//   return <div>자식임</div>;
+// }
+
+function 함수() {
+  return "반복 10억";
+}
 function Cart() {
-  const dispatch = useDispatch();
+  let result = useMemo(() => {
+    return 함수();
+  });
+
   const { user, stock, cartItem } = useSelector((state) => {
     return state;
   });
 
-  console.log(user);
-  console.log(stock);
-  console.log(cartItem);
+  //console.log(user);
+  //console.log(stock);
+  //console.log(cartItem);
 
+  let dispatch = useDispatch();
+  const [count, setCount] = useState(0);
   return (
     <div>
+      <Child count={count}></Child>
+      <button onClick={() => setCount(count + 1)}>+</button>
+
       <h6>
         {user.name}의 장바구니 {user.age}
       </h6>
