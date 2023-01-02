@@ -8,14 +8,31 @@ import Detail from "./router/Detail.js";
 import About from "./component/About.js";
 import axios from "axios";
 import Cart from "./router/Cart.js";
+import { useQuery } from "react-query";
 
 const ContextAPI = createContext();
 
 function App() {
-  const [addBtn, setAddBtn] = useState(0);
+  const [addBtn, setAsddBtn] = useState(0);
   const [shoes, setShoes] = useState(data);
   const [재고] = useState(10, 11, 12);
   let navigate = useNavigate();
+
+  // const result = useQuery("작명", () => {
+  //   axios.get("https://codingapple1.github.io/userdata.json").then((a) => {
+  //     return a.data;
+  //   });
+  // });
+  let result = useQuery(
+    "작명",
+    () =>
+      axios.get("https://codingapple1.github.io/userdata.json").then((a) => {
+        return a.data;
+      }),
+    { staleTime: 2000 }
+  );
+  console.log(result.data);
+  console.log(result.isLoading);
 
   useEffect(() => {
     if (localStorage.getItem("watched") == null) {
@@ -38,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="light">
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
@@ -60,6 +77,11 @@ function App() {
               Cart
             </Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+          <Nav className="ms-auto">
+            {result.isLoading && "로딩중"}
+            {result.error && "에러남"}
+            {result.data && result.data.name}
           </Nav>
         </Container>
       </Navbar>
@@ -132,9 +154,9 @@ function RecentItem() {
 
   return (
     <div>
-      {getItem1.map((obj, index) => {
+      {/* {getItem1.map((obj, index) => {
         return obj;
-      })}
+      })} */}
     </div>
   );
 }
