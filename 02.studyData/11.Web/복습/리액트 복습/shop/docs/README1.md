@@ -367,3 +367,58 @@ serviceWorkerRegistration.register(); //이것 처럼 변경
 ```
 
 - 이렇게 해야 생성된다.
+
+## state 변경함수 사용시 주의
+
+- 자바스크립트의 sync/ asynx관련 상식
+- 일반적으로 synchronous 하게 처리함
+
+- asynchronous하는법
+
+  - ajax
+  - 이벤트 리스너
+  - setTimeout
+    - 위를 사용하면 됨
+
+- 기존 코드를 먼저 다 실행하고 나중에 실행함
+
+```js
+console.log(1+1);
+axios get console.log(1+2);
+console.log(1+3);
+```
+
+- 위의 동작은 2 4 3 이나오게 되는 것
+
+## 리액트의 setState 함수 특징
+
+```js
+function App() {
+  let [name, setName] = useState("park");
+}
+```
+
+- 여기서 setName() 같은 변경함수들은
+  - 전부 asynchronous(비동기적)으로 처리 됨
+- 이런경우 예상치 못한 결과가 생김
+
+### 예제 버튼을 누르면 2개 기능을 순차적으로 실행 하고 싶은 경우
+
+```js
+function App() {
+  let [count, setCount] = useState(0);
+  let [age, setAge] = useState(20);
+
+  return (
+    <div>
+      <div>안녕 {age}</div>
+      <button onClick={()=>
+      if(age<3){
+      setCount(count+1)
+      setCouont(age+1)
+      }
+      }>누르면 한살 먹음/</button>
+    </div>
+  );
+}
+```
