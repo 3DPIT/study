@@ -413,8 +413,8 @@ function App() {
     <div>
       <div>안녕 {age}</div>
       <button onClick={()=>
-      if(age<3){
       setCount(count+1)
+      if(age<3){
       setCouont(age+1)
       }
       }>누르면 한살 먹음/</button>
@@ -422,3 +422,50 @@ function App() {
   );
 }
 ```
+
+- 이렇게 했을때 우리는 age가 22임을 예상한다.
+- 하지만 23임 이유는 위에서 말하 async라는 특징 때문
+  - state변경함수는 async하게 처리 되는 함수라서 완료되기 까지 시간이 걸림
+  - 그래서 그걸 두고 다음 코드 실행
+  - 즉, 1.버튼 세번째 누르면 setCount(count+1); 이걸 실행해서 count 3ehla
+  - 2.하지만 count 3 되는거 오래걸림 그래서 우선 if문 실행먼저함
+  - 3.이때 아직 count 2라서 if문의 setAge가 동작하는 것임
+
+### 그렇다면 순차적으로 어떻게 하나?
+
+1.useEffect 생성
+
+```js
+useEffect(() => {}, [count]);
+```
+
+1.1 버튼 아래와 같이 변경
+<button onClick={()=>
+setCount(count+1);
+}}>누르면 한살 먹기</button>
+
+2.age+1 하는것은 useEffectd에 작성
+
+```js
+useEffect(() => {
+  if (count < 3) {
+    setAge(age + 1);
+  }
+}, [count]);
+```
+
+- 이렇게 하면 안되는 것
+- 처음 페이지 로드 될때 한번 실행이 되기 때문에 이렇게 해야함 3.초기조건 제외
+
+```js
+useEffect(() => {
+  if (count != 0 && count < 3) {
+    setAge(age + 1);
+  }
+}, [count]);
+```
+
+- 이렇게 해도되고, count, age
+- state에 array/ object자료형에 넣어도됨
+- 하나는 굳이 state 안만들고 var 변수로 해도됨
+- 변경시 HTML 자동 재렌더링이 필요한 변수들은 state로 만들면됨
