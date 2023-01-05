@@ -64,6 +64,7 @@ function App() {
 
   return (
     <div className="App">
+      <About></About>
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
