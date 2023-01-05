@@ -469,3 +469,46 @@ useEffect(() => {
 - state에 array/ object자료형에 넣어도됨
 - 하나는 굳이 state 안만들고 var 변수로 해도됨
 - 변경시 HTML 자동 재렌더링이 필요한 변수들은 state로 만들면됨
+
+## 직접 만든 백엔드 서버 가져와서 써보기
+
+### 필요 모듈
+
+```sh
+npm install http-proxy-middleware --save
+npm install axios --save
+```
+
+- setProxy.js 생성
+  ```js
+  const { createProxyMiddleware } = require('http-proxy-middleware');
+  module.exports = function(app) {
+  app.use(
+    '/api',
+    createProxyMiddleware({
+      target: 'http://localhost:8080',	# 서버 URL or localhost:설정한포트번호
+      changeOrigin: true,
+    })
+  );
+  };
+  ```
+- App.js
+
+  ```js
+  import React, { useEffect, useState } from "react";
+  import axios from "axios";
+  function About() {
+    const [hello, setHello] = useState("");
+    useEffect(() => {
+      axios
+        .get("/api/books")
+        .then((response) => setHello(response.data))
+        .catch((error) => console.log(error));
+    }, []);
+
+    return <div>백엔드에서 가져온 데이터입니다 : {hello}</div>;
+  }
+  export default About;
+  ```
+
+- 간단하게 위처럼 하면 테스트 할 수 있음

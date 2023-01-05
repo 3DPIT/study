@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { changeName, addAge } from "./../redux/userSlice.js";
 import { addCount, sortItem } from "./../redux/store.js";
 import { memo, useMemo, useState } from "react";
+import About from "./../component/About.js"
 
 let Child = memo(function Child() {
   console.log("재렌더링 됨");
@@ -35,6 +36,7 @@ function Cart() {
   const [count, setCount] = useState(0);
   return (
     <div>
+      <About></About>
       <Child count={count}></Child>
       <button onClick={() => setCount(count + 1)}>+</button>
 
