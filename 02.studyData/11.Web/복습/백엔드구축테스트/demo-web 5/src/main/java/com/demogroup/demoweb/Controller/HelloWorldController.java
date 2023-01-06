@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@CrossOrigin(origins="http://localhost:8080")
 @RestController
 public class HelloWorldController {
 
@@ -17,6 +18,10 @@ public class HelloWorldController {
     private List<Book> bookList = new ArrayList<>();
     @RequestMapping(method = RequestMethod.GET, path="/api/books")
     public List<Book> GetAll( ){
+        return bookList;
+    }
+    @RequestMapping(method = RequestMethod.GET, path="/books")
+    public List<Book> Get1All( ){
         return bookList;
     }
     @RequestMapping(method = RequestMethod.POST, path="/add")

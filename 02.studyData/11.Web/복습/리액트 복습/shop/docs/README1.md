@@ -262,7 +262,7 @@ let Child = memo(function Child() {
   ```js
   let a = new Array(10000).fill(0);
   let [name, setName] = useState("");
-
+  
   <input
     onChange={(e) => {
       setName(e.target.value);
@@ -348,7 +348,7 @@ let state = useDeferredValue(name);
 ## PWA 세팅하기
 
 ```js
-npm create-react-app 프로젝트명 --template cra-template-pwa
+npx create-react-app 프로젝트명 --template cra-template-pwa
 
 
 ```
