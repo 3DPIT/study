@@ -16,7 +16,6 @@
 
 import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import {Button} from "@mui/material"
 
 function About() {
     const [hello, setHello] = useState('')
@@ -28,33 +27,32 @@ function About() {
         .catch(error => console.log(error))
     }, []);
 
-    useEffect(() => {
-        axios.get('/books')
-        .then(response => setHello1(response.data))
-        .catch(error => console.log(error))
-    }, []);
+//     useEffect(() => {
+//         axios.get('/books')
+//         .then(response => setHello1(response.data))
+//         .catch(error => console.log(error))
+//     }, []);
 
-    useEffect(() => {
-    axios.post("/add", {
-	"id": "3",
-  	"name": "aa",
-    "author": "kmp",
-  	"price": 111
-})
-    .then(function (response) {
-         // response  
-    }).catch(function (error) {
-        // 오류발생시 실행
-    }).then(function() {
-        // 항상 실행
-    });
-}, []);  
+//     useEffect(() => {
+//     axios.post("/add", {
+// 	"id": "3",
+//   	"name": "aa",
+//     "author": "kmp",
+//   	"price": 111
+// })
+//     .then(function (response) {
+//          // response  
+//     }).catch(function (error) {
+//         // 오류발생시 실행
+//     }).then(function() {
+//         // 항상 실행
+//     });
+// }, []);  
 // async await 함수를 사용할 때, 
 
 
     return (
         <div>
-      <Button variant="contained">Hello World</Button>
             백엔드에서 가져온 데이터입니다 : {hello}<p/>
             백엔드에서 가져온 데이터입니다 : {hello1[0].id}
 
