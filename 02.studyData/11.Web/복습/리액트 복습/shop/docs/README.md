@@ -139,14 +139,16 @@ import { Routes, Route, Link, useNavigate, Outlet } from "react-router-dom";
   <Nav.Link>
     <Link to="/">홈</Link>
   </Nav.Link>
-
+  
   //navigate 사용시
+  let navigate = useNavigate();
+  
     <Nav.Link
     onClick={() => {
       navigate("./detail");
     }}
   >Detail</Nav.Link>
-
+  
   //뒤로가기 앞으로가기 구현
   navigate(-1); //뒤로 가기
   navigate(1); //앞으로 가기
@@ -636,7 +638,7 @@ export default configureStore({
 
   ```js
   import { useSelector } from "react-redux";
-
+  
   const { user } = useSelector((state) => {
     return state;
   });
@@ -686,9 +688,9 @@ useSelector((state) => state.user);
   ```js
   import { changeName } from "./../redux/store.js";
   import { useDispatch } from "react-redux";
-
+  
   const dispatch = useDispatch(); // store.js에서 요청 보내주는 함수
-
+  
   onClick={()=>{
     dispatch(changeName())
   }}
@@ -738,7 +740,7 @@ const user = createSlice({
       },
     },
   });
-
+  
   // 사용법
   dispatch(addAge(10));
   ```
@@ -765,7 +767,7 @@ const user = createSlice({
     });
     export const { changeName, addAge } = user.actions;
     export default user;
-
+    
     //기존 store.js에서 import
     import { user } from "./store/userSlice.js";
     ```
