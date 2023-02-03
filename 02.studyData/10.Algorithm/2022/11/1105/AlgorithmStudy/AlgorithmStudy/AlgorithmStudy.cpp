@@ -1,32 +1,36 @@
-﻿#include <string>
-#include <iostream>
-#include <math.h>
+﻿#include<iostream>
+#include<vector>
+#include<stdio.h>
+
 using namespace std;
+int chkGear[4];
 
-string numberC;
-char numberChar[] = {
-	'0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'
-};
+int main(int argc, char** argv)
+{
+	/*
+	 -1 -1 -1 -1 -1 -1 -1 = -7 ascending
 
-bool checkPrimeNumber(long long number) {
-	if (number == 0 || number == 1) return false;
-	for (int i = 2; i <= number*number; i++) {
-		if (number % i == 0) return false;
+	 1 1 1 1 1 1 1 =7 decending
+
+	 els mixed
+	*/
+	vector<int>gear;
+	int currenGear = 0;
+	scanf_s("%d", &currenGear);
+	int gearSum = 0;
+	for (int i = 1; i < 8; i++) {
+		int nextGear;
+		scanf_s("%d", &nextGear);
+		if (currenGear - nextGear == -1) {
+			chkGear[0]++;
+		}
+		else if (currenGear - nextGear == 1) {
+			chkGear[1]++;
+		}
+		currenGear = nextGear;
 	}
-	return true;
-}
-
-bool checkPrimeNumber_test(long long number) {
-	if (number == 0 || number == 1) return false;
-	for (int i = 2; i <= sqrt(number); i++) {
-		if (number % i == 0)return false;
-	}
-	return true;
-}
-
-
-int main(void) {
-
-	cout << checkPrimeNumber(4);
+	if (chkGear[0] == 7) { printf("ascending\n"); }
+	else if (chkGear[1] == 7) { printf("descending\n"); }
+	else { printf("mixed\n"); }
 	return 0;
 }
