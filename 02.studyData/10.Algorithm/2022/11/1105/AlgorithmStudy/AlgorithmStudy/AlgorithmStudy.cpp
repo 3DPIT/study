@@ -1,36 +1,39 @@
 ﻿#include<iostream>
+#include<string>
 #include<vector>
-#include<stdio.h>
+#include<algorithm>
 
 using namespace std;
-int chkGear[4];
-
+struct Data {
+	string name;
+	int time[19] = { 0, };
+};
+bool cmp(Data a, Data b) {
+	return a.name < b.name;
+}
 int main(int argc, char** argv)
 {
-	/*
-	 -1 -1 -1 -1 -1 -1 -1 = -7 ascending
-
-	 1 1 1 1 1 1 1 =7 decending
-
-	 els mixed
-	*/
-	vector<int>gear;
-	int currenGear = 0;
-	scanf_s("%d", &currenGear);
-	int gearSum = 0;
-	for (int i = 1; i < 8; i++) {
-		int nextGear;
-		scanf_s("%d", &nextGear);
-		if (currenGear - nextGear == -1) {
-			chkGear[0]++;
-		}
-		else if (currenGear - nextGear == 1) {
-			chkGear[1]++;
-		}
-		currenGear = nextGear;
+	int N, M;
+	vector<Data>room;
+	cin >> N >> M;
+	for (int i = 0; i < N; i++) {
+		Data roomN;
+		cin >> roomN.name;
+		room.push_back({ roomN });
 	}
-	if (chkGear[0] == 7) { printf("ascending\n"); }
-	else if (chkGear[1] == 7) { printf("descending\n"); }
-	else { printf("mixed\n"); }
+	sort(room.begin(), room.end(),cmp);
+	for (int i = 0; i < M; i++) {
+		string name, int start, int end;
+		cin >> name >> start >> end;
+		for (int i = 0; i < room.size(); i++) {
+			if (name == room[i].name) {
+				for (int t = start; t <= end; t++) {
+					room[i].time[t] = 1;
+				}
+				room[i].time[start] = 2;
+				room[i].time[end] = 2;
+			}
+		}
+	}
 	return 0;
 }
