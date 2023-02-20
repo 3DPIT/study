@@ -1,39 +1,62 @@
-﻿#include<iostream>
-#include<string>
-#include<vector>
-#include<algorithm>
-
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <iostream>
+#include <queue>
+#include <vector>
+#define NSIZE 12
+#define MSIZE 12
 using namespace std;
+
+int N, M;
+int ret;
+int board[NSIZE][MSIZE];
 struct Data {
-	string name;
-	int time[19] = { 0, };
+	int y, x;
 };
-bool cmp(Data a, Data b) {
-	return a.name < b.name;
-}
-int main(int argc, char** argv)
-{
-	int N, M;
-	vector<Data>room;
-	cin >> N >> M;
+void COPY() {
 	for (int i = 0; i < N; i++) {
-		Data roomN;
-		cin >> roomN.name;
-		room.push_back({ roomN });
+		for (int j = 0; j < M; j++) {
+			printf("%d", board[i][j]);
+		}
+		cout << endl;
 	}
-	sort(room.begin(), room.end(),cmp);
-	for (int i = 0; i < M; i++) {
-		string name, int start, int end;
-		cin >> name >> start >> end;
-		for (int i = 0; i < room.size(); i++) {
-			if (name == room[i].name) {
-				for (int t = start; t <= end; t++) {
-					room[i].time[t] = 1;
-				}
-				room[i].time[start] = 2;
-				room[i].time[end] = 2;
+}
+void init() {
+	N = M = ret = 0;
+	scanf("%d %d", &N, &M);
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			scanf("%d", &board[i][j]);
+		}
+	}
+}
+void dfs(int y, int x, int cnt) {
+	if (cnt == 3) {
+		COPY();
+		search();
+		return;
+	}
+	for (int i = 0; i < N; i++) {
+		for (int j = x; j < M; j++) {
+			if (board[i][j] == 0) {
+				board[i][j] = -1;
+				dfs(i, j + 1, cnt+1);
+				board[i][j] = 0;
 			}
 		}
+		x = 0;
+	}
+}
+void search() {
+	queue<Data> q;
+}
+int main() {
+
+	int testCase = 1;
+	for (int tc = 0; tc < testCase; tc++) {
+		init();
+		dfs(0, 0, 0);
+		search();
+		printf("#%d %d\n", tc, ret);
 	}
 	return 0;
 }
