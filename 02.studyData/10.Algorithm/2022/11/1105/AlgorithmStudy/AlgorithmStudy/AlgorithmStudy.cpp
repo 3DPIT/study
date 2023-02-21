@@ -7,8 +7,10 @@
 using namespace std;
 
 int N, M;
-int ret;
+int ret=0x80000000;
 int board[NSIZE][MSIZE];
+int dy[] = { 0,1,0,-1 };
+int dx[] = { 1,0,-1,0 };
 struct Data {
 	int y, x;
 };
@@ -21,7 +23,8 @@ void COPY() {
 	}
 }
 void init() {
-	N = M = ret = 0;
+	N = M = 0;
+	ret = 0x80000000;
 	scanf("%d %d", &N, &M);
 	for (int i = 0; i < N; i++) {
 		for (int j = 0; j < M; j++) {
@@ -29,13 +32,50 @@ void init() {
 		}
 	}
 }
+bool safeZone(int y, int x) {
+	return 0 <= y && y < N && 0 <= x && x < M;
+}
+void search() {
+	int visit[NSIZE][MSIZE] = { 0, };
+	queue<Data> q;
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			if (board[i][j] == 2 && visit[i][j] == 0) {
+				visit[i][j] = 1;
+				q.push({ i,j });
+				while (!q.empty()) {
+					Data c = q.front(); q.pop();
+						for (int dir = 0; dir < 4; dir++) {
+							Data n;
+							n.y = c.y + dy[dir];
+							n.x = c.x + dx[dir];
+							if (safeZone(n.y,n.x)&&board[n.y][n.x] == 0 && visit[n.y][n.x] == 0) {
+								visit[n.y][n.x] = 1;
+								q.push(n);
+							}
+					}
+				}
+			}
+		}
+	}
+
+	int cnt = 0;
+	for (int i = 0; i < N; i++) {
+		for (int j = 0; j < M; j++) {
+			if (board[i][j] == 0 && visit[i][j] == 0) cnt++;
+		}
+	}
+	ret = ret < cnt ? cnt : ret;
+
+}
 void dfs(int y, int x, int cnt) {
 	if (cnt == 3) {
-		COPY();
+		//COPY();
+		//cout << endl;
 		search();
 		return;
 	}
-	for (int i = 0; i < N; i++) {
+	for (int i = y; i < N; i++) {
 		for (int j = x; j < M; j++) {
 			if (board[i][j] == 0) {
 				board[i][j] = -1;
@@ -46,17 +86,14 @@ void dfs(int y, int x, int cnt) {
 		x = 0;
 	}
 }
-void search() {
-	queue<Data> q;
-}
+
 int main() {
 
 	int testCase = 1;
 	for (int tc = 0; tc < testCase; tc++) {
 		init();
 		dfs(0, 0, 0);
-		search();
-		printf("#%d %d\n", tc, ret);
+		printf("%d\n",ret);
 	}
 	return 0;
 }
