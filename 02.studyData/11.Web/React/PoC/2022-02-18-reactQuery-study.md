@@ -46,6 +46,65 @@ draft: false
   - 데이터를 다시 호출할 때 응답이 오기 전까지 이전 데이터를 계속 보여줌
   - 필요에 따라서 로딩바와 같은 대안 UI를 보여주기 위해 loading state를 기본적으로 제공
 
+## 설치 
+
+```js
+npm install react-query
+
+index.js
+
+cost queryClient = new QueryClient()
+
+<QueryClientProvider Client={queryClient}>
+```
+
+- 장점 
+- ajax 성공 실패 로딩중 파악 쉬움
+- 리패치
+- 실패시 재시도 해줌
+- stata 공유 필요 없음
+- 캐싱 해줌 
+
+# 기본 소스틀
+
+```tsx
+//1
+useQuery("작명", ()=>{
+      return axios.get("https://codingapple1.github.io/userdata.json").then((a)=>{
+      return a.data
+      })
+   })
+
+//2 
+let result = useQuery("작명", ()=>
+      axios.get("https://codingapple1.github.io/userdata.json").then((a)=>{
+      console.log("요청확인")
+      return a.data
+      })
+   )
+```
+
+## 데이터 가져오는 소스
+
+```tsx
+result.data
+```
+
+## 로딩시 소스
+
+```tsx
+result.isLoading
+
+result.isLoading ? "로딩중" : "로딩완료"
+result.isLoading&&"로딩중"
+```
+
+## 에러 발생시 소스
+
+```tsx
+result.error
+```
+
 ## 참고자료
 
 https://tanstack.com/query/v4/docs/react/overview
