@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  metricbeat:
+    restart: always
+    image: docker.elastic.co/beats/metricbeat:8.6.0
+    container_name: metricbeat
+    user: root
+    volumes:
+      - ./metricbeat.yml:/usr/share/metricbeat/metricbeat.yml:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - /sys/fs/cgroup:/hostfs/sys/fs/cgroup:ro
+      - /proc:/hostfs/proc:ro
+      - /:/hostfs:ro
+      - ./module.d:/usr/share/metricbeat/module.d
+    command: metricbeat -e -system.hostfs=/hostfs
