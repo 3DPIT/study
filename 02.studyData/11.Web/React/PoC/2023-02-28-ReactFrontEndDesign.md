@@ -70,6 +70,7 @@ src/
 │   ├── components/
 |   |   ├── atoms/
 |   |   ├── molecules/
+│   ├── store/
 │   ├── utils/
 │   ├── hooks/
 │   ├── types/
