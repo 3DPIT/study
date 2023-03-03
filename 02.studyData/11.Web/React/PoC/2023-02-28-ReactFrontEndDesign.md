@@ -4,6 +4,97 @@ date: 2023-02-28 05:43:00 +0900
 category: react
 ---
 
+# 확정
+
+## Feature 아키텍처 개요
+
+```sh
+src/
+├── features/
+│   ├── [FeatureName]/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── utils/
+│   │   ├── hooks/
+│   │   ├── types/
+│   │   ├── constants/
+│   │   ├── [FeatureName].tsx
+│   │   ├── [FeatureName].spec.tsx
+│   │   └── styles.ts
+│   ├── [OtherFeature]/
+│   └── ...
+├── shared/
+│   ├── components/
+│   ├── utils/
+│   ├── hooks/
+│   ├── types/
+│   ├── constants/
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── ...
+└── ...
+
+
+각 폴더와 파일에 대한 역할은 다음과 같습니다.
+
+src/features/: 기능(feature)별로 폴더를 만듭니다. 예를 들어 User 기능이 있다면 src/features/User/ 폴더를 만듭니다.
+components/: 해당 기능에서 사용하는 컴포넌트를 모아둡니다. 이 폴더 안에서도 atoms/, molecules/, organisms/와 같이 컴포넌트 유형에 따라 세분화할 수 있습니다.
+pages/: 해당 기능에서 사용하는 페이지 컴포넌트를 모아둡니다.
+utils/: 해당 기능에서 사용하는 유틸리티 함수나 헬퍼 함수 등을 모아둡니다.
+hooks/: 해당 기능에서 사용하는 커스텀 훅을 모아둡니다.
+types/: 해당 기능에서 사용하는 타입 정의 파일을 모아둡니다.
+constants/: 해당 기능에서 사용하는 상수를 모아둡니다.
+[FeatureName].tsx: 해당 기능을 구현한 메인 컴포넌트입니다.
+[FeatureName].spec.tsx: 해당 기능의 테스트 파일입니다.
+styles.ts: 해당 기능에서 사용하는 스타일 파일입니다.
+위와 같은 폴더 구조를 사용하면 기능(feature)을 중심으로 모듈화하여 개발할 수 있어 유지보수와 확장성이 좋아집니다.
+```
+
+## 생각한 Feature 디자인 구조
+
+```
+src/
+├── features/
+│   ├── [FeatureName]/
+│   │   ├── components/ #해당 기능에서 사용하는 컴포넌트를 모아둡니다.
+│   │   │   ├── organisms/
+│   │   ├── pages/ #해당 기능에서 사용하는 페이지 컴포넌트를 모아둡니다.
+│   │   ├── utils/ #해당 기능에서 사용하는 유틸리티 함수나 헬퍼 함수 등을 모아둡니다.
+│   │   ├── hooks/ #해당 기능에서 사용하는 커스텀 훅을 모아둡니다.
+│   │   ├── types/ #해당 기능에서 사용하는 타입 정의 파일을 모아둡니다.
+│   │   ├── constants/ #해당 기능에서 사용하는 상수를 모아둡니다.
+│   │   ├── [FeatureName].tsx #해당 기능을 구현한 메인 컴포넌트입니다.
+│   │   ├── [FeatureName].stories.tsx #해당 기능을 구현한 스토리보드 코드
+│   │   ├── [FeatureName].spec.tsx # 해당 기능의 테스트 파일입니다.
+│   │   └── styles.ts #해당 기능에서 사용하는 스타일 파일입니다.
+│   ├── [OtherFeature]/
+│   └── ...
+├── shared/
+│   ├── components/
+|   |   ├── atoms/
+|   |   ├── molecules/
+│   ├── utils/
+│   ├── hooks/
+│   ├── types/
+│   ├── constants/
+├── App.tsx
+├── index.tsx
+│
+└── ...
+```
+
+- shared
+  - components의 경우 공동으로 쓰는 경우 이기 때문에 
+  - 비즈니스 요소가 없는 atoms와 molecules요소를 저장
+- feature
+  - components의 경우 비즈니스가 들어가는 경우 이기 때문에
+  - 비즈니스 요소가 있는 organisms 요소를 저장
+  - types
+    - 이것의 [FeatureName].tsx에 types을 쓰는 경우 코드의 길이가 길어 질 수 있으니 이곳에 관리하는 것을 원칙으로 한다.
+    - constants등 역시 최대한 분리하는 쪽으로 개발하기
+
+# 조사 목록
+
 ## 아키텍쳐
 
 ```
