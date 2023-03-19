@@ -243,3 +243,4 @@ mutate(variables,{
 ## 참고자료
 
 [[React Query] 리액트 쿼리 useMutation 실용 편(custom hook 으로 사용해보자)](https://velog.io/@kimhyo_0218/React-Query-%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%BF%BC%EB%A6%AC-useMutation-%EC%8B%A4%EC%9A%A9-%ED%8E%B8custom-hook-%EC%9C%BC%EB%A1%9C-%EC%82%AC%EC%9A%A9%ED%95%B4%EB%B3%B4%EC%9E%90)
+
