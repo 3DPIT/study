@@ -18,8 +18,6 @@ Front End 코드 개선을 위한개발 관련 자료조사
 ### 3. 출처
 - #0
 
-### 4. 참여자
- @KyeongMin.Park @UiHyeon.Kim @JoonHwan.Lee @HyoTak.Kwon @SeungHee.Chae @HyoTak.Kwon  @YeongSeok.Park @BeomHee.Jo
 # useMutation
 
 ## 공식 문서 내용
