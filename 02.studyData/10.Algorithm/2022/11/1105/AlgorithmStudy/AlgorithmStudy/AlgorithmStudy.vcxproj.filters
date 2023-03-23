@@ -30,5 +30,8 @@
     <ClCompile Include="인구이동.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="연구소2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

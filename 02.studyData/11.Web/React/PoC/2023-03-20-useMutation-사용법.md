@@ -3,6 +3,20 @@ title: useMutation-사용법
 date: 2023-03-20 05:01:00 +0900
 Category: useMutation
 ---
+Front End 코드 개선을 위한개발 관련 자료조사 
+### 1. 완료조건
+- [ ] useMutation에 대한 조사 및 공유
+- [ ] useMutation 검증 후 코드 리팩토링 진행
+- [ ] Validation 관련 object validation, form validation 자료 조사
+- [ ] Pjt 코드 Submit부분 Validation 코드 추가 
+
+### 2. 상세내용 
+- 기존 useQuery부분 개선 진행
+- Pjt 코드 부분 우선 validation 진행 
+- 추후 다양한 상태의 Validation에 대한 util 관련 코드 구현 완료
+
+### 3. 출처
+- #0
 
 # useMutation
 
