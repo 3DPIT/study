@@ -31,6 +31,7 @@ console.log(log_length(names(filter(users,over_30))));
 
 // 마지막 방법
 var bvalue = key => list => map(list,v=>v[key]);
+
 var ages = bvalue('age');
 var names = bvalue('name');
 
