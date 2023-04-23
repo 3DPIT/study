@@ -1,0 +1,9 @@
+{
+  "name": "my-project",
+  "type": "module",
+  "dependencies": {
+    "js": "^0.1.0",
+    "some-module": "^0.0.3",
+    "ts": "^0.2.2"
+  }
+}
