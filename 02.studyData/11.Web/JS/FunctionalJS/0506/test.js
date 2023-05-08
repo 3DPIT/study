@@ -179,11 +179,12 @@ function addElementLast(array, elem){
 }
 
 function addItem(cart, item){
-    return addElementLast(cart, item);
+    return addElementLast(cart, item); //C
 }
-function makeCartItem(name, price){
+
+function makeCartItem(name, price){ 
     return {
-        name: name,
+        name: name, // C
         price: price
     };
 }
@@ -191,15 +192,16 @@ function makeCartItem(name, price){
 function clacTotal(cart){
     var total = 0;
     for(var i =0;i<cart.length;i++){
-        var item = cart[i];
+        var item = cart[i]; // C
         total += item.price;
     }
 }
 
 function getsFreeShipping(cart){
-    return calcTotal(cart) >= 20;
+    return calcTotal(cart) >= 20; //C
 }
 
 function calcTax(amount){
-    return amount * 0.10;
+    return amount * 0.10; // C
 }
+

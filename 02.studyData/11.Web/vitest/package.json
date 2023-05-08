@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "jsdom": "^22.0.0",
+    "vitest": "^0.31.0"
+  },
+  "scripts": {
+    "test": "vitest run --environment jsdom"
+  }
+}
