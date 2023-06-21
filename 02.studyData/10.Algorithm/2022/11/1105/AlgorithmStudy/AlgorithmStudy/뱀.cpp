@@ -23,7 +23,7 @@ void init() {
 	for (int k = 0; k < K; k++) {
 		int y, x;
 		cin >> y >> x;
-		board[y][x] = -1;
+		board[y-1][x-1] = -1;
 	}
 }
 int main(void) {
