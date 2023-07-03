@@ -43,6 +43,12 @@
     <Filter Include="소스 파일\masterAlgorithm\230626">
       <UniqueIdentifier>{3049608d-cf83-42b8-98ac-c8457c0dcdb9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\230627">
+      <UniqueIdentifier>{623fb2d6-589e-4595-a83f-7bdb11469524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\230704">
+      <UniqueIdentifier>{ff4bdcfd-1786-4e7c-9611-06de49460e09}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -122,6 +128,15 @@
     </ClCompile>
     <ClCompile Include="1212_8진수 2진수.cpp">
       <Filter>소스 파일\masterAlgorithm\230626</Filter>
+    </ClCompile>
+    <ClCompile Include="2089_-2진수.cpp">
+      <Filter>소스 파일\masterAlgorithm\230627</Filter>
+    </ClCompile>
+    <ClCompile Include="11576_Base Conversion.cpp">
+      <Filter>소스 파일\masterAlgorithm\230627</Filter>
+    </ClCompile>
+    <ClCompile Include="1978_소수찾기.cpp">
+      <Filter>소스 파일\masterAlgorithm\230704</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
