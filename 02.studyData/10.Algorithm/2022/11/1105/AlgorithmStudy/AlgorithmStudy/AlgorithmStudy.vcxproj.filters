@@ -19,35 +19,47 @@
     <Filter Include="소스 파일\masterAlgorithm">
       <UniqueIdentifier>{7f71e675-2630-47f7-941a-85f08d3f83ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230610">
-      <UniqueIdentifier>{b5c016e9-3267-4e66-bb7c-bae755c9e7fd}</UniqueIdentifier>
+    <Filter Include="소스 파일\masterAlgorithm\수학1">
+      <UniqueIdentifier>{d24de91b-9778-4641-8d15-d89bb69da264}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230611">
-      <UniqueIdentifier>{0b0fcfa3-6804-46a9-b2ad-69982c6aa941}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230612">
-      <UniqueIdentifier>{48d6cb69-f03d-425d-a3c3-0c7a0a35a86b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230616">
-      <UniqueIdentifier>{98e73517-9e5a-421c-8ff8-a3796e72d3ba}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230619">
-      <UniqueIdentifier>{e8600982-2d19-4a52-ab09-765cfa90c3e1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230622">
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230622">
       <UniqueIdentifier>{fd7bf87a-b474-4dad-acb0-7110fd203dae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230625">
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230625">
       <UniqueIdentifier>{c03a4616-b402-4e63-bc93-d9a04aec7582}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230626">
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230626">
       <UniqueIdentifier>{3049608d-cf83-42b8-98ac-c8457c0dcdb9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230627">
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230627">
       <UniqueIdentifier>{623fb2d6-589e-4595-a83f-7bdb11469524}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\230704">
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230704">
       <UniqueIdentifier>{ff4bdcfd-1786-4e7c-9611-06de49460e09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230707">
+      <UniqueIdentifier>{a0644277-b345-4f83-9afb-b6dab2766fce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\수학1\230708">
+      <UniqueIdentifier>{347618fb-8448-4e67-86c7-642011c8fbc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업">
+      <UniqueIdentifier>{0fe5c35f-deeb-4c10-bada-3cfe4a49d870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업\230610">
+      <UniqueIdentifier>{b5c016e9-3267-4e66-bb7c-bae755c9e7fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업\230611">
+      <UniqueIdentifier>{0b0fcfa3-6804-46a9-b2ad-69982c6aa941}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업\230612">
+      <UniqueIdentifier>{48d6cb69-f03d-425d-a3c3-0c7a0a35a86b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업\230616">
+      <UniqueIdentifier>{98e73517-9e5a-421c-8ff8-a3796e72d3ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\워밍업\230619">
+      <UniqueIdentifier>{e8600982-2d19-4a52-ab09-765cfa90c3e1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -94,55 +106,67 @@
       <Filter>소스 파일\23/06/10_before</Filter>
     </ClCompile>
     <ClCompile Include="1076_저항.cpp">
-      <Filter>소스 파일\masterAlgorithm\230610</Filter>
+      <Filter>소스 파일\masterAlgorithm\워밍업\230610</Filter>
     </ClCompile>
     <ClCompile Include="1181_단어정렬.cpp">
-      <Filter>소스 파일\masterAlgorithm\230611</Filter>
+      <Filter>소스 파일\masterAlgorithm\워밍업\230611</Filter>
     </ClCompile>
     <ClCompile Include="1193_분수찾기.cpp">
-      <Filter>소스 파일\masterAlgorithm\230612</Filter>
+      <Filter>소스 파일\masterAlgorithm\워밍업\230612</Filter>
     </ClCompile>
     <ClCompile Include="1234_성지키기.cpp">
-      <Filter>소스 파일\masterAlgorithm\230616</Filter>
+      <Filter>소스 파일\masterAlgorithm\워밍업\230616</Filter>
     </ClCompile>
     <ClCompile Include="10430_나머지.cpp">
-      <Filter>소스 파일\masterAlgorithm\230622</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230622</Filter>
     </ClCompile>
     <ClCompile Include="9935_문자열폭발.cpp">
-      <Filter>소스 파일\masterAlgorithm\230619</Filter>
+      <Filter>소스 파일\masterAlgorithm\워밍업\230619</Filter>
     </ClCompile>
     <ClCompile Include="2609_최대공약수와 최소공배수.cpp">
-      <Filter>소스 파일\masterAlgorithm\230625</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230625</Filter>
     </ClCompile>
     <ClCompile Include="9613_GCD합.cpp">
-      <Filter>소스 파일\masterAlgorithm\230625</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230625</Filter>
     </ClCompile>
     <ClCompile Include="11005_진법변환2.cpp">
-      <Filter>소스 파일\masterAlgorithm\230625</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230625</Filter>
     </ClCompile>
     <ClCompile Include="2745_진법 변환.cpp">
-      <Filter>소스 파일\masterAlgorithm\230625</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230625</Filter>
     </ClCompile>
     <ClCompile Include="1373_2진수8진수.cpp">
-      <Filter>소스 파일\masterAlgorithm\230626</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230626</Filter>
     </ClCompile>
     <ClCompile Include="1212_8진수 2진수.cpp">
-      <Filter>소스 파일\masterAlgorithm\230626</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230626</Filter>
     </ClCompile>
     <ClCompile Include="2089_-2진수.cpp">
-      <Filter>소스 파일\masterAlgorithm\230627</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230627</Filter>
     </ClCompile>
     <ClCompile Include="11576_Base Conversion.cpp">
-      <Filter>소스 파일\masterAlgorithm\230627</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1\230627</Filter>
     </ClCompile>
-    <ClCompile Include="1978_소수찾기.cpp">
-      <Filter>소스 파일\masterAlgorithm\230704</Filter>
+    <ClCompile Include="11653_소인수분해.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학1\230707</Filter>
+    </ClCompile>
+    <ClCompile Include="10872_팩토리얼.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학1\230707</Filter>
+    </ClCompile>
+    <ClCompile Include="1676_팩토리얼 0의 개수.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학1\230707</Filter>
+    </ClCompile>
+    <ClCompile Include="2004_조합0의 개수.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학1\230708</Filter>
     </ClCompile>
     <ClCompile Include="1929_소수구하기.cpp">
-      <Filter>소스 파일\masterAlgorithm\230704</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1</Filter>
+    </ClCompile>
+    <ClCompile Include="1978_소수찾기.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학1</Filter>
     </ClCompile>
     <ClCompile Include="6588_골드바흐의 추측.cpp">
-      <Filter>소스 파일\masterAlgorithm\230704</Filter>
+      <Filter>소스 파일\masterAlgorithm\수학1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
