@@ -61,6 +61,9 @@
     <Filter Include="소스 파일\masterAlgorithm\워밍업\230619">
       <UniqueIdentifier>{e8600982-2d19-4a52-ab09-765cfa90c3e1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\수학2">
+      <UniqueIdentifier>{e3976d94-fffe-42f9-9673-9293340707a6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -167,6 +170,9 @@
     </ClCompile>
     <ClCompile Include="6588_골드바흐의 추측.cpp">
       <Filter>소스 파일\masterAlgorithm\수학1</Filter>
+    </ClCompile>
+    <ClCompile Include="1629_곱셈.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
