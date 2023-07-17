@@ -2,11 +2,10 @@ package hello.core.scope;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Scope;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
@@ -42,17 +41,13 @@ public class SingletoneWithPrototypeTest1 {
 
     @Scope("singleton")
     static class ClientBean{
-        //private final PrototpyeBean prototpyeBean;
 
-    @Autowired
-        ApplicationContext applicationContext;
-//        @Autowired
-//        public ClientBean(PrototpyeBean prototpyeBean){
-//            this.prototpyeBean = prototpyeBean;
-//        }
+        @Autowired
+        private ObjectProvider<PrototpyeBean> prototpyeBeanObjectProvider;
+        //private ObjectProvider<PrototpyeBean> prototpyeBeanObjectProvider;// 이전꺼임
 
         public int logic(){
-            PrototpyeBean prototpyeBean = applicationContext.getBean(PrototpyeBean.class);
+           PrototpyeBean prototpyeBean = prototpyeBeanObjectProvider.getObject();
             prototpyeBean.addCount();
             int count = prototpyeBean.getCount();
             return count;
@@ -81,10 +76,5 @@ public class SingletoneWithPrototypeTest1 {
         public void destroy(){
             System.out.println("PrototpyeBean.destroy");
         }
-
-
-
     }
-
-
 }
