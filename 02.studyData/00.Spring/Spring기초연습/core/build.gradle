@@ -34,4 +34,3 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
-D

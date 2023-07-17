@@ -8,6 +8,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.annotation.Scope;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.inject.Provider;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -43,11 +44,11 @@ public class SingletoneWithPrototypeTest1 {
     static class ClientBean{
 
         @Autowired
-        private ObjectProvider<PrototpyeBean> prototpyeBeanObjectProvider;
+        private Provider<PrototpyeBean> prototpyeBeanObjectProvider;
         //private ObjectProvider<PrototpyeBean> prototpyeBeanObjectProvider;// 이전꺼임
 
         public int logic(){
-           PrototpyeBean prototpyeBean = prototpyeBeanObjectProvider.getObject();
+           PrototpyeBean prototpyeBean = prototpyeBeanObjectProvider.get();
             prototpyeBean.addCount();
             int count = prototpyeBean.getCount();
             return count;
