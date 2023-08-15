@@ -64,6 +64,9 @@
     <Filter Include="소스 파일\masterAlgorithm\수학2">
       <UniqueIdentifier>{e3976d94-fffe-42f9-9673-9293340707a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\완전탐색">
+      <UniqueIdentifier>{2fc13856-6a73-499f-a6d9-26e04a3bc7cb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -173,6 +176,21 @@
     </ClCompile>
     <ClCompile Include="1629_곱셈.cpp">
       <Filter>소스 파일\masterAlgorithm\수학2</Filter>
+    </ClCompile>
+    <ClCompile Include="2738 행렬 덧셈.cpp">
+      <Filter>소스 파일\masterAlgorithm\수학2</Filter>
+    </ClCompile>
+    <ClCompile Include="1476 날짜 계산.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1107_리모컨.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1451_직사각형나누기.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="9095_123더하기.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
