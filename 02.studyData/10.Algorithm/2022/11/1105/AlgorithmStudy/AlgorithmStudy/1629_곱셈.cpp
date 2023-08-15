@@ -27,6 +27,21 @@ long long calc2(long long a, long long b, long long c) {
 	return ans;
 }
 
+long long calc21(long long a, long long b, long long c) {
+	long long ans = 1LL;
+	while (b > 0) {
+		if (b % 2 == 1) {
+			ans *= a;
+			ans %= c;
+		}
+		a = a * a;
+		a %= c;
+		b /= 2;
+	}
+	return ans;
+}
+
+
 int main(void) {
 	
 	ios::sync_with_stdio(false);
@@ -35,7 +50,7 @@ int main(void) {
 
 	long long A, B, C;
 	cin >> A >> B >> C;
-	int result = calc2(A, B,C);
+	int result = calc21(A, B,C);
 	cout << result % C << '\n';
 	return 0;
 }
