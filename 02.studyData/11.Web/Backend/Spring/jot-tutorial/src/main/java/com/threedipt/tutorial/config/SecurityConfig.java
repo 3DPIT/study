@@ -45,18 +45,15 @@ public class SecurityConfig {
                 .exceptionHandling()
                 .authenticationEntryPoint(jwtAuthenticationEntryPoint)
                 .accessDeniedHandler(jwtAccessDeniedHandler)
-
                 .and()
                 .headers()
                 .frameOptions()
                 .sameOrigin()
-
                 .and()
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .apply(new JwtSecurityConfig(tokenProvider))
-
                 .and()
                 .authorizeHttpRequests().requestMatchers(
                         new AntPathRequestMatcher("/**")).permitAll()
