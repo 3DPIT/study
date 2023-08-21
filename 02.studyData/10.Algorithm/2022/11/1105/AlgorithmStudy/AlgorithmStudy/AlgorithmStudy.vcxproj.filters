@@ -192,5 +192,17 @@
     <ClCompile Include="9095_123더하기.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
     </ClCompile>
+    <ClCompile Include="10819_차이를 최대로.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="10971_외판원순회2.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1697_숨바꼭질.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1963_ 소수경로.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
