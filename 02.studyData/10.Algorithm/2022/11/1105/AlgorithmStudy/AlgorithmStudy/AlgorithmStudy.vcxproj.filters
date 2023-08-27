@@ -204,5 +204,8 @@
     <ClCompile Include="1963_ 소수경로.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
     </ClCompile>
+    <ClCompile Include="9019_DSLR.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
