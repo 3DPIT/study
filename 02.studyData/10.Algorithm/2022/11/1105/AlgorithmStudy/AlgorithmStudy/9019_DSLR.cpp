@@ -32,7 +32,6 @@ int main(void) {
 			Data c = q.front(); q.pop();
 
 			if (c.num == endNum) {
-				cout << "dd" << endl;
 				cout << c.road << "\n";
 				break;
 			}
@@ -56,7 +55,7 @@ int main(void) {
 					n.road += 'S';
 					q.push(n);
 			}
-			
+		
 			//L
 			number = (c.num % 1000) * 10 + (c.num / 1000);
 			if (visit[number] == 0) {
