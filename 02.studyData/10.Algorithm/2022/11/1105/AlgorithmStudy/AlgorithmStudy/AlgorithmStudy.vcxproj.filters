@@ -210,5 +210,8 @@
     <ClCompile Include="1525_퍼즐.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
     </ClCompile>
+    <ClCompile Include="2251_물통.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

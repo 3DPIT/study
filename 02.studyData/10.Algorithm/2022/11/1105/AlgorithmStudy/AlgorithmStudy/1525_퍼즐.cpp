@@ -9,7 +9,7 @@ int dx[] = { 1,0,-1,0 };
 
 int main(void) {
 
-	int start=0;
+	int start = 0;
 	map<int, int> visit;
 	queue<int>q;
 	for (int i = 0; i < 3; i++) {
@@ -30,9 +30,9 @@ int main(void) {
 		int number = currentNumber.find('9');
 		int y = number / 3;
 		int x = number % 3;
-		
+
 		for (int dir = 0; dir < 4; dir++) {
-			int ny = y + dy[dir]; 
+			int ny = y + dy[dir];
 			int nx = x + dx[dir];
 			if (0 <= ny && ny < 3 && 0 <= nx && nx < 3) {
 				string n = currentNumber;
@@ -52,6 +52,6 @@ int main(void) {
 	else {
 		printf("%d\n", visit[123456789]);
 	}
-	
+
 	return 0;
 }
