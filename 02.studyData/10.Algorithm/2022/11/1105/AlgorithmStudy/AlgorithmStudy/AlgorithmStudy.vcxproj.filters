@@ -67,6 +67,9 @@
     <Filter Include="소스 파일\masterAlgorithm\완전탐색">
       <UniqueIdentifier>{2fc13856-6a73-499f-a6d9-26e04a3bc7cb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\재귀">
+      <UniqueIdentifier>{af037e96-8c98-419f-a976-df7fd8e02f9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -212,6 +215,9 @@
     </ClCompile>
     <ClCompile Include="2251_물통.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="1759_암호만들기.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
