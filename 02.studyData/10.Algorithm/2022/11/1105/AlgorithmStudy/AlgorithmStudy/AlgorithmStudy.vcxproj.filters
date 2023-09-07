@@ -219,5 +219,8 @@
     <ClCompile Include="1759_암호만들기.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
+    <ClCompile Include="2580_스도쿠.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
