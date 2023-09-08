@@ -61,7 +61,7 @@ void dfs(int idx) {
 			printf("\n");
 		}
 
-		exit(1);
+		exit(0);
 	}
 
 	for (int num = 1; num <= 9; num++) {
