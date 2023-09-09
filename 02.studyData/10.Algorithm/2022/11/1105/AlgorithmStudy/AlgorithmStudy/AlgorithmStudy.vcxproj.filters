@@ -225,5 +225,8 @@
     <ClCompile Include="1987_알파벳.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
+    <ClCompile Include="6603_로또.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
