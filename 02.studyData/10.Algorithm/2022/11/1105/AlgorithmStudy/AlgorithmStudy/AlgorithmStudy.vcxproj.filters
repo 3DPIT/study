@@ -64,11 +64,17 @@
     <Filter Include="소스 파일\masterAlgorithm\수학2">
       <UniqueIdentifier>{e3976d94-fffe-42f9-9673-9293340707a6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\masterAlgorithm\완전탐색">
-      <UniqueIdentifier>{2fc13856-6a73-499f-a6d9-26e04a3bc7cb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\masterAlgorithm\재귀">
       <UniqueIdentifier>{af037e96-8c98-419f-a976-df7fd8e02f9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\완전탐색1">
+      <UniqueIdentifier>{2fc13856-6a73-499f-a6d9-26e04a3bc7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\완전탐색2">
+      <UniqueIdentifier>{b87b01a8-863a-4d14-958b-81b038408386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\삼성기출문제">
+      <UniqueIdentifier>{39b69a97-c504-412b-b6c7-38721e90b243}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -184,37 +190,37 @@
       <Filter>소스 파일\masterAlgorithm\수학2</Filter>
     </ClCompile>
     <ClCompile Include="1476 날짜 계산.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1107_리모컨.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1451_직사각형나누기.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="9095_123더하기.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="10819_차이를 최대로.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="10971_외판원순회2.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1697_숨바꼭질.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1963_ 소수경로.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="9019_DSLR.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1525_퍼즐.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="2251_물통.cpp">
-      <Filter>소스 파일\masterAlgorithm\완전탐색</Filter>
+      <Filter>소스 파일\masterAlgorithm\완전탐색1</Filter>
     </ClCompile>
     <ClCompile Include="1759_암호만들기.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
@@ -223,6 +229,12 @@
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
     <ClCompile Include="1987_알파벳.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
+    </ClCompile>
+    <ClCompile Include="6603_로또.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
+    </ClCompile>
+    <ClCompile Include="1182_부분집합의 합.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
   </ItemGroup>
