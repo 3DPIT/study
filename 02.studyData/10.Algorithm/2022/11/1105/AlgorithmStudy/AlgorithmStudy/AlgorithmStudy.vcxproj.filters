@@ -237,5 +237,8 @@
     <ClCompile Include="1182_부분집합의 합.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
+    <ClCompile Include="2003_수들의 합2.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
