@@ -240,5 +240,11 @@
     <ClCompile Include="2003_수들의 합2.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
     </ClCompile>
+    <ClCompile Include="1806_부분합.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
+    </ClCompile>
+    <ClCompile Include="1644_소수의 연속합.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
