@@ -246,5 +246,8 @@
     <ClCompile Include="1644_소수의 연속합.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
     </ClCompile>
+    <ClCompile Include="1261_알고스팟.cpp">
+      <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
