@@ -1,47 +1,64 @@
-#include<stdio.h>
-#include<iostream>
+#include <iostream>
+#include <vector>
+#include <algorithm>
 using namespace std;
-int arr[24];
-int N, S;
-int ret = 0;
-
-void dfs(int sum, int idx) {
-	if (idx == N) {
-		if (sum == S) {
-			ret++;
+int main() {
+	int n, s;
+	cin >> n >> s;
+	vector<int> a(n);
+	for (int i = 0; i < n; i++) {
+		cin >> a[i];
+	}
+	int m = n / 2;
+	n = n - m;
+	vector<int> first(1 << n);
+	for (int i = 0; i < (1 << n); i++) {
+		for (int k = 0; k < n; k++) {
+			if (i&(1 << k)) {
+				first[i] += a[k];
+			}
 		}
-		return;
 	}
-
-	dfs(sum + arr[idx], idx + 1);
-	dfs(sum, idx + 1);
-}
-
-int main(void)
-{
-	scanf("%d %d", &N, &S);
-
-	for (int i = 0; i < N; i++) {
-		scanf("%d", &arr[i]);
+	vector<int> second(1 << m);
+	for (int i = 0; i < (1 << m); i++) {
+		for (int k = 0; k < m; k++) {
+			if (i&(1 << k)) {
+				second[i] += a[k + n];
+			}
+		}
 	}
-
-	dfs(0, 0);
-	//int ret1 = (1 << N);
-	//printf("%d\n", ret1);
-	//for (int i = 1; i < (1 << N); i++) {
-	//	
-	//	int sum = 0;
-	//	for (int k = 0; k < N; k++) {
-	//		if (i&(1 << k)) {
-	//			cout << "k"<< k << endl;
-	//			//cout << (1 << k) << endl;
-	//			sum += arr[k];
-	//		}
-	//	}
-	//	cout << endl;
-	//	if (sum == S) ret++;
-	//}
-	if (S == 0) ret--;
-	printf("%d", ret);
+	sort(first.begin(), first.end());
+	sort(second.begin(), second.end());
+	reverse(second.begin(), second.end());
+	n = (1 << n);
+	m = (1 << m);
+	int i = 0;
+	int j = 0;
+	long long ans = 0;
+	while (i < n && j < m) {
+		if (first[i] + second[j] == s) {
+			long long c1 = 1;
+			long long c2 = 1;
+			i += 1;
+			j += 1;
+			while (i < n && first[i] == first[i - 1]) {
+				c1 += 1;
+				i += 1;
+			}
+			while (j < m && second[j] == second[j - 1]) {
+				c2 += 1;
+				j += 1;
+			}
+			ans += c1 * c2;
+		}
+		else if (first[i] + second[j] < s) {
+			i += 1;
+		}
+		else {
+			j += 1;
+		}
+	}
+	if (s == 0) ans -= 1;
+	cout << ans << '\n';
 	return 0;
 }
