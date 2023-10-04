@@ -1,5 +1,4 @@
 package design.pattern.facade.facade2;
-\
 
 public class EmailMessage {
     private String from;

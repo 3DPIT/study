@@ -25,14 +25,14 @@ public class Client {
 //        e.printStackTrace();
 //    }
 
-    EmailSettings emailSettings = new EmailSettings();
-    emailSettings.setHost("127.0.0.1");
-    EmailSender emailSender = new EmailSender(emailSettings);
-    EmailMessage emailMessage = new EmailMessage();
-    emailMessage.setFrom("kmp");
-    emailMessage.setTo("3dpit");
-    emailMessage.setSubject("Black");
-    emailMessage.setText("밖은 지옥이더라구....")
-    emailSender.sendEmail(emailMessage);
+//    EmailSettings emailSettings = new EmailSettings();
+//    emailSettings.setHost("127.0.0.1");
+//    EmailSender emailSender = new EmailSender(emailSettings);
+//    EmailMessage emailMessage = new EmailMessage();
+//    emailMessage.setFrom("kmp");
+//    emailMessage.setTo("3dpit");
+//    emailMessage.setSubject("Black");
+//    emailMessage.setText("밖은 지옥이더라구....")
+//    emailSender.sendEmail(emailMessage);
 
 }
