@@ -20,6 +20,11 @@ public class ComputerBuilder {
         return this;
     }
 
+    public ComputerBuilder setStorage(String storage){
+        computer.setRam(storage);
+        return this;
+    }
+
     public Computer build(){
         return this.computer;
     }
