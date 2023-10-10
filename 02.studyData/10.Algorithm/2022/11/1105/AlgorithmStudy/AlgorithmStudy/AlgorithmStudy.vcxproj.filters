@@ -76,6 +76,9 @@
     <Filter Include="소스 파일\masterAlgorithm\삼성기출문제">
       <UniqueIdentifier>{39b69a97-c504-412b-b6c7-38721e90b243}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\자료구조1">
+      <UniqueIdentifier>{66984088-8d10-420f-a54e-f0284c5c1ad4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -225,9 +228,6 @@
     <ClCompile Include="1759_암호만들기.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
-    <ClCompile Include="2580_스도쿠.cpp">
-      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
-    </ClCompile>
     <ClCompile Include="1987_알파벳.cpp">
       <Filter>소스 파일\masterAlgorithm\재귀</Filter>
     </ClCompile>
@@ -251,6 +251,27 @@
     </ClCompile>
     <ClCompile Include="1208_부분집합의합2.cpp">
       <Filter>소스 파일\masterAlgorithm\완전탐색2</Filter>
+    </ClCompile>
+    <ClCompile Include="10828_스택.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="9012_괄호.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="10799_쇠막대기.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="10845_큐.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="2580_스도쿠.cpp">
+      <Filter>소스 파일\masterAlgorithm\재귀</Filter>
+    </ClCompile>
+    <ClCompile Include="10808_알파벳 개수.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="10820_문자열 분석.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
