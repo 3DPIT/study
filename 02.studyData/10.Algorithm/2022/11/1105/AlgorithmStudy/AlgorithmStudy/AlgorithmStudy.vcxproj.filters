@@ -273,5 +273,8 @@
     <ClCompile Include="10820_문자열 분석.cpp">
       <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
     </ClCompile>
+    <ClCompile Include="11655_ROT13.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
