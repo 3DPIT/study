@@ -16,12 +16,12 @@ int main(void) {
 		if (x == 0) {
 			if (pq.size() == 0)printf("0\n");
 			else {
-				printf("%d\n", pq.top());
+				printf("%d\n", pq.top()*-1);
 				pq.pop();
 			}
 		}
 		else {
-			pq.push(x);
+			pq.push(-x);
 		}
 	}
 	return 0;
