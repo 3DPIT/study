@@ -79,6 +79,9 @@
     <Filter Include="소스 파일\masterAlgorithm\자료구조1">
       <UniqueIdentifier>{66984088-8d10-420f-a54e-f0284c5c1ad4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\자료구조2">
+      <UniqueIdentifier>{986047db-8ca2-405b-9bab-28fbdca96d61}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -275,6 +278,18 @@
     </ClCompile>
     <ClCompile Include="11655_ROT13.cpp">
       <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="10824_네 수.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="11656_접미사 배열.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조1</Filter>
+    </ClCompile>
+    <ClCompile Include="1172_집합.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
+    <ClCompile Include="11279_최대힙.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
