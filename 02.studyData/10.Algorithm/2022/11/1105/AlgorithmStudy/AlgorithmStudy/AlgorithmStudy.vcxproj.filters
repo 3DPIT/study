@@ -291,5 +291,17 @@
     <ClCompile Include="11279_최대힙.cpp">
       <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
     </ClCompile>
+    <ClCompile Include="7785_회사에 있는 사람.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
+    <ClCompile Include="1764_듣보잡_set.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
+    <ClCompile Include="1764_듣보잡_map.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
+    <ClCompile Include="1764_듣보잡_set_intersection.cpp">
+      <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
