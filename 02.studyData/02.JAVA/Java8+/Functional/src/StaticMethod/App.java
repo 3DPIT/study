@@ -59,6 +59,6 @@ public class App {
         name.sort(compareToIgnoreCase.reversed());//역순
         //다른 조건으로 하고 싶은 경우 thenComparing()하면됨
 
-        
+
     }
 }
