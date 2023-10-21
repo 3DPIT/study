@@ -1,0 +1,10 @@
+package default_code;
+
+public class App {
+
+    public static void main(String[] args) {
+        Foo foo = new DefaultFoo("3dpit");
+        foo.printName();
+        foo.printNAmeUpperCase();
+    }
+}
