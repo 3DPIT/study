@@ -82,6 +82,9 @@
     <Filter Include="소스 파일\masterAlgorithm\자료구조2">
       <UniqueIdentifier>{986047db-8ca2-405b-9bab-28fbdca96d61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\그래프1">
+      <UniqueIdentifier>{fb91ebb8-00be-42a7-a236-40a4375802f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -302,6 +305,9 @@
     </ClCompile>
     <ClCompile Include="1764_듣보잡_set_intersection.cpp">
       <Filter>소스 파일\masterAlgorithm\자료구조2</Filter>
+    </ClCompile>
+    <ClCompile Include="1260_DFS와 BFS.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
