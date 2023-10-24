@@ -1,8 +1,5 @@
-package DateType;
+package dateType;
 
-import jdk.swing.interop.DispatcherWrapper;
-
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.format.DateTimeFormatter;

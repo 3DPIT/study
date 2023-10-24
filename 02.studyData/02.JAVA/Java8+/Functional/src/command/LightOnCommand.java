@@ -1,4 +1,4 @@
 package command;
 
-public class LightOnCommand {
+public class LightOnCommand     {
 }
