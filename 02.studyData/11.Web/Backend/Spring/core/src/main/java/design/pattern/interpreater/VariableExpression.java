@@ -1,4 +1,4 @@
-package interpreater;
+package design.pattern.interpreater;
 
 import java.util.Map;
 
