@@ -312,5 +312,8 @@
     <ClCompile Include="11724_연결 요소의 개수.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
     </ClCompile>
+    <ClCompile Include="1707_이분그래프.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
