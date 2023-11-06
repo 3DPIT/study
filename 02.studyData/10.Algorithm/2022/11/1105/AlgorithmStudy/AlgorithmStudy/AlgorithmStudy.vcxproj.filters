@@ -315,5 +315,14 @@
     <ClCompile Include="1707_이분그래프.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
     </ClCompile>
+    <ClCompile Include="10451_순열 사이클.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
+    <ClCompile Include="2331_반복수열.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
+    <ClCompile Include="2667_단지번호붙이기.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

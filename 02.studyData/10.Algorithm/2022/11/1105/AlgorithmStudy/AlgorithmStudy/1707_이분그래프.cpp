@@ -7,6 +7,7 @@
 using namespace std;
 vector<int> a[20001];
 int color[20001];
+int visit[20001];
 
 void dfs(int node, int c) {
 	color[node] = c;
@@ -16,6 +17,21 @@ void dfs(int node, int c) {
 			dfs(next, 3 - c);
 		}
 	}
+}
+
+bool dfs1(int node) {
+	for (int i = 0; i < a[node].size(); i++) {
+		int n = a[node][i];
+		if (visit[n]) continue;
+		visit[n] = 1;
+
+		if (color[n] == 0 || dfs1(color[n])) {
+			color[n] = node;
+			return true;
+		}
+	}
+
+	return false;
 }
 
 int main(void) {
@@ -34,16 +50,21 @@ int main(void) {
 			int u, v;
 			scanf("%d %d", &u, &v);
 			a[u].push_back(v);
-			a[v].push_back(u);
 		}
 
+		//for (int i = 1; i <= n; i++) {
+		//	if (color[i] == 0) {
+		//		dfs(i, 1);
+		//	}
+		//}
+		
+		int count = 0;
 		for (int i = 1; i <= n; i++) {
-			if (color[i] == 0) {
-				dfs(i, 1);
-			}
+			fill(visit, visit + 20001, 0);
+			if (dfs1(i)) count++;
 		}
 
-		bool ok = true;
+	/*	bool ok = true;
 		for (int i = 1; i <= n; i++) {
 			for (int k = 0; k < a[i].size(); k++) {
 				int j = a[i][k];
@@ -51,9 +72,15 @@ int main(void) {
 					ok = false;
 				}
 			}
-		}
+		}*/
 
-		printf("%s\n", ok ? "YES" : "NO");
+		//printf("%s\n", ok ? "YES" : "NO");
+		if ((count == n)) {
+			printf("YES\n");
+		}
+		else {
+			printf("NO\n");
+		}
 	}
 
 	return 0;
