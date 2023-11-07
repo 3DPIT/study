@@ -324,5 +324,8 @@
     <ClCompile Include="2667_단지번호붙이기.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
     </ClCompile>
+    <ClCompile Include="4963_섬의 개수.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
