@@ -59,7 +59,7 @@ int main(void) {
 		}
 	}
 
-	cout << cnt << endl;
+	cout << cnt-1 << endl;
 
 
 	return 0;
