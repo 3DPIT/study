@@ -43,7 +43,7 @@ int main(void)
 		}
 	}
 
-	cout << visit[N - 1][M - 1] << endl;
+	cout << visit[N - 1][M - 1]+1 << endl;
 	
 	return 0;
 }
