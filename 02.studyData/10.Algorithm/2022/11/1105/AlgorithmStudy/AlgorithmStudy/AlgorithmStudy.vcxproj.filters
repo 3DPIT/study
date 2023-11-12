@@ -336,5 +336,8 @@
     <ClCompile Include="2146_다리만들기.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
     </ClCompile>
+    <ClCompile Include="2146_다리만들기_refactor.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
