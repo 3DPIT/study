@@ -345,5 +345,8 @@
     <ClCompile Include="2252_줄세우기.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프2</Filter>
     </ClCompile>
+    <ClCompile Include="1766_문제집.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프2</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
