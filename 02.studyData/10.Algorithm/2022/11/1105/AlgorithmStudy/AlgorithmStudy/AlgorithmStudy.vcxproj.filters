@@ -85,6 +85,9 @@
     <Filter Include="소스 파일\masterAlgorithm\그래프1">
       <UniqueIdentifier>{fb91ebb8-00be-42a7-a236-40a4375802f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\masterAlgorithm\그래프2">
+      <UniqueIdentifier>{8cf38081-e7e2-4c52-9cd4-007751994d2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="구슬탈출2.cpp">
@@ -338,6 +341,9 @@
     </ClCompile>
     <ClCompile Include="2146_다리만들기_refactor.cpp">
       <Filter>소스 파일\masterAlgorithm\그래프1</Filter>
+    </ClCompile>
+    <ClCompile Include="2252_줄세우기.cpp">
+      <Filter>소스 파일\masterAlgorithm\그래프2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
