@@ -1,13 +1,11 @@
 package com.example.javastudy.order;
 
-import com.expample.di.basic.AppConfig;
-import com.expample.di.basic.member.Grade;
-import com.expample.di.basic.member.Member;
-import com.expample.di.basic.member.MemberService;
-import com.expample.di.basic.member.MemberServiceImpl;
-import com.expample.di.basic.order.Order;
-import com.expample.di.basic.order.OrderService;
-import com.expample.di.basic.order.OrderServiceImpl;
+import com.example.di.basic.AppConfig;
+import com.example.di.basic.member.Grade;
+import com.example.di.basic.member.Member;
+import com.example.di.basic.member.MemberService;
+import com.example.di.basic.order.Order;
+import com.example.di.basic.order.OrderService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

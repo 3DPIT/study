@@ -1,10 +1,8 @@
-package com.expample.di.basic.order;
+package com.example.di.basic.order;
 
-import com.expample.di.basic.discount.DiscountPolicy;
-import com.expample.di.basic.discount.FixedDiscountPolicy;
-import com.expample.di.basic.member.Member;
-import com.expample.di.basic.member.MemberRepository;
-import com.expample.di.basic.member.MemoryMemberRepository;
+import com.example.di.basic.member.Member;
+import com.example.di.basic.member.MemberRepository;
+import com.example.di.basic.discount.DiscountPolicy;
 
 public class OrderServiceImpl implements OrderService{
     private final MemberRepository memberRepository;

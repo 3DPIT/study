@@ -1,4 +1,4 @@
-package com.expample.di.basic.member;
+package com.example.di.basic1.member;
 
 public class Member {
     private Long id;

@@ -1,7 +1,7 @@
-package com.expample.di.basic.discount;
+package com.example.di.basic.discount;
 
-import com.expample.di.basic.member.Grade;
-import com.expample.di.basic.member.Member;
+import com.example.di.basic.member.Grade;
+import com.example.di.basic.member.Member;
 
 public class RateDiscountPolicy implements  DiscountPolicy{
 

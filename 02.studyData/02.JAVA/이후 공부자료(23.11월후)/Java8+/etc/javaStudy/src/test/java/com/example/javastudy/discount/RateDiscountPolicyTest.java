@@ -1,8 +1,8 @@
 package com.example.javastudy.discount;
 
-import com.expample.di.basic.discount.RateDiscountPolicy;
-import com.expample.di.basic.member.Grade;
-import com.expample.di.basic.member.Member;
+import com.example.di.basic.discount.RateDiscountPolicy;
+import com.example.di.basic.member.Grade;
+import com.example.di.basic.member.Member;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

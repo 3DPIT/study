@@ -1,4 +1,4 @@
-package com.expample.di.basic.member;
+package com.example.di.basic.member;
 
 public class MemberServiceImpl implements MemberService{
     private final MemberRepository memberRepository;
