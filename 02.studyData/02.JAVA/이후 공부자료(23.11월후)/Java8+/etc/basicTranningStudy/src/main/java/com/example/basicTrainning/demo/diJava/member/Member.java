@@ -1,8 +1,6 @@
 package com.example.basicTrainning.demo.diJava.member;
 
-import lombok.ToString;
 
-@ToString
 public class Member {
 
     private Long id;
@@ -41,4 +39,6 @@ public class Member {
     public void setGrede(Grade grede) {
         this.grede = grede;
     }
+
+
 }
