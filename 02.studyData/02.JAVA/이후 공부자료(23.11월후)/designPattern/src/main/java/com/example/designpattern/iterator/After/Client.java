@@ -16,6 +16,10 @@ public class Client {
         }
 
         //TODO 가장 최신 글 먼저 순회 하기
+        // 어떤 자료구조를 썼는지 몰라도됨 
+        Iterator<Post> recentPostIterator = board.getRecentPostIterator();
+        while(recentPostIterator.hasNext()){
+             System.out.println(recentPostIterator.next().getTitle());   
         }
     }
 }
