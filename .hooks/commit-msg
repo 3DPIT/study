@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+commit_regex="^(feat : |fix : |docs : |style : |refactor : |test : |chore : |design : |build : |ci : |perf : |omment : |revert : |rename : |remove : |!BREAKING CHANGE : |!HOTFIX : )\b"
+error_msg="nvalid commit message: The commit message must start with one of the following types: feat, fix, docs, style, refactor, test, chore ..."
+
+if ! grep -iqE "$commit_regex" "$1"; then
+    echo "$error_msg" >&2
+    exit 1
+fi
