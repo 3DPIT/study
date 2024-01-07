@@ -10,8 +10,10 @@ public class _11005_진법변환2 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
-        int number = Integer.parseInt(br.readLine());
-        int N = Integer.parseInt(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+		int number = Integer.parseInt(st.nextToken());
+		int N = Integer.parseInt(st.nextToken());
+        
         List<Character> s = new ArrayList<>();
         while(number >0){
             int ret1 = number/N;
@@ -23,7 +25,6 @@ public class _11005_진법변환2 {
         for(int i=s.size()-1;i>=0;i--){
             bw.write(s.get(i));
         }
-
 
         bw.flush();
     }
