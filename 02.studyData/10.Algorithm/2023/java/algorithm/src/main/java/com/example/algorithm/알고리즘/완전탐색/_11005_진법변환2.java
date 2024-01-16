@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+import java.util.StringTokenizer;
 
 public class _11005_진법변환2 {
     public static void main(String[] args) throws IOException {
@@ -18,8 +19,9 @@ public class _11005_진법변환2 {
         while(number >0){
             int ret1 = number/N;
             int ret2 = number%N;
-            if(ret1>=10) s.add((char) (ret2-10+'A'));
-            number = number /=N;
+            if(ret2>=10) s.add((char) (ret2-10+'A'));
+            else s.add((char)(ret2+'0'));
+            number /= N;
         }
 
         for(int i=s.size()-1;i>=0;i--){
