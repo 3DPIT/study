@@ -17,16 +17,18 @@ public class Main {
 
         int IndexStart = 1000000004;
         int IndexEnd = -1;
+        int IndexStart1 = 1000000004;
+        int IndexEnd1 = -1;
         for(int[] fee: fees){
             if(IndexStart>fee[0])IndexStart=fee[0];
             if(IndexEnd<fee[0])IndexEnd=fee[0];
-            if(IndexStart>fee[1])IndexStart=fee[1];
-            if(IndexEnd<fee[1])IndexEnd=fee[1];
+            if(IndexStart1>fee[1])IndexStart1=fee[1];
+            if(IndexEnd1<fee[1])IndexEnd1=fee[1];
         }
 
         Map<Integer,Integer> map= new HashMap<Integer, Integer>();
-        for (int a = IndexStart; a <=IndexEnd; a++) {
-            for (int b = IndexStart; b <=IndexEnd; b++) {
+        for (int a = 1; a <=IndexEnd1; a++) {
+            for (int b = 1; b <=IndexEnd1; b++) {
                 int count=0;
                 for (int[] fee : fees) {
                     int T = 0;
