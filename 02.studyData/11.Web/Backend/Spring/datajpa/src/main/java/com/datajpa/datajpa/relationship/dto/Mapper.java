@@ -1,9 +1,11 @@
-package com.datajpa.datajpa.dto;
+package com.datajpa.datajpa.relationship.dto;
 
-import com.datajpa.datajpa.dto.responseDto.AuthorResponseDto;
-import com.datajpa.datajpa.dto.responseDto.BookResponseDto;
-import com.datajpa.datajpa.model.Author;
-import com.datajpa.datajpa.model.Book;
+import com.datajpa.datajpa.relationship.dto.responseDto.AuthorResponseDto;
+import com.datajpa.datajpa.relationship.dto.responseDto.BookResponseDto;
+import com.datajpa.datajpa.relationship.dto.responseDto.CategoryResponseDto;
+import com.datajpa.datajpa.relationship.model.Author;
+import com.datajpa.datajpa.relationship.model.Book;
+import com.datajpa.datajpa.relationship.model.Category;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,5 +53,25 @@ public class Mapper {
         }
         return authorResponseDtos;
     }
-    //TODO: remain mapper 작성
+
+    public static CategoryResponseDto categoryToCategoryResponseDto(Category category){
+        CategoryResponseDto categoryResponseDto = new CategoryResponseDto();
+        categoryResponseDto.setId(category.getId());
+        categoryResponseDto.setName(category.getName());
+        List<String> names = new ArrayList<>();
+        List<Book> books = category.getBooks();
+        for(Book book : books){
+            names.add(book.getName());
+        }
+        categoryResponseDto.setBookNames(names);
+        return categoryResponseDto;
+    }
+
+    public static List<CategoryResponseDto> categoriesToCategoryResponseDtos(List<Category> categories){
+        List<CategoryResponseDto> categoryResponseDtos = new ArrayList<>();
+        for(Category category: categories){
+            categoryResponseDtos.add(categoryToCategoryResponseDto(category));
+        }
+        return categoryResponseDtos;
+    }
 }

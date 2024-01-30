@@ -1,4 +1,4 @@
-package com.datajpa.datajpa.dto.requestDto;
+package com.datajpa.datajpa.relationship.dto.requestDto;
 
 import lombok.Data;
 

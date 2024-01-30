@@ -1,4 +1,4 @@
-package com.datajpa.datajpa.model;
+package com.datajpa.datajpa.relationship.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

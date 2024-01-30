@@ -1,4 +1,4 @@
-package com.datajpa.datajpa.dto.responseDto;
+package com.datajpa.datajpa.relationship.dto.responseDto;
 
 import lombok.Data;
 
