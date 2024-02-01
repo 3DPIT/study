@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -83,28 +84,71 @@ public class BookServiceImpl implements BookService {
         return Mapper.bookToBookResponseDto(book);
     }
 
+    @Transactional
     @Override
     public BookResponseDto editBook(Long bookId, BookRequestDto bookRequestDto) {
-        return null;
+        Book bookToEdit = getBook(bookId);
+        bookToEdit.setName(bookRequestDto.getName());
+        if(!bookRequestDto.getAuthorIds().isEmpty()){
+            List<Author> authors = new ArrayList<>();
+            for(Long authorId:bookRequestDto.getAuthorIds()){
+                Author author = authorService.getAuthor(authorId);
+                authors.add(author);
+            }
+            bookToEdit.setAuthors(authors);
+        }
+        if(bookRequestDto.getCategroyId()!=null){
+            Category category = categoryService.getCategory(bookRequestDto.getCategroyId());
+            bookToEdit.setCategory(category);
+        }
+        return Mapper.bookToBookResponseDto(bookToEdit);
     }
 
     @Override
     public BookResponseDto addAuthorToBook(Long bookId, Long authorId) {
-        return null;
+        Book book = getBook(bookId);
+        Author author = authorService.getAuthor(authorId);
+        if(author.getBooks().contains(author)){
+            throw new IllegalArgumentException("this author is already assigned to this book");
+        }
+        book.addAuthor(author);
+        author.addBook(book);
+        return Mapper.bookToBookResponseDto(book);
     }
 
     @Override
     public BookResponseDto deleteAuthorFromBook(Long bookId, Long authorId) {
-        return null;
+        Book book = getBook(bookId);
+        Author author = authorService.getAuthor(authorId);
+        if(!(author.getBooks().contains(book))){
+            throw new IllegalArgumentException("book does not have this author");
+        }
+        author.removeBook(book);
+        book.deleteAuthor(author);
+        return Mapper.bookToBookResponseDto(book);
     }
 
     @Override
     public BookResponseDto addCategoryToBook(Long bookId, Long categoryId) {
-        return null;
+        Book book = getBook(bookId);
+        Category category = categoryService.getCategory(categoryId);
+        if (Objects.nonNull(book.getCategory())) {
+            throw new IllegalArgumentException("book already has a category");
+        }
+        book.setCategory(category);
+        category.addBook(book);
+        return Mapper.bookToBookResponseDto(book);
     }
 
     @Override
     public BookResponseDto removeCategoryFromBook(Long bookId, Long categoryId) {
-        return null;
+        Book book = getBook(bookId);
+        Category category = categoryService.getCategory(categoryId);
+        if (!Objects.nonNull(book.getCategory())) {
+            throw new IllegalArgumentException("book does not have a category to delete");
+        }
+        book.setCategory(null);
+        category.addBook(book);
+        return Mapper.bookToBookResponseDto(book);
     }
 }
