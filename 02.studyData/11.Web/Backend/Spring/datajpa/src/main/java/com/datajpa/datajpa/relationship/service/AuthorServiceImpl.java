@@ -1,22 +1,27 @@
 package com.datajpa.datajpa.relationship.service;
 
-import com.datajpa.datajpa.relationship.dto.Mapper;
+import com.datajpa.datajpa.relationship.model.Author;
+import com.datajpa.datajpa.relationship.dto.mapper;
 import com.datajpa.datajpa.relationship.dto.requestDto.AuthorRequestDto;
 import com.datajpa.datajpa.relationship.dto.responseDto.AuthorResponseDto;
-import com.datajpa.datajpa.relationship.model.Author;
 import com.datajpa.datajpa.relationship.model.Zipcode;
 import com.datajpa.datajpa.relationship.repository.AuthorRepository;
-import jakarta.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+import jakarta.transaction.Transactional;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
+@Service
 public class AuthorServiceImpl implements AuthorService {
+
     private final AuthorRepository authorRepository;
     private final ZipcodeService zipcodeService;
 
+    @Autowired
     public AuthorServiceImpl(AuthorRepository authorRepository, ZipcodeService zipcodeService) {
         this.authorRepository = authorRepository;
         this.zipcodeService = zipcodeService;
@@ -27,14 +32,13 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorResponseDto addAuthor(AuthorRequestDto authorRequestDto) {
         Author author = new Author();
         author.setName(authorRequestDto.getName());
-        if(authorRequestDto.getZipcodeId()==null){
+        if (authorRequestDto.getZipcodeId() == null) {
             throw new IllegalArgumentException("author need a zipcode");
         }
         Zipcode zipcode = zipcodeService.getZipcode(authorRequestDto.getZipcodeId());
         author.setZipcode(zipcode);
         authorRepository.save(author);
-        return Mapper.authorToAuthorResponseDto(author);
-
+        return mapper.authorToAuthorResponseDto(author);
     }
 
     @Override
@@ -42,19 +46,19 @@ public class AuthorServiceImpl implements AuthorService {
         List<Author> authors = StreamSupport
                 .stream(authorRepository.findAll().spliterator(), false)
                 .collect(Collectors.toList());
-        return Mapper.authorsToAuthorResponseDtos(authors);
+        return mapper.authorsToAuthorResponseDtos(authors);
     }
 
     @Override
     public AuthorResponseDto getAuthorById(Long authorId) {
-        return Mapper.authorToAuthorResponseDto(getAuthor(authorId));
+        return mapper.authorToAuthorResponseDto(getAuthor(authorId));
     }
 
     @Override
     public Author getAuthor(Long authorId) {
-        Author author = authorRepository.findById(authorId).orElseThrow(()->
+        Author author = authorRepository.findById(authorId).orElseThrow(() ->
                 new IllegalArgumentException(
-                        "author with id: "+ authorId + " could not be found"));
+                        "author with id: " + authorId + " could not be found"));
         return author;
     }
 
@@ -62,7 +66,7 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorResponseDto deleteAuthor(Long authorId) {
         Author author = getAuthor(authorId);
         authorRepository.delete(author);
-        return Mapper.authorToAuthorResponseDto(author);
+        return mapper.authorToAuthorResponseDto(author);
     }
 
     @Transactional
@@ -70,12 +74,11 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorResponseDto editAuthor(Long authorId, AuthorRequestDto authorRequestDto) {
         Author authorToEdit = getAuthor(authorId);
         authorToEdit.setName(authorRequestDto.getName());
-        if(authorRequestDto.getZipcodeId() != null){
+        if (authorRequestDto.getZipcodeId() != null) {
             Zipcode zipcode = zipcodeService.getZipcode(authorRequestDto.getZipcodeId());
             authorToEdit.setZipcode(zipcode);
         }
-
-        return Mapper.authorToAuthorResponseDto(authorToEdit);
+        return mapper.authorToAuthorResponseDto(authorToEdit);
     }
 
     @Transactional
@@ -83,11 +86,11 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorResponseDto addZipcodeToAuthor(Long authorId, Long zipcodeId) {
         Author author = getAuthor(authorId);
         Zipcode zipcode = zipcodeService.getZipcode(zipcodeId);
-        if(Objects.nonNull(author.getZipcode())){
+        if (Objects.nonNull(author.getZipcode())){
             throw new RuntimeException("author already has a zipcode");
         }
         author.setZipcode(zipcode);
-        return Mapper.authorToAuthorResponseDto(author);
+        return mapper.authorToAuthorResponseDto(author);
     }
 
     @Transactional
@@ -95,6 +98,6 @@ public class AuthorServiceImpl implements AuthorService {
     public AuthorResponseDto deleteZipcodeFromAuthor(Long authorId) {
         Author author = getAuthor(authorId);
         author.setZipcode(null);
-        return Mapper.authorToAuthorResponseDto(author);
+        return mapper.authorToAuthorResponseDto(author);
     }
 }

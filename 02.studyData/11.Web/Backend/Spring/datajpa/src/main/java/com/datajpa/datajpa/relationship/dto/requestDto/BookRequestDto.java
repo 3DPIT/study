@@ -8,5 +8,5 @@ import java.util.List;
 public class BookRequestDto {
     private String name;
     private List<Long> authorIds;
-    private Long categroyId;
+    private Long categoryId;
 }

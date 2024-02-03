@@ -22,57 +22,86 @@ public class BookController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<BookResponseDto> addBook(@RequestBody final BookRequestDto bookRequestDto){
-        BookResponseDto BookResponseDto = bookService.addBook(bookRequestDto);
-        return new ResponseEntity<>(BookResponseDto, HttpStatus.OK);
+    public ResponseEntity<BookResponseDto> addBook(@RequestBody final BookRequestDto bookRequestDto) {
+        BookResponseDto bookResponseDto = bookService.addBook(bookRequestDto);
+        return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @GetMapping("/get/{id}")
-    public ResponseEntity<BookResponseDto> getBook(@PathVariable final Long id){
-        BookResponseDto bookResponseDto =bookService.getBookById(id);
+    public ResponseEntity<BookResponseDto> getBook(@PathVariable final Long id) {
+        BookResponseDto bookResponseDto = bookService.getBookById(id);
         return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @GetMapping("/getAll")
-    public ResponseEntity<List<BookResponseDto>> getBooks(){
+    public ResponseEntity<List<BookResponseDto>> getBooks() {
         List<BookResponseDto> bookResponseDtos = bookService.getBooks();
         return new ResponseEntity<>(bookResponseDtos, HttpStatus.OK);
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<BookResponseDto> deleteBook(@PathVariable final Long id){
-        BookResponseDto bookResponseDto =bookService.deleteBook(id);
+    public ResponseEntity<BookResponseDto> deleteBook(@PathVariable final Long id) {
+        BookResponseDto bookResponseDto = bookService.deleteBook(id);
         return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @PostMapping("/edit/{id}")
-    public ResponseEntity<BookResponseDto>editBook(@RequestBody final BookRequestDto bookRequestDto, @PathVariable final Long id){
-       BookResponseDto bookResponseDto =bookService.editBook(id, bookRequestDto);
-       return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
+    public ResponseEntity<BookResponseDto> editBook(@RequestBody final BookRequestDto bookRequestDto,
+                                                    @PathVariable final Long id) {
+        BookResponseDto bookResponseDto = bookService.editBook(id, bookRequestDto);
+        return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @PostMapping("/addCategory/{categoryId}/to/{bookId}")
     public ResponseEntity<BookResponseDto> addCategory(@PathVariable final Long categoryId,
-                                                       @PathVariable final Long bookId){
+                                                       @PathVariable final Long bookId) {
         BookResponseDto bookResponseDto = bookService.addCategoryToBook(bookId, categoryId);
         return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @PostMapping("/removeCategory/{categoryId}/from/{bookId}")
-    public ResponseEntity<BookResponseDto> removeCategory(@PathVariable final Long categoryId, @PathVariable Long bookId){
-        BookResponseDto bookResponseDto =bookService.removeCategoryFromBook(bookId, categoryId);
-        return new ResponseEntity<>(bookResponseDto,HttpStatus.OK);
+    public ResponseEntity<BookResponseDto> removeCategory(@PathVariable final Long categoryId,
+                                                          @PathVariable final Long bookId) {
+        BookResponseDto bookResponseDto = bookService.removeCategoryFromBook(bookId, categoryId);
+        return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @PostMapping("/addAuthor/{authorId}/to/{bookId}")
-    public ResponseEntity<BookResponseDto> addAuthor(@PathVariable final Long authorId, @PathVariable final Long bookId){
-        BookResponseDto bookResponseDto = bookService.addAuthorToBook(bookId,authorId);
-        return new ResponseEntity<>(bookResponseDto,HttpStatus.OK);
+    public ResponseEntity<BookResponseDto> addAuthor(@PathVariable final Long authorId,
+                                                     @PathVariable final Long bookId) {
+        BookResponseDto bookResponseDto = bookService.addAuthorToBook(bookId, authorId);
+        return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 
     @PostMapping("/removeAuthor/{authorId}/from/{bookId}")
-    public ResponseEntity<BookResponseDto> removeAuthor(@PathVariable final Long authorId, @PathVariable final Long bookId){
+    public ResponseEntity<BookResponseDto> removeAuthor(@PathVariable final Long authorId,
+                                                        @PathVariable final Long bookId) {
         BookResponseDto bookResponseDto = bookService.deleteAuthorFromBook(bookId, authorId);
         return new ResponseEntity<>(bookResponseDto, HttpStatus.OK);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

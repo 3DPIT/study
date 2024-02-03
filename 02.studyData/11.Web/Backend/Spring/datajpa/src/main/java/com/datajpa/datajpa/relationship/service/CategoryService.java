@@ -1,7 +1,7 @@
 package com.datajpa.datajpa.relationship.service;
 
-import com.datajpa.datajpa.relationship.dto.requestDto.CategoryRequestDto;
 import com.datajpa.datajpa.relationship.dto.responseDto.CategoryResponseDto;
+import com.datajpa.datajpa.relationship.dto.requestDto.CategoryRequestDto;
 import com.datajpa.datajpa.relationship.model.Category;
 import org.springframework.stereotype.Service;
 

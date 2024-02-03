@@ -1,17 +1,18 @@
-server.port=8080
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopping_mall
+    username: root
+    password: root
 
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2
-
-spring.datasource.url=jdbc:h2:mem:memDb;DB_CLOSE_DELAY=-1
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
-
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=create-drop
-spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.format_sql=true
-
-
-server.p
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect:
+        org.hibernate.dialect.PostgreSQL10Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    show-xsql: true

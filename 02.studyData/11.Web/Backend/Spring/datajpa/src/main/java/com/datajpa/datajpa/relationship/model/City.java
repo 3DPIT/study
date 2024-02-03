@@ -1,20 +1,21 @@
 package com.datajpa.datajpa.relationship.model;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import jakarta.persistence.*;
 
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name="city")
+@Table(name = "City")
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String name;
 
-    public  City(String name){
+    public City(String name) {
         this.name = name;
     }
 }
