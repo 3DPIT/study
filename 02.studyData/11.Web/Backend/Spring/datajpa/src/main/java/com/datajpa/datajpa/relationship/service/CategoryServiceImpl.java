@@ -57,9 +57,9 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public CategoryResponseDto editCategory(Long categoryId, CategoryResponseDto categoryResponseDto) {
+    public CategoryResponseDto editCategory(Long categoryId, CategoryRequestDto categoryRequestDto) {
         Category categoryToEdit = getCategory(categoryId);
-        categoryToEdit.setName(categoryToEdit.getName());
+        categoryToEdit.setName(categoryRequestDto.getName());
         return Mapper.categoryToCategoryResponseDto(categoryToEdit);
     }
 }

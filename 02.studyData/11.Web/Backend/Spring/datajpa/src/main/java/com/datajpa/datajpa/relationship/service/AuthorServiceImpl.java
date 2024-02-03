@@ -24,7 +24,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Transactional
     @Override
-    public AuthorResponseDto addAuthorResponseDto(AuthorRequestDto authorRequestDto) {
+    public AuthorResponseDto addAuthor(AuthorRequestDto authorRequestDto) {
         Author author = new Author();
         author.setName(authorRequestDto.getName());
         if(authorRequestDto.getZipcodeId()==null){
@@ -67,7 +67,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Transactional
     @Override
-    public AuthorResponseDto editZipCode(Long authorId, AuthorRequestDto authorRequestDto) {
+    public AuthorResponseDto editAuthor(Long authorId, AuthorRequestDto authorRequestDto) {
         Author authorToEdit = getAuthor(authorId);
         authorToEdit.setName(authorRequestDto.getName());
         if(authorRequestDto.getZipcodeId() != null){
@@ -80,7 +80,7 @@ public class AuthorServiceImpl implements AuthorService {
 
     @Transactional
     @Override
-    public AuthorResponseDto addCityToZipcode(Long authorId, Long zipcodeId) {
+    public AuthorResponseDto addZipcodeToAuthor(Long authorId, Long zipcodeId) {
         Author author = getAuthor(authorId);
         Zipcode zipcode = zipcodeService.getZipcode(zipcodeId);
         if(Objects.nonNull(author.getZipcode())){

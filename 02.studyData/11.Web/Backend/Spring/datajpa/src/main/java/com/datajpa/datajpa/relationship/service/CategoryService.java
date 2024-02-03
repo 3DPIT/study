@@ -14,5 +14,5 @@ public interface CategoryService {
     public CategoryResponseDto getCategoryById(Long categoryId);
     public List<CategoryResponseDto> getCategories();
     public CategoryResponseDto deleteCategory(Long categoryId);
-    public CategoryResponseDto editCategory(Long categoryId, CategoryResponseDto categoryResponseDto);
+    public CategoryResponseDto editCategory(Long categoryId, CategoryRequestDto categoryRequestDto);
 }
