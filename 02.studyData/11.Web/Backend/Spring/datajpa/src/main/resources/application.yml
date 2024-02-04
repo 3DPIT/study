@@ -16,3 +16,6 @@ spring:
       hibernate:
         format_sql: true
     show-xsql: true
+
+  main:
+    allow-bean-definition-overriding: true
