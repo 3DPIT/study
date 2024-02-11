@@ -1,0 +1,22 @@
+spring:
+  redis:
+    host: locahost
+    port: 6379
+
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopping_mall
+    username: root
+    password: root
+
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect:
+        org.hibernate.dialect.PostgreSQL10Dialect
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
