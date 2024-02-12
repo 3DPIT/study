@@ -1,5 +1,7 @@
-package com.example.redis_final;
+package com.example.redis_final.controller;
 
+import com.example.redis_final.data.Member;
+import com.example.redis_final.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cache.annotation.Cacheable;

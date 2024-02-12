@@ -1,4 +1,4 @@
-package com.example.redis_final;
+package com.example.redis_final.data;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
