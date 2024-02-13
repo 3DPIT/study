@@ -1,0 +1,8 @@
+spring:
+cache:
+  type: redis
+  redis:
+    time-to-live: 3600 # ??? ?? ??(sec)
+    cache-null-values: true # null ?? ??
+    host: localhost
+    port: 6379
