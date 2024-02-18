@@ -37,9 +37,9 @@ public class _2817_ALPS식투표 {
             String[] inputs= br.readLine().split(" " );
             char peopleName = inputs[0].charAt(0);
             int electCount = Integer.parseInt(inputs[1]);
-            double fivePercentNumber = (electCount%electNumber)*100;
+            double fivePercentNumber = ((electCount*100/electNumber));
             //5% 이상인 후보만 출력
-            if(fivePercentNumber>=5){
+            if(fivePercentNumber>=5.0){
                 map.put(peopleName,0);
                 //14개로 나누기
                 for(int j=1;j<=14;j++){
@@ -49,11 +49,7 @@ public class _2817_ALPS식투표 {
             }
         }
 
-//        235217
-//        3
-//        A 107382
-//        C 18059
-//        B 43265
+
 
 
         Collections.sort(members, new Comparator<Member>(){
@@ -63,14 +59,16 @@ public class _2817_ALPS식투표 {
             }
         });
 
-        for( int i=0;i<14;i++){
-                map.put(members.get(i).PeopleName,map.get(members.get(i).electCount)+1);
-        }
-
-        for(int i=0;i<peopleNumber;i++){
-            if(map.get(resultMember[i].PeopleName)==0){
-                bw.write(resultMember[i].PeopleName);
+        for (int i = 0; i < 14; i++) {
+            // Map에 해당 PeopleName 키가 존재하지 않는 경우, 해당 키와 값 1을 추가합니다.
+            if (!map.containsKey(members.get(i).PeopleName)) {
+                map.put(members.get(i).PeopleName, 1);
+            } else {
+                // Map에 이미 해당 PeopleName 키가 존재하는 경우, 기존 값을 가져와 1을 더한 후 다시 저장합니다.
+                map.put(members.get(i).PeopleName, map.get(members.get(i).PeopleName) + 1);
             }
         }
+
+        map.forEach((key, value) -> System.out.println(key + " " + value));
     }
 }
