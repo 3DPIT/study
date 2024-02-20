@@ -3,11 +3,13 @@ package com.example.blogservice.controller;
 import com.example.blogservice.domain.Article;
 import com.example.blogservice.dto.AddArticleRequest;
 import com.example.blogservice.dto.ArticleResponse;
+import com.example.blogservice.dto.ArticleViewResponse;
 import com.example.blogservice.dto.UpdateArticleRequest;
 import com.example.blogservice.service.BlogService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

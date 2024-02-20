@@ -1,4 +1,4 @@
-package com.example.algorithm.알고리즘.완전탐색;
+package com.example.algorithm.알고리즘.test.main2;
 
 import java.util.HashMap;
 import java.util.List;
