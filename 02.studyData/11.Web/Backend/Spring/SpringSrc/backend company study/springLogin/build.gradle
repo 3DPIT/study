@@ -2,8 +2,6 @@ plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.2'
     id 'io.spring.dependency-management' version '1.1.4'
-    id 'org.hibernate.orm' version '6.4.1.Final'
-    id 'org.graalvm.buildtools.native' version '0.9.28'
 }
 
 group = 'com.example'
@@ -11,12 +9,6 @@ version = '0.0.1-SNAPSHOT'
 
 java {
     sourceCompatibility = '17'
-}
-
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
 }
 
 repositories {
@@ -27,10 +19,11 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    runtimeOnly 'com.h2database:h2'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+    runtimeOnly 'com.h2database:h2'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
     testImplementation 'org.springframework.security:spring-security-test'
@@ -39,10 +32,3 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
-
-hibernate {
-    enhancement {
-        enableAssociationManagement = true
-    }
-}
-
