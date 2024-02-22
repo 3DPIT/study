@@ -1,10 +1,7 @@
-package kr.co.black.mockito.user;
+package kr.co.black.mockito.mockitoMain.user;
 
-import lombok.Getter;
-import lombok.Setter;
 
-@Getter
-@Setter
+
 public class User {
     String name;
     String phoneNumber;

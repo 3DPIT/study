@@ -1,4 +1,4 @@
-package kr.co.black.mockito.user;
+package kr.co.black.mockito.mockitoMain.user;
 
 import org.springframework.stereotype.Service;
 

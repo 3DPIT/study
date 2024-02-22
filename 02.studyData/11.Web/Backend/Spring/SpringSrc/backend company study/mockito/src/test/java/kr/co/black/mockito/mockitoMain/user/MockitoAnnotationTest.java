@@ -1,5 +1,6 @@
-package kr.co.black.mockito.user;
+package kr.co.black.mockito.mockitoMain.user;
 
+import kr.co.black.mockito.mockitoMain.user.UserService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

@@ -1,4 +1,4 @@
-package kr.co.black.mockito.product;
+package kr.co.black.mockito.mockitoMain.product;
 
 import org.springframework.stereotype.Service;
 
