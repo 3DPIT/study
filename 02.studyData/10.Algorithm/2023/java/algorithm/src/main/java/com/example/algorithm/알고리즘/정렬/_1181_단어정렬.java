@@ -33,12 +33,19 @@ public class _1181_단어정렬 {
 //            }
 //        }
 
-        for(int i=0;i<words.length-1;i++){
-            if(!words[i].equals(words[i+1])){
+        bw.write(words[0]+"\n");
+        for(int i=1;i<N;i++){
+            if(!words[i].equals(words[i-1])){
                 bw.write(words[i]+"\n");
             }
         }
-        bw.write(words[words.length-1]+"\n");
+//
+//        for(int i=0;i<words.length-1;i++){
+//            if(!words[i].equals(words[i+1])){
+//                bw.write(words[i]+"\n");
+//            }
+//        }
+//        bw.write(words[words.length-1]+"\n");
 
         bw.flush();
 //        System.out.println(sb.toString());
