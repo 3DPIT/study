@@ -25,17 +25,32 @@ public class _1181_단어정렬 {
             return o1.length()-o2.length();
         });
 
-        for(String word : words){
-    System.out.println(word);
+//        StringBuilder sb = new StringBuilder();
+//        for(String word : words){
+//            if(sb.length()==0||sb.indexOf(word)==-1){
+//                sb.append(word);
+//                sb.append("\n");
+//            }
+//        }
+
+        for(int i=0;i<words.length-1;i++){
+            if(!words[i].equals(words[i+1])){
+                bw.write(words[i]+"\n");
+            }
         }
+        bw.write(words[words.length-1]+"\n");
+
+        bw.flush();
+//        System.out.println(sb.toString());
     }
 }
 
 /*
-13
+14
 but
 i
 wont
+hesitate
 hesitate
 no
 more
