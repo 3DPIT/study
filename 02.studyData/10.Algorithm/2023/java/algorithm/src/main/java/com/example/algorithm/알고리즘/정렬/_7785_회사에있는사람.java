@@ -1,10 +1,7 @@
 package com.example.algorithm.알고리즘.정렬;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class _7785_회사에있는사람 {
     public static void main(String[] args) throws IOException {
@@ -13,22 +10,21 @@ public class _7785_회사에있는사람 {
 
         int N = Integer.parseInt(br.readLine());
 
-        HashMap<String,Integer> hm  = new HashMap<>();
+        Set<String> hm  = new HashSet<>();
         for(int i=0 ;i <N;i++){
             String[] st = br.readLine().split(" ");
-            if(st[1].equals("leave")){
+            if(st[1].equals("leave")) {
                 hm.remove(st[0]);
             }
-               //제거
             else
-                hm.put(st[0],1);
+                hm.add(st[0]);
         }
 
         List<String> ret = new ArrayList<>();
-        for(String hmName: hm.keySet()){
+        for(String hmName: hm){
             ret.add(hmName);
         }
-
+        ret.sort((o1, o2) -> o1.compareTo(o2));
         for(int i=ret.size()-1;i>=0;i--){
             bw.write(ret.get(i)+"\n");
         }
