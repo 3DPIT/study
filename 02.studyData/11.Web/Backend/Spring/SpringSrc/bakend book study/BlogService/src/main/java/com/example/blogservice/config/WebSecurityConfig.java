@@ -2,13 +2,13 @@ package com.example.blogservice.config;
 
 import com.example.blogservice.service.UserDetailService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -32,9 +32,6 @@ public class WebSecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
         http
-                .csrf((csrfConfig) ->
-                        csrfConfig.disable()
-                )
                 .authorizeHttpRequests((authorizeRequests) ->
                         authorizeRequests
                                 .requestMatchers("/login", "/signup","/user").permitAll()
@@ -43,11 +40,14 @@ public class WebSecurityConfig {
                 .formLogin((formLogin) ->
                         formLogin
                                 .loginPage("/login")
-                                .defaultSuccessUrl("articles", true)
+                                .defaultSuccessUrl("/articles")
                 )
                 .logout((logoutConfig) ->
                         logoutConfig.logoutSuccessUrl("/login")
                                 .invalidateHttpSession(true)
+                )
+                .csrf((csrfConfig) ->
+                        csrfConfig.disable()
                 );
 
         return http.build();
@@ -71,20 +71,20 @@ public class WebSecurityConfig {
 
     //인증 관리자 설정
     @Bean
-    public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailService userDetailService) throws Exception{
-        http.getSharedObject(AuthenticationManager.class)
-                        .authenticate((auth))
-        http.getSharedObject(AuthenticationManager.class);
-        http.userDetailsService(userService);
-        http.passwordManagement(bCryptPasswordEncoder);
-        return http.build();
+    public AuthenticationManager authenticationManager(HttpSecurity http, BCryptPasswordEncoder bCryptPasswordEncoder, UserDetailsService userDetailService) throws Exception {
+        AuthenticationManagerBuilder builder = http.getSharedObject(AuthenticationManagerBuilder.class);
+        builder.userDetailsService(userService)
+                .passwordEncoder(bCryptPasswordEncoder);
+
+        return builder.build();
+    }
+
 //        return
 //                http.getSharedObject(AuthenticationManagerBuilder.class)
 //                .userDetailsService(userDetailService)//사용자 정보 서비스 설정
 //                .passwordEncoder(bCryptPasswordEncoder)
 //                .and()
 //                .build();
-    }
 
     //패스워드 인코더로 사용할 빈 등록
     @Bean

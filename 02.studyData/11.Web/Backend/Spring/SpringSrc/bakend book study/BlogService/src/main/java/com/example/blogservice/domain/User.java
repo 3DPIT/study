@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
-@Table(name="user")
+@Table(name="users")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
@@ -43,6 +43,11 @@ public class User implements UserDetails {
     @Override//사용자의 id를 반환 (고유한 값)
     public String getUsername() {
         return email;
+    }
+
+    @Override//사용자의 패스워드 반환
+    public String getPassword() {
+        return password;
     }
 
     @Override//계정 만료 여부 반환
