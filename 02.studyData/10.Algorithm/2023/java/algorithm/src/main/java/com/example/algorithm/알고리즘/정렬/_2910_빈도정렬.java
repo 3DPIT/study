@@ -1,6 +1,8 @@
 package com.example.algorithm.알고리즘.정렬;
 
 
+import com.sun.source.tree.Tree;
+
 import java.io.*;
 import java.util.*;
 
@@ -20,32 +22,58 @@ public class _2910_빈도정렬 {
         Set<Integer> inputSet = new LinkedHashSet<>();
 
         Map<Integer , Integer> m = new HashMap<>();
+        Map<Integer , Integer> m2 = new HashMap<>();
 
         String[] inputs = br.readLine().split(" ");
         List<Integer> inputList = new ArrayList<>(inputs.length);
 
         for(int i=0;i<N;i++){
             int input = Integer.parseInt(inputs[i]);
-            inputSet.add(input); //중복 없이 숫자 순서 저장
-            inputList.add(input);
-            m.put(input,m.getOrDefault(input, 0)+1); //빈도 저장
+            inputSet.add(input);
+//            inputList.add(input);
+            m.put(input, m.getOrDefault(input, 0)+1);
         }
 
-        inputList.sort(new Comparator<Integer>() {
-            @Override
-            public int compare(Integer o1, Integer o2) {
+        Iterator<Integer> it = inputSet.iterator();
+        for(int i=0;i<inputSet.size();i++){
+            m2.put(it.next(),i);
+        }
 
-                return m.get(o2).compareTo(m.get(o1));
+        for(int i=0;i<N;i++){
+            inputList.add(m.get(i));
+        }
+
+        inputList.sort((o1,o2)->{
+            if(m.get(o1).equals(m.get(o2))){
+                return m2.get(m.get(o1)).compareTo(m2.get(m.get(o2)));
             }
+
+            return m.get(o1).compareTo(m.get(o2));
         });
 
-        for(Integer input : inputList){
-            bw.write(input+" ");
+        Map<Integer, Integer> map = new LinkedHashMap<>();
+        for(int i=0;i<N;i++){
+            int message = sc.netInt();
+            map.put(message, map.getORDefault(message, 0)+1);
         }
 
-        bw.flush();
+        Ingeger[] fre = map.keySet().toArray(new Integer[map.size()]);
+
+        Arrays.sort(fre, new Comparator<Integer>(){
+            @Override
+            public int compare(Integer o1, Integer o2){
+                return map.get(o2)-map.get(o1);
+            }
+        })
+        })
+
+
+        //정렬된 좌표를 ㅈ
         // 정렬하고
         // 정렬된것 숫자의 빈도가 같으면 먼저 나온것을 먼저로 한다.
+
+        //작은 순 정렬
+        //
     }
 }
 
