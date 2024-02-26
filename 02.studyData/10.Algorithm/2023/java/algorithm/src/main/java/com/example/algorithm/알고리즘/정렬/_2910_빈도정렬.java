@@ -17,7 +17,7 @@ public class _2910_빈도정렬 {
         int N = Integer.parseInt(st.nextToken());
         int numberCount = Integer.parseInt(st.nextToken());
 
-        Set<Integer> inputSet = new HashSet<>();
+        Set<Integer> inputSet = new LinkedHashSet<>();
 
         Map<Integer , Integer> m = new HashMap<>();
 
@@ -26,12 +26,24 @@ public class _2910_빈도정렬 {
 
         for(int i=0;i<N;i++){
             int input = Integer.parseInt(inputs[i]);
-            inputSet.add(input);
-            inputㅣㅣㅣㄴaa
-        put(input,m.getOrㅋDefault(input, 0)+1);
+            inputSet.add(input); //중복 없이 숫자 순서 저장
+            inputList.add(input);
+            m.put(input,m.getOrDefault(input, 0)+1); //빈도 저장
         }
 
+        inputList.sort(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
 
+                return m.get(o2).compareTo(m.get(o1));
+            }
+        });
+
+        for(Integer input : inputList){
+            bw.write(input+" ");
+        }
+
+        bw.flush();
         // 정렬하고
         // 정렬된것 숫자의 빈도가 같으면 먼저 나온것을 먼저로 한다.
     }
