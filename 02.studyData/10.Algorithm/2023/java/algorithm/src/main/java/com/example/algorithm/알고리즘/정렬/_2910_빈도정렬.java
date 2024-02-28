@@ -18,7 +18,26 @@ public class _2910_빈도정렬 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken());
         int numberCount = Integer.parseInt(st.nextToken());
-//
+
+        String[] inputs = br.readLine().split(" ");
+
+        Map<Integer, Integer> map = new LinkedHashMap<>();
+        for(int i=0; i < inputs.length;i++){
+            int number = Integer.parseInt(inputs[i]);
+            map.put(number, map.getOrDefault(number,0)+1);
+        }
+
+        Integer[] frequnceNumber = map.keySet().toArray(new Integer[map.size()]);
+
+        Arrays.sort(frequnceNumber,(o1, o2)->map.get(o2)- map.get(o1));
+
+        for(int frequnce: frequnceNumber) {
+            int count = map.get(frequnce);
+            while (count-- > 0) {
+                bw.write(frequnce + " ");
+            }
+        }
+        bw.flush();
 //        Set<Integer> inputSet = new LinkedHashSet<>();
 //
 //        Map<Integer , Integer> m = new HashMap<>();
@@ -50,30 +69,30 @@ public class _2910_빈도정렬 {
 //
 //            return m.get(o1).compareTo(m.get(o2));
 //        });
-
-        String[] inputs = br.readLine().split(" ");
-        Map<Integer, Integer> map = new LinkedHashMap<>();
-        for(int i=0;i<N;i++){
-            int message = Integer.parseInt(inputs[i]);
-            map.put(message, map.getOrDefault(message, 0)+1);
-        }
-
-        Integer[] frequenceNumber = map.keySet().toArray(new Integer[map.size()]);
-
-        Arrays.sort(frequenceNumber, new Comparator<Integer>(){
-            @Override
-            public int compare(Integer o1, Integer o2){
-                return map.get(o2)-map.get(o1);
-            }
-        });
-
-        for(int number: frequenceNumber){
-            for(int i=0;i<map.get(number);i++) {
-                bw.write(number + " ");
-            }
-        }
-
-        bw.flush();
+//
+//        String[] inputs = br.readLine().split(" ");
+//        Map<Integer, Integer> map = new LinkedHashMap<>();
+//        for(int i=0;i<N;i++){
+//            int message = Integer.parseInt(inputs[i]);
+//            map.put(message, map.getOrDefault(message, 0)+1);
+//        }
+//
+//        Integer[] frequenceNumber = map.keySet().toArray(new Integer[map.size()]);
+//
+//        Arrays.sort(frequenceNumber, new Comparator<Integer>(){
+//            @Override
+//            public int compare(Integer o1, Integer o2){
+//                return map.get(o2)-map.get(o1);
+//            }
+//        });
+//
+//        for(int number: frequenceNumber){
+//            for(int i=0;i<map.get(number);i++) {
+//                bw.write(number + " ");
+//            }
+//        }
+//
+//        bw.flush();
 
 
         //정렬된 좌표를 ㅈ
