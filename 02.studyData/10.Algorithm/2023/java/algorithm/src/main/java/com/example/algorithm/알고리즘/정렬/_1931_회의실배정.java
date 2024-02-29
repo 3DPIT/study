@@ -1,8 +1,7 @@
 package com.example.algorithm.알고리즘.정렬;
 
 /*
-https://www.acmicpc.net/problem/1931
- */
+√ */
 public class _1931_회의실배정 {
     public static void main(String[] args) {
 
