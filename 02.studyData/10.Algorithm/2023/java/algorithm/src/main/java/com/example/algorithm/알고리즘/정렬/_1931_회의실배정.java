@@ -1,6 +1,8 @@
 package com.example.algorithm.알고리즘.정렬;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -19,9 +21,33 @@ public class _1931_회의실배정 {
             map.put(Integer.parseInt(input[0]),Integer.parseInt(input[1]));
         }
 
-        for(int key : map.keySet()){
-            bw.write(key+" "+map.get(key)+"\n");
+        List<Integer> keySet = new ArrayList<>(map.keySet());
+        List<Integer> keyValue = new ArrayList<>(map.values());
+
+        keySet.sort((o1,o2)->{
+            if(o1.equals(o2)){
+                return map.get(o2).compareTo(map.get(o1));
+            }
+            return o1.compareTo(o2);
+        });
+
+        keyValue.sort((o1,o2)->{
+            if(o1.equals(o2)){
+                return map.get(o1).compareTo(map.get(o2));
+            }
+            return o1.compareTo(o2);
+        });
+
+
+        for(int i=0;i<keySet.size();i++){
+            bw.write("key"+" "+ map.get(keySet.get(i)) +"\n");
+
         }
+        for(int i=0;i<keyValue.size();i++){
+            bw.write("value"+" "+ map.get(keyValue.get(i)) +"\n");
+
+        }
+        bw.flush();
         // 시작시간 기준으로 오름차순, 끝시간 기준으로 오름차순
         // 0번 부터 n까지 검사 시작
         // 선택된것의 종료시간 이후에서 가장 처음꺼를 기준으로 계산 하여 count 계산
