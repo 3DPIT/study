@@ -13,19 +13,35 @@ public class _11659_구간합구하기4 {
         int M = Integer.parseInt(inputs[1]);
         String[] InputNumbers = br.readLine().split(" ");
 
-        int[] numbers = new int[N];
+        int[] sumNumberArrays = new int[N];
         for(int i=0 ;i<N;i++){
-            numbers[i]= Integer.parseInt(InputNumbers[i]);
+            sumNumberArrays[i] += Integer.parseInt(InputNumbers[i]);
         }
+        /*
+        5 4 3  2  1
+        5 9 12 14 15
+        1 2 3  4  5
 
-        for(int i=0;i<M;i++){
+        14 = 5 + 4 + 3 + 2
+        9  = arr[4] - arr[2-1]
+        = arr[j] - arr[i-1];
+
+        // i 5 j 5
+        arr[5] - arr[4] = 15-14;
+
+
+
+        1 ~ 3 12
+        2 ~ 4  9 =
+        */
+
+        for(int i=0;i<M;i++) {
             String[] inputIndexs = br.readLine().split(" ");
-            int sum =0;
-            for(int j=Integer.parseInt(inputIndexs[0])-1;j<Integer.parseInt(inputIndexs[1]);j++){
-                sum += numbers[j];
-            }
+            int startIndex = Integer.parseInt(inputIndexs[0]);
+            int endIndex = Integer.parseInt(inputIndexs[1]);
+            int sum = sumNumberArrays[endIndex]-sumNumberArrays[startIndex-1];
 
-            bw.write(sum +"\n");
+            bw.write(sum+"\n");
             bw.flush();
         }
     }
