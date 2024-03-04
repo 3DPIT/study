@@ -1,14 +1,20 @@
 package com.example.algorithm.알고리즘.정렬;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 /*
 √ */
 public class _1931_회의실배정 {
+    public static class Meeting{
+        int start;
+        int end;
+
+        public Meeting(int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+    }
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -16,37 +22,30 @@ public class _1931_회의실배정 {
         int N = Integer.parseInt(br.readLine());
 
         Map<Integer,Integer> map = new TreeMap<>();
+        Meeting[] meetings = new Meeting[N];
         for(int i=0;i<N;i++){
             String[] input = br.readLine().split(" ");
-            map.put(Integer.parseInt(input[0]),Integer.parseInt(input[1]));
+            meetings[i]=new Meeting(Integer.parseInt(input[0]),Integer.parseInt(input[1]));
         }
 
-        List<Integer> keySet = new ArrayList<>(map.keySet());
-        List<Integer> keyValue = new ArrayList<>(map.values());
-
-        keySet.sort((o1,o2)->{
-            if(o1.equals(o2)){
-                return map.get(o2).compareTo(map.get(o1));
+        Arrays.sort(meetings, (o1, o2)->{
+            if(o1.end == o2.end){
+                return o1.start-o2.start;
             }
-            return o1.compareTo(o2);
+            return o1.end-o2.end;
         });
 
-        keyValue.sort((o1,o2)->{
-            if(o1.equals(o2)){
-                return map.get(o1).compareTo(map.get(o2));
+        int ret=0;
+        int end=0;
+        for(int i=0;i<N;i++){
+            if(end<=meetings[i].start){
+                ret++;
+                end=meetings[i].end;
             }
-            return o1.compareTo(o2);
-        });
-
-
-        for(int i=0;i<keySet.size();i++){
-            bw.write("key"+" "+ map.get(keySet.get(i)) +"\n");
-
         }
-        for(int i=0;i<keyValue.size();i++){
-            bw.write("value"+" "+ map.get(keyValue.get(i)) +"\n");
 
-        }
+        bw.write(ret+"\n");
+
         bw.flush();
         // 시작시간 기준으로 오름차순, 끝시간 기준으로 오름차순
         // 0번 부터 n까지 검사 시작
