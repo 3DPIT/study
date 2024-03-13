@@ -1,7 +1,5 @@
-package com.example.studybackend;
+package com.example.studybackend.studyjpa.domain.posts;
 
-import com.example.studybackend.studyjpa.domain.posts.PostRepository;
-import com.example.studybackend.studyjpa.domain.posts.Posts;
 import org.junit.After;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +13,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-class StudyBackendApplicationTests {
+class PostRepositoryTest { // Change the name of the class from StudyBackendApplicationTests to PostRepositoryTest and remove the contextLoads method from the class
 
     @Autowired
     PostRepository postRepository;
