@@ -16,7 +16,7 @@ public class PostsServiceImpl implements PostsService{
 
     @Transactional
     @Override
-    public Long save(PostsSaveReq req) {
+    public long save(PostsSaveReq req) {
          return postsRepo.save(req.toEntity()).getId();
     }
 

@@ -1,8 +1,12 @@
 package com.mirero.aegis.demotest.web.dto;
 
 import com.mirero.aegis.demotest.domain.posts.Posts;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
+@Builder
+@AllArgsConstructor
 @Getter
 public class PostsResponseDto {
 

@@ -16,7 +16,8 @@ public class PostsController {
 
     @PostMapping("/posts")
     public ResponseEntity<Long> save(@RequestBody PostsSaveReq req){
-       return ResponseEntity.ok().body(postsService.save(req));
+        Long id = postsService.save(req);
+       return ResponseEntity.ok().body(id.longValue());
     }
 
     @GetMapping("/posts/{id}")
