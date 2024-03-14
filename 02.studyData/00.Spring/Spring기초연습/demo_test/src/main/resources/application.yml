@@ -1,0 +1,22 @@
+spring:
+  application:
+    name=demo_test
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:postgresql://3dpit.synology.me:7432/postgres
+    username: root
+    password: root
+  h2:
+    console:
+      enable:true
+  sql:
+    init:
+      mode: always
+
