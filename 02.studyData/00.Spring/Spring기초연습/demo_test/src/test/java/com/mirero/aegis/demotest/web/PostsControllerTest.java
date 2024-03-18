@@ -5,12 +5,9 @@ import com.mirero.aegis.demotest.domain.posts.Posts;
 import com.mirero.aegis.demotest.service.posts.PostsServiceImpl;
 import com.mirero.aegis.demotest.web.dto.PostsResponseDto;
 import com.mirero.aegis.demotest.web.dto.PostsSaveReq;
-import org.assertj.core.api.Assertions;
 import org.hamcrest.CoreMatchers;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
-import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -33,8 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(PostsController.class)
 @ExtendWith(MockitoExtension.class)
-@AutoConfigureMockMvc
-@ActiveProfiles("test")
+//@ActiveProfiles("test")
 public class PostsControllerTest {
 
     @Autowired
@@ -48,12 +44,24 @@ public class PostsControllerTest {
 
     @Test
     public void postsController_savePosts_returnOk() throws Exception{
-        given(postsService.save(new PostsSaveReq("title", "content", "author"))).willReturn(1L);
 
-        ResultActions result = mockMvc.perform(post("/api/v1/posts")
+        //given
+        final String url = "/api/v1/posts";
+        final String title = "title";
+        final String content = "content";
+        final String author = "author";
+        final PostsSaveReq postsSaveReq = new PostsSaveReq(title, content, author);
+        //객체 JSON으로 직렬화
+        final String requestBody = objectMapper.writeValueAsString(postsSaveReq);
+
+        when(postsService.save(postsSaveReq)).thenReturn(1L);
+
+        //when
+        ResultActions result = mockMvc.perform(post(url)
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(new PostsSaveReq("title", "content", "author"))));
+                .content(requestBody));
 
+        //then
         result.andExpect(status().isOk())
                 .andDo(MockMvcResultHandlers.print());
     }
@@ -61,10 +69,17 @@ public class PostsControllerTest {
     @Test
     public void postsController_getPosts_returnOk() throws Exception{
         //given
-        given(postsService.findById(1L)).willReturn(new PostsResponseDto(new Posts(1L, "title", "content", "author")));
+        final String url = "/api/v1/posts/{id}";
+        final String title = "title";
+        final String content = "content";
+        final String author = "author";
+        final Posts posts = new Posts(1L,title, content, author);
+
+        //given
+        given(postsService.findById(1L)).willReturn(new PostsResponseDto(posts));
 
         //when
-        ResultActions result = mockMvc.perform(get("/api/v1/posts/{id}",1));
+        ResultActions result = mockMvc.perform(get(url,1));
 
         //then
         result.andExpect(status().isOk())
@@ -73,30 +88,5 @@ public class PostsControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.title", CoreMatchers.is("title")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.content", CoreMatchers.is("content")))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.author", CoreMatchers.is("author")));
-    }
-
-    @Spy
-    TestReturnOne testReturnOneSpy;
-
-    @Mock
-    TestReturnOne testReturnOneMock;
-
-    @Test
-    public void TestReturnMock(){
-
-        Assertions.assertThat(testReturnOneSpy.testMethod()).isEqualTo(1555);
-
-        when(testReturnOneMock.testMethod()).thenReturn(1000);
-        given(testReturnOneMock.testMethod()).willReturn(10003);
-
-        Assertions.assertThat(testReturnOneMock.testMethod()).isEqualTo(10003);
-    }
-
-    public class TestReturnOne{
-        int id;
-
-        public int testMethod(){
-            return 1555;
-        }
     }
 }

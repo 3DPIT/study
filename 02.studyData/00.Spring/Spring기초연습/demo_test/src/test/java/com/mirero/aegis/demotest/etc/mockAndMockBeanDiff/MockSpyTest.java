@@ -1,9 +1,8 @@
-package com.mirero.aegis.demotest.service;
+package com.mirero.aegis.demotest.etc.mockAndMockBeanDiff;
 
 import com.mirero.aegis.demotest.domain.posts.Posts;
 import com.mirero.aegis.demotest.domain.posts.PostsRepo;
 import com.mirero.aegis.demotest.service.posts.PostsServiceImpl;
-import com.mirero.aegis.demotest.web.dto.PostsResponseDto;
 import com.mirero.aegis.demotest.web.dto.PostsSaveReq;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -11,14 +10,13 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.mockito.Spy;
 import org.mockito.junit.jupiter.MockitoExtension;
-
-import java.util.Optional;
 
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-public class PostsServiceTest {
+public class MockSpyTest {
 
     @Mock
     private PostsRepo postsRepo;
@@ -31,7 +29,7 @@ public class PostsServiceTest {
 
         //given
         Posts posts =Posts.builder()
-               .id(1L)
+                .id(1L)
                 .title("title")
                 .content("content")
                 .author("author")
@@ -43,36 +41,13 @@ public class PostsServiceTest {
                 .author("author")
                 .build();
 
-       when(postsRepo.save(any(Posts.class))).thenReturn(posts);
+        when(postsRepo.save(any(Posts.class))).thenReturn(posts);
 
-       //when
+        //when
         long id =  postsService.save(req);
 
         //then
         verify(postsRepo, times(1)).save(any(Posts.class));
-       Assertions.assertThat(id).isEqualTo(1);
-    }
-
-    @Test
-    public void PostsServiceTest_findById_returnOk() {
-        //given
-        Posts posts =Posts.builder()
-                .id(1L)
-                .title("title")
-                .content("content")
-                .author("author")
-                .build();
-
-        when(postsRepo.findById(1L)).thenReturn(Optional.of(posts));
-
-        //when
-        PostsResponseDto postsResponseDto =  postsService.findById(1L);
-
-        //then
-        Assertions.assertThat(postsResponseDto.getId()).isEqualTo(1);
-        Assertions.assertThat(postsResponseDto.getTitle()).isEqualTo("title");
-        Assertions.assertThat(postsResponseDto.getContent()).isEqualTo("content");
-        Assertions.assertThat(postsResponseDto.getAuthor()).isEqualTo("author");
+        Assertions.assertThat(id).isEqualTo(1);
     }
 }
-
