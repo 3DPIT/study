@@ -49,6 +49,7 @@ public class BDDMockitoTest {
 
         //then
         then(postsRepo).should(times(1)).save(Mockito.any(Posts.class));
+        then(postsRepo).should(times(1)).findById(1L)
         Assertions.assertThat(id).isEqualTo(1);
     }
 }
