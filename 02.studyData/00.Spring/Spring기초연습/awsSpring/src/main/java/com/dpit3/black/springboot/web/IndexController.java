@@ -1,5 +1,6 @@
 package com.dpit3.black.springboot.web;
 
+import com.dpit3.black.springboot.config.auth.LoginUser;
 import com.dpit3.black.springboot.config.auth.dto.SessionUser;
 import com.dpit3.black.springboot.service.posts.PostsService;
 import com.dpit3.black.springboot.web.dto.PostsResponseDto;
@@ -19,9 +20,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
-        model.addAttribute("posts", postsService.findAllDesc());
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
+    public String index(Model model, @LoginUser SessionUser user){
+        model.addAttribute("posts",  postsService.findAllDesc());
 
         if(user != null){
             model.addAttribute("userName", user.getName());
