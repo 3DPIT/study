@@ -2,7 +2,9 @@ package com.example.basicTrainning.demo.diJava.discount;
 
 import com.example.basicTrainning.demo.diJava.member.Grade;
 import com.example.basicTrainning.demo.diJava.member.Member;
+import org.springframework.stereotype.Component;
 
+@Component
 public class RateDiscount implements DiscountPolicy{
     private int discountPercent =10;
     @Override
