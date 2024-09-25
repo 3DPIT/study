@@ -1,6 +1,8 @@
 package com.dipit3.black;
 
+import com.dipit3.black.builder.Calzone;
 import com.dipit3.black.builder.People;
+import com.dipit3.black.builder.Pizza;
 
 import static com.dipit3.black.builder.People.*;
 
@@ -12,5 +14,13 @@ public class Main {
         People people = new Builder("경민")
                 .address("서울")
                 .build();
+
+
+        Calzone calzone =  new Calzone.Builder()
+                .addToppping(Pizza.Topping.HAM)
+                .sauceInside()
+                .build();
+
+        System.out.println(calzone.toString());
     }
 }
