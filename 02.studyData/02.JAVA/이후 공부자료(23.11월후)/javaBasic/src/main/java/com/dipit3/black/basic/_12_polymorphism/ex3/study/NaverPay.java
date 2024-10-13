@@ -1,6 +1,6 @@
 package com.dipit3.black.basic._12_polymorphism.ex3.study;
 
-public class NaverPay implements Pay {
+public class NaverPay {
 
     public boolean pay(int amount){
         System.out.println("네이버페이 시스템과 연결합니다.");
